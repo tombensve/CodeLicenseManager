@@ -1038,10 +1038,10 @@ Use the CodeLicenseManager-maven-plugin with the "install" goal. Here is an exam
                     <installOptions>
                         <verbose>true</verbose>
                         <licenseDir>
-                            ${basedir}/license
+                            target/license
                         </licenseDir>
                         <thirdpartyLicenseDir>
-                            ${basedir}/license/thirdparty
+                            target/license/thirdparty
                         </thirdpartyLicenseDir>
                     </installOptions>
 
