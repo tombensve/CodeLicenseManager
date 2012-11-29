@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>se.natusoft.tools.codelicmgr</groupId>
+        <artifactId>CodeLicenseManager</artifactId>
+        <version>2.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>se.natusoft.tools.codelicmgr</groupId>
+    <artifactId>CodeLicenseManager-documentation</artifactId>
+    <version>2.0</version>
+
+
+    <build>
+        <plugins>
+
+            <!--
+                License install.
+
+                Please note this plugin cannot be put in the parent pom in this case since that creates
+                a cyclic dependency! This has a dependency on CodeLicenseManager-Manager which in turn
+                have dependencies on most of the other including the maven plugin. Running it here has
+                the side effect of not being able to automatically resolve third party licenses
+                since it is only run withing this project. Thereby we have to specify all third party
+                licenses manually.
+            -->
+            <plugin>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>CodeLicenseManager-maven-plugin</artifactId>
+                <version>${project.version}</version>
+
+                <dependencies>
+                    <dependency>
+                        <groupId>${project.groupId}</groupId>
+                        <artifactId>CodeLicenseManager-licenses-common-opensource</artifactId>
+                        <version>${project.version}</version>
+                    </dependency>
+                </dependencies>
+
+                <!-- Common config for all executions of this plugin. -->
+                <configuration>
+
+                    <thirdpartyLicenses>
+                        <license>
+                            <type>LGPL</type>
+                            <version>v3</version>
+                            <licenseProducts>
+                                <product>
+                                    <name>bsh</name>
+                                    <version>1.3.0</version>
+                                    <web>http://www.beanshell.org/</web>
+                                </product>
+                            </licenseProducts>
+                        </license>
+                        <license>
+                            <type>Apache</type>
+                            <version>2.0</version>
+                            <licenseProducts>
+                                <product>
+                                    <name>FileEditor</name>
+                                    <version>2.0</version>
+                                    <web>https://github.com/tombensve/FileEditor</web>
+                                </product>
+                                <product>
+                                    <name>OptionsManager</name>
+                                    <version>2.0</version>
+                                    <web>https://github.com/tombensve/OptionsManager</web>
+                                </product>
+                                <product>
+                                    <name>MarkdownDoc</name>
+                                    <version>1.0</version>
+                                    <web>https://github.com/tombensve/MarkdownDoc</web>
+                                </product>
+                            </licenseProducts>
+                        </license>
+                    </thirdpartyLicenses>
+
+                </configuration>
+
+                <executions>
+                    <!-- Lets install license texts during install phase. -->
+                    <execution>
+                        <id>install-lics</id>
+                        <goals>
+                            <goal>install</goal>
+                        </goals>
+                        <phase>install</phase>
+                        <configuration>
+
+                            <installOptions>
+                                <verbose>true</verbose>
+                                <!-- A text file with the license text will be put in this directory. -->
+                                <licenseDir>target/license</licenseDir>
+                                <!-- Text files with license text for all thirdparty licenses will be put in this directory. -->
+                                <thirdpartyLicenseDir>target/license/thirdparty</thirdpartyLicenseDir>
+                            </installOptions>
+                            <createLicensesMarkdown>true</createLicensesMarkdown>
+                            <markdownTargetSubdir>CodeLicenseManager-documentation/docs</markdownTargetSubdir>
+                            <markdownLinkPrefix>https://github.com/tombensve/CodeLicenseManager/blob/master/CodeLicenseManager-documentation/docs/</markdownLinkPrefix>
+
+                        </configuration>
+                    </execution>
+                </executions>
+
+            </plugin>
+
+            <!--
+                Documentation generation.
+            -->
+            <plugin>
+                <groupId>se.natusoft.tools.doc.markdowndoc</groupId>
+                <artifactId>markdowndoc-maven-plugin</artifactId>
+                <version>1.0</version>
+
+                <dependencies>
+                    <dependency>
+                        <groupId>se.natusoft.tools.doc.markdowndoc</groupId>
+                        <artifactId>markdown-doc-lib</artifactId>
+                        <version>1.0</version>
+                    </dependency>
+                </dependencies>
+
+                <executions>
+                    <execution>
+                        <id>generate-docs</id>
+                        <goals>
+                            <goal>doc</goal>
+                        </goals>
+                        <phase>install</phase>
+                        <configuration>
+
+                            <generatorOptions>
+                                <generator>pdf</generator>
+                                <inputPaths>
+                                    CodeLicenseManager-documentation/docs/UserGuide.md,
+                                    CodeLicenseManager-documentation/docs/parts/H1Licenses.mdpart,
+                                    CodeLicenseManager-documentation/docs/licenses.md,
+                                    CodeLicenseManager-documentation/docs/parts/H1LicenseTexts.mdpart,
+                                    CodeLicenseManager-documentation/docs/.*-.*.md
+                                </inputPaths>
+                            </generatorOptions>
+
+                            <pdfGeneratorOptions>
+                                <resultFile>CodeLicenseManager-documentation/docs/CLM-User-Guide.pdf</resultFile>
+                                <pageSize>A4</pageSize>
+                                <title>Code License Manager</title>
+                                <subject>User Guide</subject>
+                                <version>2.0</version>
+                                <author>Tommy Svensson</author>
+                                <copyright>Copyright © 2012 Natusoft AB</copyright>
+                                <generateTitlePage>true</generateTitlePage>
+                                <generateTOC>true</generateTOC>
+                            </pdfGeneratorOptions>
+
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>

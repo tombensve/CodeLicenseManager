@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Document   : build.xml
+    Created on : den 22 januari 2010, 16:53
+    Author     : tommy
+    Description:
+        Purpose of the document follows.
+-->
+
+<project name="MyProject" basedir=".">
+    <taskdef name="clmapply" classname="se.natusoft.tools.codelicmgr.CodeLicenseManagerApplyAntTask">
+        <classpath>
+            <pathelement path="CodeLicenseManager-dist-1.0/lib/CodeLicenseManager-ant-task-2.0.jar"/>
+            <pathelement path="CodeLicenseManager-dist-1.0/lib/FileEditor-2.0.jar"/>
+            <pathelement path="CodeLicenseManager-dist-1.0/lib/bsh-1.3.0.jar"/>
+            <pathelement path="CodeLicenseManager-dist-1.0/lib/CodeLicenseManager-manager-2.0.jar"/>
+            <pathelement path="CodeLicenseManager-dist-1.0/lib/license/CodeLicenseManager-licenses-common-opensource-2.0.jar"/>
+            <pathelement path="CodeLicenseManager-dist-1.0/lib/updaters/CodeLicenseManager-source-updater-slashstar-comment-2.0.jar"/>
+        </classpath>
+    </taskdef>
+
+    <target name="apply">
+        <clmapply>
+            <project name="myproj" description="My Project" codeVersion="1.0"/>
+            <copyright year="2010" holder="Me Myself and I"/>
+            <license type="Apache" version="2.0"/>
+            <thirdpartyLicense type="LGPL" version="v3" licenseUrl="http://www.gnu.org/copyleft/lesser.html">
+                <product name="bsh" version="1.3.0" web="http://www.beanshell.org"/>
+            </thirdpartyLicense>
+
+            <codeOptions verbose="true" updateCopyright="true" updateProject="true" addAuthorsBlock="true" sourceCodeDirs="./**/.*.java"/>
+        </clmapply>
+    </target>
+</project>

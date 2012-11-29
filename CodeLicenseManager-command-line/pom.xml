@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>CodeLicenseManager</artifactId>
+        <groupId>se.natusoft.tools.codelicmgr</groupId>
+        <version>2.0</version>
+    </parent>
+
+    <groupId>se.natusoft.tools.codelicmgr</groupId>
+    <artifactId>CodeLicenseManager-command-line</artifactId>
+    <version>2.0</version>
+
+    <name>CodeLicenseManager-command-line</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>CodeLicenseManager-manager</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.5</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <!--version>2.3</version-->
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>se.natusoft.tools.codelicmgr.Main</mainClass>
+                        </manifest>
+                        <manifestEntries>
+                            <version>${project.version}</version>
+                            <providedBy>${project.organization.name} (www.biltmore.se)</providedBy>
+                            <avalableAt>https://github.com/tombensve/CodeLicenseManager</avalableAt>
+                        </manifestEntries>
+                    </archive>
+                </configuration>           
+            </plugin>
+
+            <!--
+                Define project assemblies.
+            -->
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <!--version>2.2-beta-5</version-->
+                <configuration>
+                    <descriptors>
+                        <descriptor>file:${basedir}/src/assembly/cmdline-jar.xml</descriptor>
+                    </descriptors>
+                    <archive>
+                        <manifest>
+                            <mainClass>se.natusoft.tools.codelicmgr.Main</mainClass>
+                        </manifest>
+                        <manifestEntries>
+                            <version>${project.version}</version>
+                            <providedBy>${project.organization.name} (www.natusoft.se)</providedBy>
+                            <avalableAt>https://github.com/tombensve/CodeLicenseManager</avalableAt>
+                        </manifestEntries>
+                    </archive>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>package-zip</id>
+                        <goals>
+                            <goal>assembly</goal>
+                        </goals>
+                        <phase>package</phase>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
+
+

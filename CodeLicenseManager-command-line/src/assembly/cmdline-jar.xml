@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="MacRoman"?>
+
+<assembly>
+    <id>exec</id>
+
+    <formats>
+        <format>jar</format>
+    </formats>
+
+    <includeBaseDirectory>false</includeBaseDirectory>
+
+    <!--
+        This includes only the classes that needs no other dependencies than
+        OptionsManager, whichi also gets included by the dependecySets below.
+        The Main.class will instantiate an URLClassLoader and provide a complete
+        classpath including user specified license library and source code updaters.
+        Main.class will load and call CLMMain.class via CLMMainAPI.class. 
+    -->
+    <fileSets>
+        <fileSet>
+            <directory>target/classes</directory>
+            <outputDirectory></outputDirectory>
+            <includes>
+                <include>**/Main.class</include>
+                <include>**/Action.class</include>
+                <include>**/CLMMainAPI.class</include>
+                <include>**/CmdlineOptions.class</include>
+            </includes>
+            <excludes>
+            </excludes>
+        </fileSet>
+    </fileSets>
+
+    <dependencySets>
+        <dependencySet>
+            <unpack>true</unpack>
+            <includes>
+                <include>OptionsManager*</include>
+            </includes>
+        </dependencySet>
+    </dependencySets>
+
+</assembly>

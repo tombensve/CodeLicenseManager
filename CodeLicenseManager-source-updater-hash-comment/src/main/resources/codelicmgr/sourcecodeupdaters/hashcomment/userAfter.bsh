@@ -1,0 +1,88 @@
+/*
+ * PROJECT
+ *     Name
+ *         CodeLicenseManager-source-updater-hash-comment
+ *     
+ *     Code Version
+ *         2.0
+ *     
+ *     Description
+ *         Manages project and license information in project sourcecode
+ *         and provides license text files for inclusion in builds. Supports
+ *         multiple languages and it is relatively easy to add a new
+ *         language and to make your own custom source code updater.
+ *         
+ * COPYRIGHTS
+ *     Copyright (C) 2009 by Natusoft AB All rights reserved.
+ *     
+ * LICENSE
+ *     Apache 2.0 (Open Source)
+ *     
+ *     Licensed under the Apache License, Version 2.0 (the "License");
+ *     you may not use this file except in compliance with the License.
+ *     You may obtain a copy of the License at
+ *     
+ *       http://www.apache.org/licenses/LICENSE-2.0
+ *     
+ *     Unless required by applicable law or agreed to in writing, software
+ *     distributed under the License is distributed on an "AS IS" BASIS,
+ *     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *     See the License for the specific language governing permissions and
+ *     limitations under the License.
+ *     
+ * AUTHORS
+ *     Tommy Svensson
+ *         Changes:
+ *         2009-11-03: Created!
+ *         
+ * This is run after all other scripts. It is for user specific updaters that uses
+ * information in the <userData/> config section. You can ofcourse put user data information in
+ * any of the scripts when you make your own updater. This is just a convenience.
+ *
+ * The following objects are available to this script:
+ *
+ *   editor - A TextFileEditor instance with the current source code file loaded. You are not allowed to do
+ *            load(file) or save() on it! If you feel the need to do that then you are probably doing something
+ *            strange and should reconcider whay you are doing :-). All other methods on this object can be called.
+ *
+ *   projectName             - The name of the project.
+ *   hasProjectDescripion    - True if a project description has been provided.
+ *   projectDescription      - The projectDescription if 'hasProjectDescription' is true.
+ *   hasProjectCodeVersion   - True if a project code version has been provided.
+ *   projectCodeVersion      - The version of the project code if 'hasProjectCodeVersion' is true.
+ *   hasProjectSubProjectOf  - True if the 'subProjectOf' config has been provided.
+ *   projectSubProjectOf     - The name of the parent project the project is a subproject of if 'hasSubProjectOf' is true.
+ *   licenseType             - The type of the license. Example: "Apache" or "GPL".
+ *   licenseVersion          - The version of the license. Example "2.0" or "v3".
+ *   licenseDescription      - A short description of the license, usually just the full name of the license. Provided by license library.
+ *   source                  - "Open" or "Closed" depending on license type.
+ *   sourceBlock             - The license notice to put at the top of the source file. Sometimes called the license boilerplate.
+ *                             Use the formatMultiLineTextToCode(...) function with this.
+ *
+ * The following functions are available:
+ *
+ *   display(String str)
+ *       str - The string to display. This will only be displayed if verbose is turned on!
+ *
+ *   formatMultiLineTextToCode(TextBuffer buffer, String text, String lineEnd, final String stringSpec, final String escapedStringSpec, int indent, boolean trim)
+ *       buffer            - The buffer to put formatted result in.
+ *       text              - The text to format.
+ *       lineEnd           - The string that terminates each line. For example " +" or ",".
+ *       stringSpec        - A character or set of characters that indicates start and end of a String. For eample "\"" or "'".
+ *       escapedStringSpec - A character or set of characters that indicates an escaped start and end of a string. For example "\\\�" or "\\'"
+ *       indent            - The number of spaces to indent each line.
+ *       trim              - If true each line is also trimmed.
+ *
+ *   formatMultiLineTextToCode(TextBuffer buffer, String text, String lineBeg, String lineEnd, final String stringSpec, final String escapedStringSpec, int indent, boolean trim)
+ *       buffer            - The buffer to put formatted result in.
+ *       text              - The text to format.
+ *       lineBeg           - The beginning of each line. The indent will be added after this.
+ *       lineEnd           - The string that terminates each line. For example " +" or ",".
+ *       stringSpec        - A character or set of characters that indicates start and end of a String. For eample "\"" or "'".
+ *       escapedStringSpec - A character or set of characters that indicates an escaped start and end of a string. For example "\\\�" or "\\'"
+ *       indent            - The number of spaces to indent each line.
+ *       trim              - If true each line is also trimmed.
+ *
+ * In addition to this any functions and objects you define in init.bsh will also be available.
+ *
+ */

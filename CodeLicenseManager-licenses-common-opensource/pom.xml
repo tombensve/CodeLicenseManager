@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<project>
+    <parent>
+        <artifactId>CodeLicenseManager</artifactId>
+        <groupId>se.natusoft.tools.codelicmgr</groupId>
+        <version>2.0</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    
+    <groupId>se.natusoft.tools.codelicmgr</groupId>
+    <artifactId>CodeLicenseManager-licenses-common-opensource</artifactId>
+    <version>2.0</version>
+
+    <name>CodeLicenseManager-licenses-common-opensource</name>
+
+</project>

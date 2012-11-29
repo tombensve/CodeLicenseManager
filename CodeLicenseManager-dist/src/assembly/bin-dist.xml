@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="MacRoman"?>
+
+<assembly>
+    <id>installation</id>
+
+    <formats>
+        <format>zip</format>
+    </formats>
+
+    <includeBaseDirectory>true</includeBaseDirectory>
+
+    <fileSets>
+        <!--
+            bin
+        -->
+        <fileSet>
+            <directory>../CodeLicenseManager-command-line/target</directory>
+            <outputDirectory>bin</outputDirectory>
+            <includes>
+                <include>CodeLicenseManager-command-line-*-exec.jar</include>
+            </includes>
+            <excludes>
+            </excludes>
+        </fileSet>
+
+        <fileSet>
+            <directory>../CodeLicenseManager-command-line/src/main/script</directory>
+            <outputDirectory>bin</outputDirectory>
+            <includes>
+                <include>*.*</include>
+            </includes>
+            <excludes>
+            </excludes>
+        </fileSet>
+
+        <!--
+            lib/license
+        -->
+        <fileSet>
+            <directory>../CodeLicenseManager-licenses-common-opensource/target</directory>
+            <outputDirectory>lib/license</outputDirectory>
+            <includes>
+                <include>*.jar</include>
+            </includes>
+            <excludes>
+                <exclude>*-javadoc.jar</exclude>
+            </excludes>
+        </fileSet>
+
+        <!--
+            lib/updaters
+        -->
+        <fileSet>
+            <directory>../CodeLicenseManager-source-updater-groovy-annotation/target</directory>
+            <outputDirectory>lib/updaters</outputDirectory>
+            <includes>
+                <include>*.jar</include>
+            </includes>
+            <excludes>
+                <exclude>*-javadoc.jar</exclude>
+            </excludes>
+        </fileSet>
+
+        <fileSet>
+            <directory>../CodeLicenseManager-source-updater-hash-comment/target</directory>
+            <outputDirectory>lib/updaters</outputDirectory>
+            <includes>
+                <include>*.jar</include>
+            </includes>
+            <excludes>
+                <exclude>*-javadoc.jar</exclude>
+            </excludes>
+        </fileSet>
+
+        <fileSet>
+            <directory>../CodeLicenseManager-source-updater-html-xml/target</directory>
+            <outputDirectory>lib/updaters</outputDirectory>
+            <includes>
+                <include>*.jar</include>
+            </includes>
+            <excludes>
+                <exclude>*-javadoc.jar</exclude>
+            </excludes>
+        </fileSet>
+
+        <fileSet>
+            <directory>../CodeLicenseManager-source-updater-java-annotation/target</directory>
+            <outputDirectory>lib/updaters</outputDirectory>
+            <includes>
+                <include>*.jar</include>
+            </includes>
+            <excludes>
+                <exclude>*-javadoc.jar</exclude>
+            </excludes>
+        </fileSet>
+
+        <fileSet>
+            <directory>../CodeLicenseManager-source-updater-jsp/target</directory>
+            <outputDirectory>lib/updaters</outputDirectory>
+            <includes>
+                <include>*.jar</include>
+            </includes>
+            <excludes>
+                <exclude>*-javadoc.jar</exclude>
+            </excludes>
+        </fileSet>
+
+        <fileSet>
+            <directory>../CodeLicenseManager-source-updater-slashstar-comment/target</directory>
+            <outputDirectory>lib/updaters</outputDirectory>
+            <includes>
+                <include>*.jar</include>
+            </includes>
+            <excludes>
+                <exclude>*-javadoc.jar</exclude>
+            </excludes>
+        </fileSet>
+
+        <!--
+            lib
+        -->
+
+        <fileSet>
+            <directory>../CodeLicenseManager-annotations-retention-runtime/target</directory>
+            <outputDirectory>lib</outputDirectory>
+            <includes>
+                <include>*.jar</include>
+            </includes>
+            <excludes>
+                <exclude>*-javadoc.jar</exclude>
+            </excludes>
+        </fileSet>
+
+        <fileSet>
+            <directory>../CodeLicenseManager-annotations-retention-runtime-all/target</directory>
+            <outputDirectory>lib</outputDirectory>
+            <includes>
+                <include>*.jar</include>
+            </includes>
+            <excludes>
+                <exclude>*-javadoc.jar</exclude>
+            </excludes>
+        </fileSet>
+
+        <fileSet>
+            <directory>../CodeLicenseManager-annotations-retention-source/target</directory>
+            <outputDirectory>lib</outputDirectory>
+            <includes>
+                <include>*.jar</include>
+            </includes>
+            <excludes>
+                <exclude>*-javadoc.jar</exclude>
+            </excludes>
+        </fileSet>
+
+        <!--fileSet>
+            <directory>../CodeLicenseManager-ant-task/target</directory>
+            <outputDirectory>lib</outputDirectory>
+            <includes>
+                <include>*.jar</include>
+            </includes>
+            <excludes>
+                <exclude>*-javadoc.jar</exclude>
+            </excludes>
+        </fileSet-->
+
+        <fileSet>
+            <directory>../CodeLicenseManager-command-line/target</directory>
+            <outputDirectory>lib</outputDirectory>
+            <includes>
+                <include>*.jar</include>
+            </includes>
+            <excludes>
+                <exclude>*-javadoc.jar</exclude>
+                <exclude>*-exec.jar</exclude>
+            </excludes>
+        </fileSet>
+
+        <fileSet>
+            <directory>../CodeLicenseManager-manager/target</directory>
+            <outputDirectory>lib</outputDirectory>
+            <includes>
+                <include>*.jar</include>
+            </includes>
+            <excludes>
+                <exclude>*-javadoc.jar</exclude>
+            </excludes>
+        </fileSet>
+
+        <fileSet>
+            <directory>../CodeLicenseManager-maven-plugin/target</directory>
+            <outputDirectory>lib</outputDirectory>
+            <includes>
+                <include>*.jar</include>
+            </includes>
+            <excludes>
+                <exclude>*-javadoc.jar</exclude>
+            </excludes>
+        </fileSet>
+
+        <!--
+            docs
+        -->
+
+        <fileSet>
+            <directory>../CodeLicenseManager-site/target/site</directory>
+            <outputDirectory>docs</outputDirectory>
+            <includes>
+                <include>**/*</include>
+            </includes>
+        </fileSet>
+
+        <!--
+            license
+        -->
+
+        <fileSet>
+            <directory>../CodeLicenseManager-site/license</directory>
+            <outputDirectory>license</outputDirectory>
+            <includes>
+                <include>**/*</include>
+            </includes>
+        </fileSet>
+
+
+    </fileSets>
+    
+    <dependencySets>
+        <dependencySet>
+            <outputDirectory>lib</outputDirectory>
+            <unpack>false</unpack>
+            <excludes>
+                <exclude>CodeLicenseManager-annotation-retention*</exclude>
+            </excludes>
+        </dependencySet>
+    </dependencySets>
+
+</assembly>

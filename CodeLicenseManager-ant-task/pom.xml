@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>CodeLicenseManager</artifactId>
+        <groupId>se.natusoft.tools.codelicmgr</groupId>
+        <version>2.0</version>
+    </parent>
+
+    <groupId>se.natusoft.tools.codelicmgr</groupId>
+    <artifactId>CodeLicenseManager-ant-task</artifactId>
+    <version>2.0</version>
+
+    <name>CodeLicenseManager-ant-task</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.ant</groupId>
+            <artifactId>ant</artifactId>
+            <version>1.7.1</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>CodeLicenseManager-annotations-retention-source</artifactId>
+            <version>${project.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>CodeLicenseManager-manager</artifactId>
+            <version>${project.version}</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
+    <profiles>
+        <profile>
+            <!--
+            Runs the maven plugin on a few dummy source files under src/test/java.
+            -->
+            <id>test-ant-task</id>
+            <build>
+                <plugins>
+
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-antrun-plugin</artifactId>
+                        <dependencies>
+                            <dependency>
+                                <groupId>${project.groupId}</groupId>
+                                <artifactId>CodeLicenseManager-licenses-common-opensource</artifactId>
+                                <version>${project.version}</version>
+                            </dependency>
+                            <dependency>
+                                <groupId>${project.groupId}</groupId>
+                                <artifactId>CodeLicenseManager-source-updater-java-annotation</artifactId>
+                                <version>${project.version}</version>
+                            </dependency>
+                            <dependency>
+                                <groupId>${project.groupId}</groupId>
+                                <artifactId>CodeLicenseManager-ant-task</artifactId>
+                                <version>${project.version}</version>
+                            </dependency>
+                        </dependencies>
+                        <executions>
+                            <execution>
+                                <id>ant-run</id>
+                                <phase>generate-test-sources</phase>
+                                <goals>
+                                    <goal>run</goal>
+                                </goals>
+                                <configuration>
+                                    <tasks>
+                                        <!--
+                                            Plese note that we are cheating ant wise by letting maven setup our classpath :-)
+                                        -->
+                                        <taskdef name="clmapply" classname="se.natusoft.tools.codelicmgr.CodeLicenseManagerApplyAntTask"/>
+                                        <taskdef name="clminstall" classname="se.natusoft.tools.codelicmgr.CodeLicenseManagerInstallAntTask"/>
+
+                                        <clmapply debug="true">
+                                            <project
+                                                name="CodeLicenseManager"
+                                                codeVersion="2.5"
+                                                subProjectOf=""
+                                                description="Manages project and license information in project sourcecode&#xa;
+                                                    and provides license text for inclusion in builds."
+                                            />
+                                            <copyright
+                                                year="2008"
+                                                holder="Tommy Svensson"
+                                            />
+                                            <copyright
+                                                year="2009"
+                                                holder="Biltmore Group AB"
+                                            />
+                                            <license
+                                                type="Apache"
+                                                version="2.0"
+                                            />
+                                            <thirdPartyLicense
+                                                type="Apache"
+                                                version="2.0"
+                                            />
+                                            <thirdPartyLicense
+                                                type="LGPL"
+                                                version="v3"
+                                            />
+                                            <!-- All options are optional. -->
+                                            <codeOptions
+                                                verbose="true"
+                                                codeLanguage=""
+                                                updateCopyright="true"
+                                                updateProject="true"
+                                                addAuthorsBlock="true"
+                                                sourceCodeDirs="${basedir}/src/test/java/**/.*.java"
+                                            />
+
+                                            <userData name="maintainer" value="Tommy Svensson"/>
+                                            <userData name="Something" value="Whatever"/>
+
+                                        </clmapply>
+                                        <clminstall debug="true">
+                                            <project
+                                                name="CodeLicenseManager"
+                                                codeVersion="2.5"
+                                                subProjectOf=""
+                                                description="Manages project and license information in project sourcecode&#xa;
+                                                    and provides license text for inclusion in builds."
+                                            />
+                                            <copyright
+                                                year="2008"
+                                                holder="Tommy Svensson"
+                                            />
+                                            <copyright
+                                                year="2009"
+                                                holder="Biltmore Group AB"
+                                            />
+                                            <license
+                                                type="Apache"
+                                                version="2.0"
+                                            />
+                                            <thirdPartyLicense
+                                                type="Apache"
+                                                version="2.0"
+                                            />
+                                            <thirdPartyLicense
+                                                type="LGPL"
+                                                version="v3"
+                                            />
+                                            <!-- All options are optional. -->
+                                            <installOptions
+                                                verbose="true"
+                                                licenseDir="${basedir}/target/license"
+                                                thirdpartyLicenseDir="${basedir}/target/license/thirdparty"
+                                            />
+
+                                        </clminstall>
+                                    </tasks>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+
+            </build>
+        </profile>
+    </profiles>
+
+</project>

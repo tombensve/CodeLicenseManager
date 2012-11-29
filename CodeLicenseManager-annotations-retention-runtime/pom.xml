@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+    This provides annotations for specifying project and copyright information
+    instead of a comment block. 
+    
+    This version makes all but @License and @Change available runtime.
+-->
+<project>
+    <parent>
+        <artifactId>CodeLicenseManager</artifactId>
+        <groupId>se.natusoft.tools.codelicmgr</groupId>
+        <version>2.0</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>se.natusoft.tools.codelicmgr</groupId>
+    <artifactId>CodeLicenseManager-annotations-retention-runtime</artifactId>
+    <version>2.0</version>
+
+    <name>CodeLicenseManager-annotations-retention-runtime</name>
+
+</project>

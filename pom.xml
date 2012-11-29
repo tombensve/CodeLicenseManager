@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Artifact information -->
+    <groupId>se.natusoft.tools.codelicmgr</groupId>
+    <artifactId>CodeLicenseManager</artifactId>
+    <version>2.0</version>
+    <packaging>pom</packaging>
+
+    <url>http://codelicmgr.sf.net/</url>
+
+    <!--
+        Specifies project information that is used by the maven site generator,
+        but also by the CodeLicenseManager maven plugin if project information
+        is skipped in the plugins configuration section, as in this case.
+        Organization name will be used as copyright holder and inception year
+        will be used as copyright year.
+
+        Unfortunately the maven pom does not have a clear copyright tag to use.
+    -->
+    <name>CodeLicenseManager</name>
+    <description>
+        Manages project and license information in project sourcecode
+        and provides license text files for inclusion in builds. Supports
+        multiple languages and it is relatively easy to add a new
+        language and to make your own custom source code updater.
+    </description>
+    <properties>
+        <copyrightYear>2012</copyrightYear>
+        <copyrightHolder>Natusoft AB</copyrightHolder>
+        <copyrightHolderWeb>http://www.natusoft.se/</copyrightHolderWeb>
+        <developer1Name>Tommy Svensson</developer1Name>
+        <developer1Email>tommy@natusoft.se</developer1Email>
+        <app.version>2.0</app.version>
+    </properties>
+    <licenses>
+        <license>
+            <!-- Name needs to be in "{type} {version}" or "{type}-{version} format to be reused by the plugin. -->
+            <name>Apache 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+    <organization>
+        <name>${copyrightHolder}</name>
+        <url>${copyrightHolderWeb}</url>
+    </organization>
+    <inceptionYear>${copyrightYear}</inceptionYear>
+    <developers>
+        <developer>
+            <name>${developer1Name}</name>
+            <email>${developer1Email}</email>
+        </developer>
+    </developers>
+
+    <!--
+        Building
+    -->
+
+    <!-- Common dependencies for project and sub components. -->
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.5</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <!-- Common plugins for project and sub components. -->
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.5.1</version>
+                <configuration>
+                    <source>1.5</source>
+                    <target>1.5</target>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-install-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <createChecksum>true</createChecksum>
+                </configuration>
+            </plugin>
+
+            <!--
+                Manipulate manifest for jar files.
+            -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <archive>
+                        <manifestEntries>
+                            <version>${project.version}</version>
+                            <providedBy>${project.organization.name}</providedBy>
+                            <avalableAt>https://github.com/tombensve/CodeLicenseManager</avalableAt>
+                        </manifestEntries>
+                    </archive>
+                </configuration>
+            </plugin>
+
+        </plugins>
+
+    </build>
+
+    <!--
+        Modules
+    -->
+
+    <!-- The projects sub components. -->
+    <modules>
+        <module>CodeLicenseManager-manager</module>
+        <module>CodeLicenseManager-maven-plugin</module>
+        <module>CodeLicenseManager-annotations-retention-source</module>
+        <module>CodeLicenseManager-annotations-retention-runtime</module>
+        <module>CodeLicenseManager-annotations-retention-runtime-all</module>
+        <module>CodeLicenseManager-licenses-common-opensource</module>
+        <module>CodeLicenseManager-source-updater-java-annotation</module>
+        <module>CodeLicenseManager-source-updater-slashstar-comment</module>
+        <module>CodeLicenseManager-source-updater-groovy-annotation</module>
+        <module>CodeLicenseManager-source-updater-hash-comment</module>
+        <module>CodeLicenseManager-source-updater-html-xml</module>
+        <module>CodeLicenseManager-source-updater-jsp</module>
+        <module>CodeLicenseManager-ant-task</module>
+        <module>CodeLicenseManager-command-line</module>
+        <module>CodeLicenseManager-dist</module>
+        <module>CodeLicenseManager-documentation</module>
+    </modules>
+
+    <repositories>
+        <repository>
+            <id>maven-natusoft-se</id>
+            <name>
+                Natusofts maven repository
+            </name>
+            <url>http://maven.natusoft.se/</url>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>maven-natusoft-se</id>
+            <name>
+                Natusoft maven repository.
+            </name>
+            <url>http://maven.natusoft.se/</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <!--
+        Profiles
+    -->
+
+    <profiles>
+
+        <profile>
+            <!--
+                This profile runs the CodeLicenseManager maven plugin and updates the source code
+                with relevant information specified in this pom.
+            -->
+            <id>apply-licence-info</id>
+            <build>
+                <plugins>
+                    <plugin>
+
+                        <groupId>${project.groupId}</groupId>
+                        <artifactId>CodeLicenseManager-maven-plugin</artifactId>
+                        <version>${project.version}</version>
+
+                        <dependencies>
+                            <dependency>
+                                <groupId>${project.groupId}</groupId>
+                                <artifactId>CodeLicenseManager-licenses-common-opensource</artifactId>
+                                <version>${project.version}</version>
+                            </dependency>
+                            <dependency><!-- This must come first since it overrides the comment version for java in the next dependency. -->
+                                <groupId>${project.groupId}</groupId>
+                                <artifactId>CodeLicenseManager-source-updater-java-annotation</artifactId>
+                                <version>${project.version}</version>
+                            </dependency>
+                            <dependency><!-- For the bsh scripts. -->
+                                <groupId>${project.groupId}</groupId>
+                                <artifactId>CodeLicenseManager-source-updater-slashstar-comment</artifactId>
+                                <version>${project.version}</version>
+                            </dependency>
+                            <dependency><!-- For properties. -->
+                                <groupId>${project.groupId}</groupId>
+                                <artifactId>CodeLicenseManager-source-updater-hash-comment</artifactId>
+                                <version>${project.version}</version>
+                            </dependency>
+                        </dependencies>
+
+                        <configuration>
+
+                            <project>
+                                <codeVersion>${project.version}</codeVersion>
+                            </project>
+
+                            <!-- All options are optional. -->
+                            <codeOptions>
+                                <verbose>true</verbose>
+                                <!-- If not set uses extension on source file to resolve. -->
+                                <codeLanguage>by-extension</codeLanguage>
+                                <!-- If true updates the license information in source code. -->
+                                <updateLicenseInfo>true</updateLicenseInfo>
+                                <!-- If true updates the copyright information in source code. -->
+                                <updateCopyright>true</updateCopyright>
+                                <!-- If true updates the project information in source code. -->
+                                <updateProject>true</updateProject>
+                                <!-- If true will add authors information to source files that does not have it. This is not always implemented! -->
+                                <addAuthorsBlock>true</addAuthorsBlock>
+                                <!-- The directories to scan for source code to update with project & license information. -->
+                                <sourceCodeDirs>
+                                    src/main/java/**/.*.java,src/main/resources/**/.*.bsh,src/main/resources/**/.*.properties
+                                </sourceCodeDirs>
+
+                            </codeOptions>
+
+                            <userData>
+                                <!--name></name>
+                                <value></value-->
+                            </userData>
+
+                            <scripts>
+                                <!--
+                                    Update the version number and maintainer informatin diplayed by CodeLicenseManager.
+                                -->
+                                <script>
+                                    <fileFilter>.*CodeLicenseManager.java</fileFilter>
+                                    <code>
+                                        editor.moveToTopOfFile();
+                                        if (editor.find("Display.msg\\(\"CodeLicenseManager ")) {
+                                            display("Updating version, copyright and maintainer!");
+                                            editor.deleteCurrentLine();
+                                            editor.insertLine("        Display.msg(\"CodeLicenseManager ${app.version}\\nMaintained by ${developer1Name} (${developer1Email})\");");
+                                        }
+                                    </code>
+                                </script>
+                                <!--
+                                    Update the vesion number and maintainer in code updaters properties files.
+                                -->
+                                <script>
+                                    <fileFilter>.*sourcecodeupdaters.*updater\.properties</fileFilter>
+                                    <code>
+                                        editor.moveToTopOfFile();
+                                        if (editor.find("updater.maintainer=")) {
+                                            editor.deleteCurrentLine();
+                                        }
+                                        else {
+                                            editor.moveToBottomOfFile();
+                                            editor.insertLine("");
+                                            editor.insertLine("# Name and email of maintainer");
+                                        }
+                                        editor.insertLine("updater.maintainer=Maintained by ${developer1Name} (${developer1Email})");
+
+                                        editor.moveToTopOfFile();
+                                        if (editor.find("updater.support=")) {
+                                            editor.deleteCurrentLine();
+                                        }
+                                        else {
+                                            editor.moveToBottomOfFile();
+                                            editor.insertLine("");
+                                            editor.insertLine("# Where to turn for support.");
+                                        }
+                                        editor.insertLine("updater.support=For support goto ${project.issueManagement.url} or contact maintainer.");
+                                    </code>
+                                </script>
+                            </scripts>
+
+                        </configuration>
+
+                        <executions>
+                            <execution>
+                                <id>apply-licence-info</id>
+                                <goals>
+                                    <goal>apply</goal>
+                                </goals>
+                                <phase>generate-sources</phase>
+                            </execution>
+                        </executions>
+
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+</project>

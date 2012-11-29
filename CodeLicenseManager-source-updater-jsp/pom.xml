@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<project>
+    <parent>
+        <artifactId>CodeLicenseManager</artifactId>
+        <groupId>se.natusoft.tools.codelicmgr</groupId>
+        <version>2.0</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>se.natusoft.tools.codelicmgr</groupId>
+    <artifactId>CodeLicenseManager-source-updater-jsp</artifactId>
+    <version>2.0</version>
+
+    <name>CodeLicenseManager-source-updater-jsp</name>
+
+    <profiles>
+        <profile>
+            <!--
+            Runs the maven plugin on a few dummy source files under src/test/java.
+            -->
+            <id>test-license-info-jsp</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>${project.groupId}</groupId>
+                        <artifactId>CodeLicenseManager-maven-plugin</artifactId>
+                        <version>${project.version}</version>
+                        <dependencies>
+                            <dependency>
+                                <groupId>${project.groupId}</groupId>
+                                <artifactId>CodeLicenseManager-licenses-common-opensource</artifactId>
+                                <version>${project.version}</version>
+                            </dependency>
+                            <dependency>
+                                <groupId>${project.groupId}</groupId>
+                                <artifactId>CodeLicenseManager-source-updater-jsp</artifactId>
+                                <version>${project.version}</version>
+                            </dependency>
+                        </dependencies>
+                        <configuration>
+                            <project>
+                                <name>CodeLicenseManager</name>
+                                <codeVersion>2.5</codeVersion>
+                                <subProjectOf></subProjectOf>
+                                <description>
+                                    Manages project and license information in project sourcecode
+                                    and provides license text for inclusion in builds.
+                                </description>
+                                <copyright>
+                                    <year>2008</year>
+                                    <holder>Tommy Svensson</holder>
+                                </copyright>
+                                <copyright>
+                                    <year>2009</year>
+                                    <holder>Natusoft AB</holder>
+                                </copyright>
+                                <license>
+                                    <type>Apache</type>
+                                    <version>2.0</version>
+                                </license>
+                            </project>
+                            <thirdpartyLicenses>
+                                <license>
+                                    <!-- maven -->
+                                    <type>Apache</type>
+                                    <version>2.0</version>
+                                </license>
+                                <license>
+                                    <!-- beanshell -->
+                                    <type>LGPL</type>
+                                    <version>v3</version>
+                                </license>
+                            </thirdpartyLicenses>
+                            <!-- All options are optional. -->
+                            <codeOptions>
+                                <verbose>true</verbose>
+                                <!-- If not set uses extension on source file to resolve. -->
+                                <codeLanguage></codeLanguage>
+                                <!-- If true updates the @Copyright annotation in source code. -->
+                                <updateCopyright>true</updateCopyright>
+                                <!-- If true updates the @Project annotation in source code. -->
+                                <updateProject>true</updateProject>
+                                <!-- If true will add @Authors({@Author(name="user.name")}) block to source files that does not have it. -->
+                                <addAuthorsBlock>true</addAuthorsBlock>
+                                <!-- The directories to scan for source code to update with project & license information. -->
+                                <sourceCodeDirs><!-- ${basedir}/src/main/java,${basedir}/src/test/java,${basedir}/src/main/groovy,${basedir}/src/test/groovy -->
+                                    ${basedir}/src/test/jsp/.*.jsp
+                                </sourceCodeDirs>
+
+                            </codeOptions>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <id>test-exec-groovy</id>
+                                <goals>
+                                    <goal>apply</goal>
+                                </goals>
+                                <phase>generate-test-sources</phase>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+</project>

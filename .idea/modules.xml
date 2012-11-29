@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CodeLicenseManager.iml" filepath="$PROJECT_DIR$/CodeLicenseManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime/CodeLicenseManager-annotations-retention-runtime.iml" filepath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime/CodeLicenseManager-annotations-retention-runtime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime-all/CodeLicenseManager-annotations-retention-runtime-all.iml" filepath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime-all/CodeLicenseManager-annotations-retention-runtime-all.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CodeLicenseManager-annotations-retention-source/CodeLicenseManager-annotations-retention-source.iml" filepath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-source/CodeLicenseManager-annotations-retention-source.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CodeLicenseManager-ant-task/CodeLicenseManager-ant-task.iml" filepath="$PROJECT_DIR$/CodeLicenseManager-ant-task/CodeLicenseManager-ant-task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CodeLicenseManager-command-line/CodeLicenseManager-command-line.iml" filepath="$PROJECT_DIR$/CodeLicenseManager-command-line/CodeLicenseManager-command-line.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CodeLicenseManager-dist/CodeLicenseManager-dist.iml" filepath="$PROJECT_DIR$/CodeLicenseManager-dist/CodeLicenseManager-dist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CodeLicenseManager-documentation/CodeLicenseManager-documentation.iml" filepath="$PROJECT_DIR$/CodeLicenseManager-documentation/CodeLicenseManager-documentation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/CodeLicenseManager-licenses-common-opensource.iml" filepath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/CodeLicenseManager-licenses-common-opensource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CodeLicenseManager-manager/CodeLicenseManager-manager.iml" filepath="$PROJECT_DIR$/CodeLicenseManager-manager/CodeLicenseManager-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CodeLicenseManager-maven-plugin/CodeLicenseManager-maven-plugin.iml" filepath="$PROJECT_DIR$/CodeLicenseManager-maven-plugin/CodeLicenseManager-maven-plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/CodeLicenseManager-source-updater-groovy-annotation.iml" filepath="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/CodeLicenseManager-source-updater-groovy-annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/CodeLicenseManager-source-updater-hash-comment.iml" filepath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/CodeLicenseManager-source-updater-hash-comment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/CodeLicenseManager-source-updater-html-xml.iml" filepath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/CodeLicenseManager-source-updater-html-xml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/CodeLicenseManager-source-updater-java-annotation.iml" filepath="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/CodeLicenseManager-source-updater-java-annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/CodeLicenseManager-source-updater-jsp.iml" filepath="$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/CodeLicenseManager-source-updater-jsp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/CodeLicenseManager-source-updater-slashstar-comment.iml" filepath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/CodeLicenseManager-source-updater-slashstar-comment.iml" />
+    </modules>
+  </component>
+</project>
+
