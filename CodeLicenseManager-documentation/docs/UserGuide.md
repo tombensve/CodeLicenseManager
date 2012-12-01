@@ -1489,7 +1489,9 @@ This updater recognizes the following source code extensions:
 
 * xsd 
 
-* xsl 
+* xsl
+
+* dtd
 
 
 If you know of other valid source code extensions using this comment format please 
