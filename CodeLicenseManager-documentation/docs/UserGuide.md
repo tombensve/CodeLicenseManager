@@ -1,24 +1,5 @@
 # Code License Manager 2.0
 
-## Special note to users of version < 2.0.
-
-A previous version of this utility exists on <http://codelicmgr.sf.net/>.
-As of version 2.0 this has moved to github and also changed package from _se.biltmore..._
-to _se.natusoft..._ The package change was required due to a bad decision by me to use the
-package name of a company my company was part owner of, but in the end didn't work out as
-intended and I left. Thereby I have changed package to my own company name.
-
-If you used the previous version then a search and replace of
-
-    <groupId>se.biltmore.tools.codelicmgr</groupId>
-
-to
-
-    <groupId>se.natusoft.tools.codelicmgr</groupId>
-
-in your pom(s) should be enough. Some new options have been added and nothing
-have been removed.
-
 ## Introduction
 
 CodeLicenseManager (henceforth called CLM) was born out of frustration in handling
@@ -2124,5 +2105,25 @@ at the insert position leaving an empty line between the match and the new inser
 position. 
 
 _search_ - This is a regular expression search string surrounded by ''. Example: 
-'^# LICENSE'. This attribute must always be specified. 
-  
+'^# LICENSE'. This attribute must always be specified.
+
+
+
+# Special note to users of version < 2.0.
+
+A previous version of this utility exists on <http://codelicmgr.sf.net/>.
+As of version 2.0 this has moved to github and also changed package from _se.biltmore..._
+to _se.natusoft..._ The package change was required due to a bad decision by me to use the
+package name of a company my company was part owner of, but in the end didn't work out as
+intended and I left. Thereby I have changed package to my own company name.
+
+If you used the previous version then a search and replace of
+
+    <groupId>se.biltmore.tools.codelicmgr</groupId>
+
+to
+
+    <groupId>se.natusoft.tools.codelicmgr</groupId>
+
+in your pom(s) should be enough. Some new options have been added and nothing
+have been removed.
