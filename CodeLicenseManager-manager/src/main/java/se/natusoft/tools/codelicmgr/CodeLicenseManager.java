@@ -1013,27 +1013,28 @@ public class CodeLicenseManager {
         }
     }
 
-    public void downloadLicenseTextToDir(File dir, String licenseUrl, String targetName) throws IOException {
-        Display.msg("Didn't find license in local license library, so downloading license text from: " + licenseUrl);
-
-        URL url = new URL(licenseUrl);
+    public void downloadLicenseTextToDir(File dir, String licenseUrl, String targetName) {
+        Display.msg("Didn't find license '"+ targetName + "' in local license library, so downloading license text from: " + licenseUrl);
 
         OutputStream to = null;
-        if (dir != null) {
-            dir.mkdirs();
-            to = new BufferedOutputStream(new FileOutputStream(new File(dir, targetName + ".html")));
-        }
-
-        InputStream from = url.openStream();
+        InputStream from = null;
         try {
+            URL url = new URL(licenseUrl);
+
+            if (dir != null) {
+                dir.mkdirs();
+                to = new BufferedOutputStream(new FileOutputStream(new File(dir, targetName + ".html")));
+            }
+
+            from = url.openStream();
             CopyTool.copyFile(from, to);
         }
+        catch (IOException ioe) {
+            Display.msg("Error: failed to download license: " + ioe.getMessage());
+        }
         finally {
-            try { from.close(); } catch (IOException ioe) {}
-            to.flush();
-            if (dir != null) {
-                try { to.close(); } catch (IOException ioe) {}
-            }
+            try { if (from != null) from.close(); } catch (IOException ioe) {}
+            try { if (to != null) {to.flush();to.close();}} catch (IOException ioe) {}
         }
     }
 

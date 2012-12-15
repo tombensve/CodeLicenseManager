@@ -2,6 +2,38 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <option name="DEFAULT_COMPILER" value="Javac" />
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/CodeLicenseManager-maven-plugin/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/CodeLicenseManager-maven-plugin/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/CodeLicenseManager-ant-task/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/CodeLicenseManager-ant-task/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/CodeLicenseManager-manager/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/CodeLicenseManager-manager/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/CodeLicenseManager-annotations-retention-source/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/CodeLicenseManager-annotations-retention-source/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/CodeLicenseManager-documentation/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/CodeLicenseManager-documentation/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime-all/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime-all/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/CodeLicenseManager-command-line/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/CodeLicenseManager-command-line/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/target/generated-sources/annotations" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/target/generated-test-sources/test-annotations" includeSubdirectories="true" />
+    </excludeFromCompile>
     <resourceExtensions />
     <wildcardResourcePatterns>
       <entry name="?*.properties" />
@@ -15,10 +47,51 @@
       <entry name="?*.tld" />
       <entry name="?*.ftl" />
     </wildcardResourcePatterns>
-    <annotationProcessing enabled="false" useClasspath="true" />
-  </component>
-  <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_STRING" value="-target 1.5" />
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="CodeLicenseManager-annotations-retention-runtime" />
+        <module name="CodeLicenseManager-annotations-retention-runtime-all" />
+        <module name="CodeLicenseManager-annotations-retention-source" />
+        <module name="CodeLicenseManager-ant-task" />
+        <module name="CodeLicenseManager-command-line" />
+        <module name="CodeLicenseManager-documentation" />
+        <module name="CodeLicenseManager-licenses-common-opensource" />
+        <module name="CodeLicenseManager-manager" />
+        <module name="CodeLicenseManager-maven-plugin" />
+        <module name="CodeLicenseManager-source-updater-groovy-annotation" />
+        <module name="CodeLicenseManager-source-updater-hash-comment" />
+        <module name="CodeLicenseManager-source-updater-html-xml" />
+        <module name="CodeLicenseManager-source-updater-java-annotation" />
+        <module name="CodeLicenseManager-source-updater-jsp" />
+        <module name="CodeLicenseManager-source-updater-slashstar-comment" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="CodeLicenseManager" target="1.5" />
+      <module name="CodeLicenseManager-annotations-retention-runtime" target="1.5" />
+      <module name="CodeLicenseManager-annotations-retention-runtime-all" target="1.5" />
+      <module name="CodeLicenseManager-annotations-retention-source" target="1.5" />
+      <module name="CodeLicenseManager-ant-task" target="1.5" />
+      <module name="CodeLicenseManager-command-line" target="1.5" />
+      <module name="CodeLicenseManager-dist" target="1.5" />
+      <module name="CodeLicenseManager-documentation" target="1.5" />
+      <module name="CodeLicenseManager-licenses-common-opensource" target="1.5" />
+      <module name="CodeLicenseManager-manager" target="1.5" />
+      <module name="CodeLicenseManager-maven-plugin" target="1.5" />
+      <module name="CodeLicenseManager-source-updater-groovy-annotation" target="1.5" />
+      <module name="CodeLicenseManager-source-updater-hash-comment" target="1.5" />
+      <module name="CodeLicenseManager-source-updater-html-xml" target="1.5" />
+      <module name="CodeLicenseManager-source-updater-java-annotation" target="1.5" />
+      <module name="CodeLicenseManager-source-updater-jsp" target="1.5" />
+      <module name="CodeLicenseManager-source-updater-slashstar-comment" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
 
