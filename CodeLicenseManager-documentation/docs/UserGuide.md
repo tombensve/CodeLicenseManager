@@ -1493,6 +1493,20 @@ This updater recognizes the following source code extensions:
 
 * dtd
 
+_Please note_ that for html and xml files and others requiring a tag like
+
+    \<?xml version="1.0" encoding="UTF-8"?\>
+
+as the first line, start your file like this:
+
+    \<?xml version="1.0" encoding="UTF-8"?\>
+    <!--
+    -->
+    ...
+
+before running this updater or it will insert the whole comment block before the `\<?xml ...` tag!
+This is  not as easy as it might sound to fix since this is not a bug in itself but a side-effect
+of a more complex bug.
 
 If you know of other valid source code extensions using this comment format please 
 inform me about it and I will update this. See contact information at the bottom 
