@@ -13,13 +13,13 @@ import se.natusoft.tools.codelicmgr.annotations.*;
  */
 @Project(
     name="CodeLicenseManager-annotations-retention-runtime",
-    codeVersion="2.0",
+    codeVersion="2.1",
     description="Manages project and license information in project sourcecode" +
                 "and provides license text files for inclusion in builds. Supports" +
                 "multiple languages and it is relatively easy to add a new" +
                 "language and to make your own custom source code updater."
 )
-@Copyright(year="2009", holder="Natusoft AB", rights="All rights reserved.")
+@Copyright(year="2013", holder="Natusoft AB", rights="All rights reserved.")
 @License(
     type="Apache",
     version="2.0",

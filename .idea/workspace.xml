@@ -1,14 +1,197 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" name="Default" comment="">
+    <list default="true" id="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" name="Default" comment="Setup for deploy upload to maven.natusoft.se.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-documentation/docs/CLM-User-Guide.pdf" afterPath="$PROJECT_DIR$/CodeLicenseManager-documentation/docs/CLM-User-Guide.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/AGPL-v3.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/AGPL-v3.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-maven-plugin/src/main/java/se/natusoft/tools/codelicmgr/APTUtils.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-maven-plugin/src/main/java/se/natusoft/tools/codelicmgr/APTUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/ASL-2.0.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/ASL-2.0.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-command-line/src/main/java/se/natusoft/tools/codelicmgr/Action.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-command-line/src/main/java/se/natusoft/tools/codelicmgr/Action.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/Apache License-2.0.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/Apache License-2.0.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/Apache-2.0.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/Apache-2.0.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/ApacheSoftwareLicense-2.0.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/ApacheSoftwareLicense-2.0.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime-all/src/main/java/se/natusoft/tools/codelicmgr/annotations/Author.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime-all/src/main/java/se/natusoft/tools/codelicmgr/annotations/Author.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime/src/main/java/se/natusoft/tools/codelicmgr/annotations/Author.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime/src/main/java/se/natusoft/tools/codelicmgr/annotations/Author.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-source/src/main/java/se/natusoft/tools/codelicmgr/annotations/Author.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-source/src/main/java/se/natusoft/tools/codelicmgr/annotations/Author.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime-all/src/main/java/se/natusoft/tools/codelicmgr/annotations/Authors.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime-all/src/main/java/se/natusoft/tools/codelicmgr/annotations/Authors.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime/src/main/java/se/natusoft/tools/codelicmgr/annotations/Authors.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime/src/main/java/se/natusoft/tools/codelicmgr/annotations/Authors.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-source/src/main/java/se/natusoft/tools/codelicmgr/annotations/Authors.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-source/src/main/java/se/natusoft/tools/codelicmgr/annotations/Authors.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-maven-plugin/src/main/java/se/natusoft/tools/codelicmgr/BuildDataCollector.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-maven-plugin/src/main/java/se/natusoft/tools/codelicmgr/BuildDataCollector.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/CDDL-1.0.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/CDDL-1.0.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-command-line/src/main/java/se/natusoft/tools/codelicmgr/CLMMain.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-command-line/src/main/java/se/natusoft/tools/codelicmgr/CLMMain.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-command-line/src/main/java/se/natusoft/tools/codelicmgr/CLMMainAPI.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-command-line/src/main/java/se/natusoft/tools/codelicmgr/CLMMainAPI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime-all/src/main/java/se/natusoft/tools/codelicmgr/annotations/Change.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime-all/src/main/java/se/natusoft/tools/codelicmgr/annotations/Change.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime/src/main/java/se/natusoft/tools/codelicmgr/annotations/Change.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime/src/main/java/se/natusoft/tools/codelicmgr/annotations/Change.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-source/src/main/java/se/natusoft/tools/codelicmgr/annotations/Change.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-source/src/main/java/se/natusoft/tools/codelicmgr/annotations/Change.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-command-line/src/main/java/se/natusoft/tools/codelicmgr/cmdline/config/CmdlineOptions.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-command-line/src/main/java/se/natusoft/tools/codelicmgr/cmdline/config/CmdlineOptions.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/CodeLicenseException.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/CodeLicenseException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/CodeLicenseManager.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/CodeLicenseManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-ant-task/src/main/java/se/natusoft/tools/codelicmgr/CodeLicenseManagerApplyAntTask.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-ant-task/src/main/java/se/natusoft/tools/codelicmgr/CodeLicenseManagerApplyAntTask.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-maven-plugin/src/main/java/se/natusoft/tools/codelicmgr/CodeLicenseManagerApplyMojo.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-maven-plugin/src/main/java/se/natusoft/tools/codelicmgr/CodeLicenseManagerApplyMojo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-maven-plugin/src/main/java/se/natusoft/tools/codelicmgr/CodeLicenseManagerDeleteMojo.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-maven-plugin/src/main/java/se/natusoft/tools/codelicmgr/CodeLicenseManagerDeleteMojo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-ant-task/src/main/java/se/natusoft/tools/codelicmgr/CodeLicenseManagerInstallAntTask.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-ant-task/src/main/java/se/natusoft/tools/codelicmgr/CodeLicenseManagerInstallAntTask.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-maven-plugin/src/main/java/se/natusoft/tools/codelicmgr/CodeLicenseManagerInstallMojo.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-maven-plugin/src/main/java/se/natusoft/tools/codelicmgr/CodeLicenseManagerInstallMojo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-ant-task/src/main/java/se/natusoft/tools/codelicmgr/CodeLicenseManagerScriptAntTask.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-ant-task/src/main/java/se/natusoft/tools/codelicmgr/CodeLicenseManagerScriptAntTask.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-maven-plugin/src/main/java/se/natusoft/tools/codelicmgr/CodeLicenseManagerScriptMojo.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-maven-plugin/src/main/java/se/natusoft/tools/codelicmgr/CodeLicenseManagerScriptMojo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/CodeOptionsConfig.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/CodeOptionsConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/Configuration.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/Configuration.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/CopyTool.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/CopyTool.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime-all/src/main/java/se/natusoft/tools/codelicmgr/annotations/Copyright.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime-all/src/main/java/se/natusoft/tools/codelicmgr/annotations/Copyright.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime/src/main/java/se/natusoft/tools/codelicmgr/annotations/Copyright.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime/src/main/java/se/natusoft/tools/codelicmgr/annotations/Copyright.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-source/src/main/java/se/natusoft/tools/codelicmgr/annotations/Copyright.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-source/src/main/java/se/natusoft/tools/codelicmgr/annotations/Copyright.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/CopyrightConfig.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/CopyrightConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime-all/src/main/java/se/natusoft/tools/codelicmgr/annotations/Copyrights.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime-all/src/main/java/se/natusoft/tools/codelicmgr/annotations/Copyrights.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime/src/main/java/se/natusoft/tools/codelicmgr/annotations/Copyrights.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime/src/main/java/se/natusoft/tools/codelicmgr/annotations/Copyrights.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-source/src/main/java/se/natusoft/tools/codelicmgr/annotations/Copyrights.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-source/src/main/java/se/natusoft/tools/codelicmgr/annotations/Copyrights.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/CopyrightsConfig.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/CopyrightsConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/Display.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/Display.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/EPL-1.0.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/EPL-1.0.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GNUAGPL-v3.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GNUAGPL-v3.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GNUAfferoGeneralPublicLicense-v3.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GNUAfferoGeneralPublicLicense-v3.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GNUPublicLicense-v2.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GNUPublicLicense-v2.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GNUPublicLicense-v3.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GNUPublicLicense-v3.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GPL-v2.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GPL-v2.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GPL-v3.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GPL-v3.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/InstallOptionsConfig.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/InstallOptionsConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/LGPL-2.1.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/LGPL-2.1.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/LGPL-v3.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/LGPL-v3.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/LesserGNUPublicLicense-v3.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/LesserGNUPublicLicense-v3.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/library/LibraryLicense.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/library/LibraryLicense.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime-all/src/main/java/se/natusoft/tools/codelicmgr/annotations/License.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime-all/src/main/java/se/natusoft/tools/codelicmgr/annotations/License.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime/src/main/java/se/natusoft/tools/codelicmgr/annotations/License.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime/src/main/java/se/natusoft/tools/codelicmgr/annotations/License.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-source/src/main/java/se/natusoft/tools/codelicmgr/annotations/License.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-source/src/main/java/se/natusoft/tools/codelicmgr/annotations/License.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/LicenseConfig.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/LicenseConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/library/LicenseLibrary.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/library/LicenseLibrary.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/codelicmgr/licenses/LicenseResourceProvider.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/codelicmgr/licenses/LicenseResourceProvider.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/MIT-1.0.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/MIT-1.0.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-command-line/src/main/java/se/natusoft/tools/codelicmgr/Main.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-command-line/src/main/java/se/natusoft/tools/codelicmgr/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/MarkdownUtils.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/MarkdownUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-maven-plugin/src/main/java/se/natusoft/tools/codelicmgr/MojoUtils.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-maven-plugin/src/main/java/se/natusoft/tools/codelicmgr/MojoUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/Mozilla-1.1.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/Mozilla-1.1.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/OSGI-2.0.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/OSGI-2.0.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/OSGiSL-2.0.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/OSGiSL-2.0.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/OSGiSpecificationLicense-2.0.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/OSGiSpecificationLicense-2.0.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-maven-plugin/src/main/java/se/natusoft/tools/codelicmgr/PomExtractor.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-maven-plugin/src/main/java/se/natusoft/tools/codelicmgr/PomExtractor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/ProductConfig.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/ProductConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/ProductsConfig.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/ProductsConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime-all/src/main/java/se/natusoft/tools/codelicmgr/annotations/Project.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime-all/src/main/java/se/natusoft/tools/codelicmgr/annotations/Project.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime/src/main/java/se/natusoft/tools/codelicmgr/annotations/Project.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime/src/main/java/se/natusoft/tools/codelicmgr/annotations/Project.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-source/src/main/java/se/natusoft/tools/codelicmgr/annotations/Project.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-source/src/main/java/se/natusoft/tools/codelicmgr/annotations/Project.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/ProjectConfig.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/ProjectConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/ScriptConfig.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/ScriptConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/scripting/ScriptingException.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/scripting/ScriptingException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/ScriptsConfig.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/ScriptsConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime-all/src/main/java/se/natusoft/tools/codelicmgr/enums/Source.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime-all/src/main/java/se/natusoft/tools/codelicmgr/enums/Source.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime/src/main/java/se/natusoft/tools/codelicmgr/enums/Source.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime/src/main/java/se/natusoft/tools/codelicmgr/enums/Source.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-source/src/main/java/se/natusoft/tools/codelicmgr/enums/Source.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-source/src/main/java/se/natusoft/tools/codelicmgr/enums/Source.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/scripting/SourceCodeUpdateScriptManager.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/scripting/SourceCodeUpdateScriptManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/SourceCodeUpdater.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/SourceCodeUpdater.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/codelicmgr/sourcecodeupdaters/SourceCodeUpdaterResourceProvider.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/codelicmgr/sourcecodeupdaters/SourceCodeUpdaterResourceProvider.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/SourcePath.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/SourcePath.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/ThirdpartyLicenseConfig.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/ThirdpartyLicenseConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/ThirdpartyLicensesConfig.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/ThirdpartyLicensesConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/UserDataConfig.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/UserDataConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/src/main/resources/codelicmgr/sourcecodeupdaters/awk.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/src/main/resources/codelicmgr/sourcecodeupdaters/awk.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/src/main/resources/codelicmgr/sourcecodeupdaters/bsh.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/src/main/resources/codelicmgr/sourcecodeupdaters/bsh.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/src/main/resources/codelicmgr/sourcecodeupdaters/c.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/src/main/resources/codelicmgr/sourcecodeupdaters/c.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/resources/codelicmgr/sourcecodeupdaters/scripts/copyrightSupport.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/resources/codelicmgr/sourcecodeupdaters/scripts/copyrightSupport.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/src/main/resources/codelicmgr/sourcecodeupdaters/cpp.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/src/main/resources/codelicmgr/sourcecodeupdaters/cpp.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/src/main/resources/codelicmgr/sourcecodeupdaters/cs.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/src/main/resources/codelicmgr/sourcecodeupdaters/cs.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/src/main/resources/codelicmgr/sourcecodeupdaters/css.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/src/main/resources/codelicmgr/sourcecodeupdaters/css.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/groovyannotations/deleteCopyrightInfo.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/groovyannotations/deleteCopyrightInfo.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/src/main/resources/codelicmgr/sourcecodeupdaters/hashcomment/deleteCopyrightInfo.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/src/main/resources/codelicmgr/sourcecodeupdaters/hashcomment/deleteCopyrightInfo.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/htmlxml/deleteCopyrightInfo.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/htmlxml/deleteCopyrightInfo.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/javaannotation/deleteCopyrightInfo.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/javaannotation/deleteCopyrightInfo.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/src/main/resources/codelicmgr/sourcecodeupdaters/jsp/deleteCopyrightInfo.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/src/main/resources/codelicmgr/sourcecodeupdaters/jsp/deleteCopyrightInfo.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/groovyannotations/deleteImports.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/groovyannotations/deleteImports.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/javaannotation/deleteImports.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/javaannotation/deleteImports.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/groovyannotations/deleteLicenseInfo.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/groovyannotations/deleteLicenseInfo.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/src/main/resources/codelicmgr/sourcecodeupdaters/hashcomment/deleteLicenseInfo.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/src/main/resources/codelicmgr/sourcecodeupdaters/hashcomment/deleteLicenseInfo.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/htmlxml/deleteLicenseInfo.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/htmlxml/deleteLicenseInfo.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/javaannotation/deleteLicenseInfo.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/javaannotation/deleteLicenseInfo.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/src/main/resources/codelicmgr/sourcecodeupdaters/jsp/deleteLicenseInfo.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/src/main/resources/codelicmgr/sourcecodeupdaters/jsp/deleteLicenseInfo.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/groovyannotations/deleteProjectInfo.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/groovyannotations/deleteProjectInfo.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/src/main/resources/codelicmgr/sourcecodeupdaters/hashcomment/deleteProjectInfo.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/src/main/resources/codelicmgr/sourcecodeupdaters/hashcomment/deleteProjectInfo.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/htmlxml/deleteProjectInfo.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/htmlxml/deleteProjectInfo.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/javaannotation/deleteProjectInfo.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/javaannotation/deleteProjectInfo.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/src/main/resources/codelicmgr/sourcecodeupdaters/jsp/deleteProjectInfo.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/src/main/resources/codelicmgr/sourcecodeupdaters/jsp/deleteProjectInfo.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/dtd.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/dtd.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/ent.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/ent.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/groovy.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/groovy.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/src/main/resources/codelicmgr/sourcecodeupdaters/groovy.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/src/main/resources/codelicmgr/sourcecodeupdaters/groovy.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/htm.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/htm.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/html.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/html.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/groovyannotations/init.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/groovyannotations/init.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/src/main/resources/codelicmgr/sourcecodeupdaters/hashcomment/init.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/src/main/resources/codelicmgr/sourcecodeupdaters/hashcomment/init.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/htmlxml/init.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/htmlxml/init.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/javaannotation/init.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/javaannotation/init.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/src/main/resources/codelicmgr/sourcecodeupdaters/jsp/init.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/src/main/resources/codelicmgr/sourcecodeupdaters/jsp/init.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/src/main/resources/codelicmgr/sourcecodeupdaters/scripts/init.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/src/main/resources/codelicmgr/sourcecodeupdaters/scripts/init.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/java.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/java.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/src/main/resources/codelicmgr/sourcecodeupdaters/java.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/src/main/resources/codelicmgr/sourcecodeupdaters/java.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/src/main/resources/codelicmgr/sourcecodeupdaters/jsp.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/src/main/resources/codelicmgr/sourcecodeupdaters/jsp.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/src/main/resources/codelicmgr/sourcecodeupdaters/perl.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/src/main/resources/codelicmgr/sourcecodeupdaters/perl.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/src/main/resources/codelicmgr/sourcecodeupdaters/properties.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/src/main/resources/codelicmgr/sourcecodeupdaters/properties.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/src/main/resources/codelicmgr/sourcecodeupdaters/py.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/src/main/resources/codelicmgr/sourcecodeupdaters/py.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/src/main/resources/codelicmgr/sourcecodeupdaters/ruby.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/src/main/resources/codelicmgr/sourcecodeupdaters/ruby.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/src/main/resources/codelicmgr/sourcecodeupdaters/sh.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/src/main/resources/codelicmgr/sourcecodeupdaters/sh.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/groovyannotations/updateAuthorsBlock.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/groovyannotations/updateAuthorsBlock.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/src/main/resources/codelicmgr/sourcecodeupdaters/hashcomment/updateAuthorsBlock.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/src/main/resources/codelicmgr/sourcecodeupdaters/hashcomment/updateAuthorsBlock.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/htmlxml/updateAuthorsBlock.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/htmlxml/updateAuthorsBlock.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/javaannotation/updateAuthorsBlock.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/javaannotation/updateAuthorsBlock.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/src/main/resources/codelicmgr/sourcecodeupdaters/jsp/updateAuthorsBlock.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/src/main/resources/codelicmgr/sourcecodeupdaters/jsp/updateAuthorsBlock.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/src/main/resources/codelicmgr/sourcecodeupdaters/scripts/updateAuthorsBlock.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/src/main/resources/codelicmgr/sourcecodeupdaters/scripts/updateAuthorsBlock.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/groovyannotations/updateCopyrightInfo.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/groovyannotations/updateCopyrightInfo.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/src/main/resources/codelicmgr/sourcecodeupdaters/hashcomment/updateCopyrightInfo.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/src/main/resources/codelicmgr/sourcecodeupdaters/hashcomment/updateCopyrightInfo.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/htmlxml/updateCopyrightInfo.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/htmlxml/updateCopyrightInfo.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/javaannotation/updateCopyrightInfo.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/javaannotation/updateCopyrightInfo.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/src/main/resources/codelicmgr/sourcecodeupdaters/jsp/updateCopyrightInfo.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/src/main/resources/codelicmgr/sourcecodeupdaters/jsp/updateCopyrightInfo.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/src/main/resources/codelicmgr/sourcecodeupdaters/scripts/updateCopyrightInfo.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/src/main/resources/codelicmgr/sourcecodeupdaters/scripts/updateCopyrightInfo.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/groovyannotations/updateImports.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/groovyannotations/updateImports.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/src/main/resources/codelicmgr/sourcecodeupdaters/hashcomment/updateImports.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/src/main/resources/codelicmgr/sourcecodeupdaters/hashcomment/updateImports.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/htmlxml/updateImports.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/htmlxml/updateImports.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/javaannotation/updateImports.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/javaannotation/updateImports.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/src/main/resources/codelicmgr/sourcecodeupdaters/jsp/updateImports.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/src/main/resources/codelicmgr/sourcecodeupdaters/jsp/updateImports.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/src/main/resources/codelicmgr/sourcecodeupdaters/scripts/updateImports.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/src/main/resources/codelicmgr/sourcecodeupdaters/scripts/updateImports.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/groovyannotations/updateLicenseInfo.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/groovyannotations/updateLicenseInfo.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/src/main/resources/codelicmgr/sourcecodeupdaters/hashcomment/updateLicenseInfo.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/src/main/resources/codelicmgr/sourcecodeupdaters/hashcomment/updateLicenseInfo.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/htmlxml/updateLicenseInfo.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/htmlxml/updateLicenseInfo.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/javaannotation/updateLicenseInfo.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/javaannotation/updateLicenseInfo.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/src/main/resources/codelicmgr/sourcecodeupdaters/jsp/updateLicenseInfo.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/src/main/resources/codelicmgr/sourcecodeupdaters/jsp/updateLicenseInfo.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/src/main/resources/codelicmgr/sourcecodeupdaters/scripts/updateLicenseInfo.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/src/main/resources/codelicmgr/sourcecodeupdaters/scripts/updateLicenseInfo.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/groovyannotations/updateProjectInfo.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/groovyannotations/updateProjectInfo.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/src/main/resources/codelicmgr/sourcecodeupdaters/hashcomment/updateProjectInfo.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/src/main/resources/codelicmgr/sourcecodeupdaters/hashcomment/updateProjectInfo.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/htmlxml/updateProjectInfo.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/htmlxml/updateProjectInfo.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/javaannotation/updateProjectInfo.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/javaannotation/updateProjectInfo.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/src/main/resources/codelicmgr/sourcecodeupdaters/jsp/updateProjectInfo.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/src/main/resources/codelicmgr/sourcecodeupdaters/jsp/updateProjectInfo.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/src/main/resources/codelicmgr/sourcecodeupdaters/scripts/updateProjectInfo.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/src/main/resources/codelicmgr/sourcecodeupdaters/scripts/updateProjectInfo.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/updater.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/updater.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/src/main/resources/codelicmgr/sourcecodeupdaters/updater.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/src/main/resources/codelicmgr/sourcecodeupdaters/updater.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/updater.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/updater.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/updater.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/updater.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/src/main/resources/codelicmgr/sourcecodeupdaters/updater.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/src/main/resources/codelicmgr/sourcecodeupdaters/updater.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/src/main/resources/codelicmgr/sourcecodeupdaters/updater.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/src/main/resources/codelicmgr/sourcecodeupdaters/updater.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/groovyannotations/userAfter.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/groovyannotations/userAfter.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/src/main/resources/codelicmgr/sourcecodeupdaters/hashcomment/userAfter.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/src/main/resources/codelicmgr/sourcecodeupdaters/hashcomment/userAfter.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/htmlxml/userAfter.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/htmlxml/userAfter.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/javaannotation/userAfter.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/javaannotation/userAfter.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/src/main/resources/codelicmgr/sourcecodeupdaters/jsp/userAfter.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/src/main/resources/codelicmgr/sourcecodeupdaters/jsp/userAfter.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/src/main/resources/codelicmgr/sourcecodeupdaters/scripts/userAfter.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/src/main/resources/codelicmgr/sourcecodeupdaters/scripts/userAfter.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/groovyannotations/userBefore.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/groovyannotations/userBefore.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/src/main/resources/codelicmgr/sourcecodeupdaters/hashcomment/userBefore.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/src/main/resources/codelicmgr/sourcecodeupdaters/hashcomment/userBefore.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/htmlxml/userBefore.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/htmlxml/userBefore.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/javaannotation/userBefore.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/src/main/resources/codelicmgr/sourcecodeupdaters/javaannotation/userBefore.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/src/main/resources/codelicmgr/sourcecodeupdaters/jsp/userBefore.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/src/main/resources/codelicmgr/sourcecodeupdaters/jsp/userBefore.bsh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/src/main/resources/codelicmgr/sourcecodeupdaters/scripts/userBefore.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/src/main/resources/codelicmgr/sourcecodeupdaters/scripts/userBefore.bsh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/xhtml.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/xhtml.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/xml.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/xml.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/xsd.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/xsd.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/xsl.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters/xsl.properties" />
     </list>
     <ignored path="CodeLicenseManager.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1362328828013" ignored="false" />
+    <file path="/Dummy.txt" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1362329309178" ignored="false" />
     <file path="/CodeLicenseManager.java" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1362254100113" ignored="false" />
     <file path="$PROJECT_DIR$/../PropertiesCollectorMavenPlugin/src/main/java/se/natusoft/maven/plugin/properties/PropertySet.java" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1359228098581" ignored="false" />
     <file path="/PropertySet.java" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1359228098581" ignored="false" />
@@ -121,10 +304,199 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="119" column="12" selection-start="4370" selection-end="4370" vertical-scroll-proportion="0.10507881">
+            <state line="27" column="44" selection-start="1296" selection-end="1296" vertical-scroll-proportion="-16.875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Apache-2.0.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/Apache-2.0.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApacheSoftwareLicense-2.0.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/ApacheSoftwareLicense-2.0.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ASL-2.0.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/ASL-2.0.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CDDL-1.0.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/CDDL-1.0.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EPL-1.0.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/EPL-1.0.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GNUAfferoGeneralPublicLicense-v3.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GNUAfferoGeneralPublicLicense-v3.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="0" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GNUAGPL-v3.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GNUAGPL-v3.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="0" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GNUPublicLicense-v2.properties" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GNUPublicLicense-v2.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="2" selection-start="1168" selection-end="1168" vertical-scroll-proportion="0.4373928">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GNUPublicLicense-v3.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GNUPublicLicense-v3.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GPL-v2.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GPL-v2.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GPL-v3.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GPL-v3.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LesserGNUPublicLicense-v3.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/LesserGNUPublicLicense-v3.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LGPL-2.1.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/LGPL-2.1.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LGPL-v3.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/LGPL-v3.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MIT-1.0.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/MIT-1.0.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Mozilla-1.1.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/Mozilla-1.1.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OSGI-2.0.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/OSGI-2.0.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OSGiSL-2.0.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/OSGiSL-2.0.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OSGiSpecificationLicense-2.0.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/OSGiSpecificationLicense-2.0.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AGPL-v3.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/AGPL-v3.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Apache License-2.0.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/Apache License-2.0.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -148,22 +520,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime-all/pom.xml" />
-        <option value="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-source/pom.xml" />
-        <option value="$PROJECT_DIR$/CodeLicenseManager-ant-task/pom.xml" />
-        <option value="$PROJECT_DIR$/CodeLicenseManager-command-line/pom.xml" />
-        <option value="$PROJECT_DIR$/CodeLicenseManager-dist/pom.xml" />
-        <option value="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/pom.xml" />
-        <option value="$PROJECT_DIR$/CodeLicenseManager-maven-plugin/pom.xml" />
-        <option value="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/pom.xml" />
-        <option value="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/pom.xml" />
-        <option value="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/pom.xml" />
-        <option value="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/pom.xml" />
-        <option value="$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/pom.xml" />
-        <option value="$PROJECT_DIR$/CodeLicenseManager-manager/pom.xml" />
-        <option value="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/pom.xml" />
-        <option value="$PROJECT_DIR$/CodeLicenseManager-documentation/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/CDDL-1.0.properties" />
+        <option value="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/EPL-1.0.properties" />
+        <option value="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GNUPublicLicense-v2.properties" />
+        <option value="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GNUPublicLicense-v3.properties" />
+        <option value="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GPL-v2.properties" />
+        <option value="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GPL-v3.properties" />
+        <option value="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/LesserGNUPublicLicense-v3.properties" />
+        <option value="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/LGPL-2.1.properties" />
+        <option value="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/LGPL-v3.properties" />
+        <option value="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/MIT-1.0.properties" />
+        <option value="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/Mozilla-1.1.properties" />
+        <option value="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/OSGI-2.0.properties" />
+        <option value="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/OSGiSL-2.0.properties" />
+        <option value="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/OSGiSpecificationLicense-2.0.properties" />
+        <option value="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GNUAfferoGeneralPublicLicense-v3.properties" />
+        <option value="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GNUAGPL-v3.properties" />
       </list>
     </option>
   </component>
@@ -183,6 +555,30 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="CodeLicenseManager-source-updater-slashstar-comment" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="CodeLicenseManager-source-updater-slashstar-comment" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
       <PATH>
         <PATH_ELEMENT>
           <option name="myItemId" value="" />
@@ -364,6 +760,64 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="CodeLicenseManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeLicenseManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeLicenseManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeLicenseManager-maven-plugin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeLicenseManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeLicenseManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeLicenseManager-licenses-common-opensource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeLicenseManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeLicenseManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeLicenseManager-licenses-common-opensource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="licenses" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -694,7 +1148,11 @@
       <created>1362328849538</created>
       <updated>1362328849538</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Setup for deploy upload to maven.natusoft.se.">
+      <created>1362329194588</created>
+      <updated>1362329194588</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -721,7 +1179,7 @@
     <frame x="112" y="67" width="2105" height="1314" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Dilbert" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3277592" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Dilbert" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3274707" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -738,10 +1196,10 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975206" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25643516" sideWeight="0.44732442" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2272948" sideWeight="0.55025125" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2272948" sideWeight="0.67252934" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25643516" sideWeight="0.55025125" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25643516" sideWeight="0.67252934" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44974875" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Code Consultant" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -793,7 +1251,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="- APT and Markdown generated docs now links to license text on the web instead of linking to downloaded files.&#10;- Maven plugin now collects complete license information by saving to disk inbetween plugin invocations since static field does not work due to maven creating a new ClassLoaader per plugin invocation.&#10;- No longer tries to best-effort-fake a library license when there are errors in the library definition. It will now fail the build in this case.&#10;- For both auto collected license in formation and license information specified in pom, CLM will now complement it with URL if such is not specified but available in license library.&#10;- Added license url for all licenses in library.&#10;- Added OSGi Specification License 2.0 to library.&#10;- A bit of internal cosmetics.&#10;- Bumped version to 2.1.&#10;&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Setup for deploy upload to maven.natusoft.se." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -819,6 +1277,7 @@
     <MESSAGE value="Added files with extension dtd as being of comment type html-xml." />
     <MESSAGE value="Documentation update." />
     <MESSAGE value="- APT and Markdown generated docs now links to license text on the web instead of linking to downloaded files.&#10;- Maven plugin now collects complete license information by saving to disk inbetween plugin invocations since static field does not work due to maven creating a new ClassLoaader per plugin invocation.&#10;- No longer tries to best-effort-fake a library license when there are errors in the library definition. It will now fail the build in this case.&#10;- For both auto collected license in formation and license information specified in pom, CLM will now complement it with URL if such is not specified but available in license library.&#10;- Added license url for all licenses in library.&#10;- Added OSGi Specification License 2.0 to library.&#10;- A bit of internal cosmetics.&#10;- Bumped version to 2.1.&#10;&#10;" />
+    <MESSAGE value="Setup for deploy upload to maven.natusoft.se." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -828,114 +1287,114 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-documentation/pom.xml">
+    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/CDDL-1.0.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="68" selection-start="1395" selection-end="1395" vertical-scroll-proportion="-19.375">
+        <state line="6" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-manager/pom.xml">
+    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/EPL-1.0.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="30" selection-start="634" selection-end="634" vertical-scroll-proportion="0.24956217">
+        <state line="6" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime/pom.xml">
+    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GNUPublicLicense-v3.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="16" selection-start="582" selection-end="582" vertical-scroll-proportion="-11.25">
+        <state line="6" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime-all/pom.xml">
+    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GPL-v2.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="16" selection-start="573" selection-end="573" vertical-scroll-proportion="-11.25">
+        <state line="6" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-annotations-retention-source/pom.xml">
+    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GPL-v3.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="16" selection-start="630" selection-end="630" vertical-scroll-proportion="-11.875">
+        <state line="6" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-ant-task/pom.xml">
+    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/LesserGNUPublicLicense-v3.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="16" selection-start="581" selection-end="581" vertical-scroll-proportion="-8.75">
+        <state line="6" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-command-line/pom.xml">
+    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/LGPL-2.1.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="16" selection-start="589" selection-end="589" vertical-scroll-proportion="-8.125">
+        <state line="6" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-dist/pom.xml">
+    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/LGPL-v3.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="16" selection-start="581" selection-end="581" vertical-scroll-proportion="-8.125">
+        <state line="6" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/pom.xml">
+    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/MIT-1.0.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="16" selection-start="386" selection-end="386" vertical-scroll-proportion="-7.5">
+        <state line="6" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-maven-plugin/pom.xml">
+    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/Mozilla-1.1.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="16" selection-start="617" selection-end="617" vertical-scroll-proportion="0.18388791">
+        <state line="6" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/pom.xml">
+    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/OSGI-2.0.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="36" selection-start="1437" selection-end="1437" vertical-scroll-proportion="0.48598948">
+        <state line="6" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/pom.xml">
+    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/OSGiSL-2.0.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="16" selection-start="383" selection-end="383" vertical-scroll-proportion="-0.31523642">
+        <state line="6" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/pom.xml">
+    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/OSGiSpecificationLicense-2.0.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="16" selection-start="379" selection-end="379" vertical-scroll-proportion="-0.33800352">
+        <state line="6" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/pom.xml">
+    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GNUAfferoGeneralPublicLicense-v3.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="16" selection-start="386" selection-end="386" vertical-scroll-proportion="-0.3809107">
+        <state line="42" column="0" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/pom.xml">
+    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GNUAGPL-v3.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="16" selection-start="374" selection-end="374" vertical-scroll-proportion="-0.262697">
+        <state line="42" column="0" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GNUPublicLicense-v2.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="12" selection-start="4370" selection-end="4370" vertical-scroll-proportion="0.10507881">
+        <state line="34" column="2" selection-start="1168" selection-end="1168" vertical-scroll-proportion="0.4373928">
           <folding />
         </state>
       </provider>

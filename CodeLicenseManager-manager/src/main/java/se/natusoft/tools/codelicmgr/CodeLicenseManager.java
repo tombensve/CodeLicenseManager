@@ -24,13 +24,13 @@ import se.natusoft.tools.fileeditor.TextFileEditor;
 
 @Project(
     name="CodeLicenseManager-manager",
-    codeVersion="2.0",
+    codeVersion="2.1",
     description="Manages project and license information in project sourcecode" +
                 "and provides license text files for inclusion in builds. Supports" +
                 "multiple languages and it is relatively easy to add a new" +
                 "language and to make your own custom source code updater."
 )
-@Copyright(year="2009", holder="Natusoft AB", rights="All rights reserved.")
+@Copyright(year="2013", holder="Natusoft AB", rights="All rights reserved.")
 @License(
     type="Apache",
     version="2.0",
@@ -130,7 +130,7 @@ public class CodeLicenseManager {
     public CodeLicenseManager(Configuration config, boolean loadLicenseLib) throws CodeLicenseException {
         this.config = config;
 
-        Display.msg("CodeLicenseManager 2.0\nMaintained by Tommy Svensson (tommy@natusoft.se)");
+        Display.msg("CodeLicenseManager 2.1\nMaintained by Tommy Svensson (tommy@natusoft.se)");
 
         if (loadLicenseLib) {
 
