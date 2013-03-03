@@ -70,6 +70,15 @@
 
     <!-- Common plugins for project and sub components. -->
     <build>
+        <extensions>
+            <!-- Enabling the use of FTP -->
+            <extension>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-ftp</artifactId>
+                <version>2.3</version>
+            </extension>
+        </extensions>
+
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -133,6 +142,13 @@
         <module>CodeLicenseManager-dist</module>
         <module>CodeLicenseManager-documentation</module>
     </modules>
+
+    <distributionManagement>
+        <repository>
+            <id>maven-repository-upload</id>
+            <url>ftp://${maven.repo.upload}/${maven.base.path}</url>
+        </repository>
+    </distributionManagement>
 
     <repositories>
         <repository>
