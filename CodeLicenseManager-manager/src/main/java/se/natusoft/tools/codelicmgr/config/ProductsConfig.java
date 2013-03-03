@@ -1,5 +1,6 @@
 package se.natusoft.tools.codelicmgr.config;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import se.natusoft.tools.optionsmgr.annotations.Description;
@@ -48,7 +49,7 @@ import se.natusoft.tools.codelicmgr.enums.Source;
         }
     )
 })
-public class ProductsConfig {
+public class ProductsConfig implements Serializable {
     
     private ArrayList<ProductConfig> products = new ArrayList<ProductConfig>();
 
@@ -65,7 +66,34 @@ public class ProductsConfig {
     @Option
     @Description("A used third party product having this license.")
     public void addProduct(ProductConfig product) {
-        this.products.add(product);
+        // We exclude maven itself since it is only build time not runtime.
+        if (!product.getName().startsWith("maven-")) {
+            this.products.add(resolveURL(product));
+        }
+    }
+
+    /**
+     * Replaces some ${...} variables in url.
+     *
+     * @param product The product to update url for.
+     */
+    private ProductConfig resolveURL(ProductConfig product) {
+        if (product.getVersion() != null && product.getName() != null) {
+            product.setWeb(product.getWeb().replace("${project.version}", product.getVersion()));
+            product.setWeb(product.getWeb().replace("${pom.artifactId}", product.getName()));
+            if (product.getWeb().contains("${pom.artifactId.substring")) {
+                int bix = product.getWeb().indexOf('$');
+                int eix = product.getWeb().lastIndexOf('}');
+                String first = product.getWeb().substring(0, bix);
+                String last = product.getWeb().substring(eix+1);
+                String middle = product.getWeb().substring(bix, eix);
+                String[] parts = middle.split("[\\(\\)]");
+                int subIx = Integer.valueOf(parts[1]);
+
+                product.setWeb(first + product.getName().substring(subIx) + last);
+            }
+        }
+        return product;
     }
 
     /**
@@ -77,18 +105,15 @@ public class ProductsConfig {
 
     @Override
     public String toString() {
-        return toString("");
-    }
-
-    public String toString(String indent) {
         StringBuilder sb = new StringBuilder();
-        sb.append(indent);
-        sb.append("ProductsConfig {\n");
+        sb.append("ProductsConfig {");
+        String comma = "";
         for (ProductConfig product : this.products) {
-            sb.append(product.toString(indent + "    "));;
+            sb.append(comma);
+            sb.append(product.toString());
+            comma = ", ";
         }
-        sb.append(indent);
-        sb.append("}\n");
+        sb.append("}");
 
         return sb.toString();
     }

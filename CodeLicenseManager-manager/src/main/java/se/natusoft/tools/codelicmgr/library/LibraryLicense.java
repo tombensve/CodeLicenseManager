@@ -191,10 +191,12 @@ public class LibraryLicense {
         if (isLibraryLicense() && !this.downloadable) {
             String errors = "";
 
-            // Verify that we have a source block.
-            InputStream licTextStream = LicenseResourceProvider.getInputStream(this.sourceBlockFileName);
-            if (licTextStream == null && this.url == null) {
-                errors += "Source block file ('" + this.sourceBlockFileName + "') not found! ";
+            // Verify that we have a source block. Not all licenses have source blocks!
+            if (!this.sourceBlockFileName.trim().equals("-") && !this.sourceBlockFileName.trim().equals("none")) {
+                InputStream licTextStream = LicenseResourceProvider.getInputStream(this.sourceBlockFileName);
+                if (licTextStream == null && this.url == null) {
+                    errors += "Source block file ('" + this.sourceBlockFileName + "') not found! ";
+                }
             }
 
             // Verify that we really have the full licence text file.
@@ -267,7 +269,7 @@ public class LibraryLicense {
      * @throws CodeLicenseException on failure to provide it.
      */
     public String getLicenseSourceBlock() throws CodeLicenseException {
-        String licText = "License text not available!";
+        String licText = "";
 
         if (this.sourceBlockFileName != null) {
 
@@ -415,4 +417,22 @@ public class LibraryLicense {
     public boolean isDownloadable() {
         return this.downloadable;
     }
+
+    /**
+     * @return A String representation of this LibraryLicense.
+     */
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("{");
+        sb.append("type=" + this.type + ", ");
+        sb.append("version=" + this.version + ", ");
+        sb.append("sourceType=" + this.sourceType + ", ");
+        sb.append("sourceBlockFileName=" + this.sourceBlockFileName + ", ");
+        sb.append("FullTextFileName=" + this.fullTextFileName + ", ");
+        sb.append("fullTextMarkdownFileName=" + this.fullTextMarkdownFileName + ", ");
+        sb.append("url=" + this.url);
+        sb.append("}");
+        return sb.toString();
+    }
+
 }

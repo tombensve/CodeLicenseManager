@@ -1,7 +1,10 @@
 package se.natusoft.tools.codelicmgr.config;
 
 import se.natusoft.tools.codelicmgr.annotations.Authors;
+
+import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import se.natusoft.tools.codelicmgr.annotations.Author;
 import se.natusoft.tools.codelicmgr.annotations.Change;
@@ -59,7 +62,7 @@ import se.natusoft.tools.optionsmgr.annotations.Type;
  * Holds information about third party licenses used.
  */
 @OptionsModel(name="thirdpartyLicenses")
-public class ThirdpartyLicensesConfig {
+public class ThirdpartyLicensesConfig implements Serializable, Iterable<ThirdpartyLicenseConfig> {
 
     //
     // License list
@@ -94,7 +97,33 @@ public class ThirdpartyLicensesConfig {
      * @param license The license to add.
      */
     public void addLicense(ThirdpartyLicenseConfig license) {
-        this.licenses.add(license);
+        boolean haveLicense = false;
+        for (ThirdpartyLicenseConfig tpLic : this.licenses) {
+            if (license.getType() != null && license.getVersion() != null) {
+                if (tpLic.getType() != null && tpLic.getVersion() != null) {
+                    if (tpLic.getType().equals(license.getType()) && tpLic.getVersion().equals(license.getVersion())) {
+                        haveLicense = true;
+                    }
+                }
+                else if (tpLic.getLicenseUrl().equals(license.getLicenseUrl())) {
+                    // In this case we update the previous license information.
+                    tpLic.setType(license.getType());
+                    tpLic.setVersion(license.getVersion());
+                    haveLicense = true;
+                }
+            }
+            else if (license.getLicenseUrl() != null) {
+                if (tpLic.getLicenseUrl() != null) {
+                    if (tpLic.getLicenseUrl().equals(license.getLicenseUrl())) {
+                        haveLicense = true;
+                    }
+                }
+            }
+        }
+
+        if (!haveLicense) {
+            this.licenses.add(license);
+        }
     }
 
 
@@ -103,6 +132,15 @@ public class ThirdpartyLicensesConfig {
      */
     public List<ThirdpartyLicenseConfig> getLicenses() {
         return this.licenses;
+    }
+
+    /**
+     * Returns an iterator over a set of elements of type T.
+     *
+     * @return an Iterator.
+     */
+    public Iterator<ThirdpartyLicenseConfig> iterator() {
+        return getLicenses().iterator();
     }
 
     // -------------------------
@@ -120,20 +158,15 @@ public class ThirdpartyLicensesConfig {
 
     @Override
     public String toString() {
-        return toString("");
-    }
-
-    public String toString(String indent) {
         StringBuilder sb = new StringBuilder();
 
-        sb.append(indent);
-        sb.append("ThirdpartyLicensesConfig {\n");
+        sb.append("ThirdpartyLicensesConfig {");
         for (LicenseConfig license : this.licenses) {
-            sb.append(license.toString(indent + "    "));
+            sb.append(license.toString());
         }
-        sb.append(indent);
-        sb.append("}\n");
+        sb.append("}");
 
         return sb.toString();
     }
+
 }

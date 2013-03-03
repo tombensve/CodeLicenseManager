@@ -236,27 +236,18 @@ public class ProjectConfig {
 
     @Override
     public String toString() {
-        return toString("");
-    }
-
-    public String toString(String indent) {
         StringBuilder sb = new StringBuilder();
 
-        sb.append(indent);
-        sb.append("ProjectConfig {\n");
-        sb.append(indent);
-        sb.append("    name='");sb.append(this.name);sb.append("'\n");
-        sb.append(indent);
-        sb.append("    description='");sb.append(this.description);sb.append("'\n");
-        sb.append(indent);
-        sb.append("    codeVersion='");sb.append(this.codeVersion);sb.append("'\n");
-        sb.append(indent);
-        sb.append("    subProjectOf='");sb.append(this.subProjectOf);sb.append("'\n");
-        sb.append(this.license != null ? this.license.toString(indent + "    ") : indent + "    LicenseConfig {}\n");
-        sb.append(this.copyrights != null ? this.copyrights.toString(indent + "    ") : indent + "    CopyrightsConfig {}\n");
-        sb.append(indent);
-        sb.append("}\n");
+        sb.append("ProjectConfig {");
+        sb.append("name='");sb.append(this.name);sb.append("', ");
+        sb.append("description='");sb.append(this.description);sb.append("', ");
+        sb.append("codeVersion='");sb.append(this.codeVersion);sb.append("', ");
+        sb.append("subProjectOf='");sb.append(this.subProjectOf);sb.append("', ");
+        sb.append(this.license != null ? this.license.toString() : "LicenseConfig {}, ");
+        sb.append(this.copyrights != null ? this.copyrights.toString() : "CopyrightsConfig {}");
+        sb.append("}");
 
         return sb.toString();
     }
+
 }

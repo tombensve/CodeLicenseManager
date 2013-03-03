@@ -6,10 +6,10 @@
     <!-- Artifact information -->
     <groupId>se.natusoft.tools.codelicmgr</groupId>
     <artifactId>CodeLicenseManager</artifactId>
-    <version>2.0</version>
+    <version>2.1</version>
     <packaging>pom</packaging>
 
-    <url>http://codelicmgr.sf.net/</url>
+    <url>https://github.com/tombensve/CodeLicenseManager</url>
 
     <!--
         Specifies project information that is used by the maven site generator,
@@ -28,12 +28,12 @@
         language and to make your own custom source code updater.
     </description>
     <properties>
-        <copyrightYear>2012</copyrightYear>
+        <copyrightYear>2013</copyrightYear>
         <copyrightHolder>Natusoft AB</copyrightHolder>
         <copyrightHolderWeb>http://www.natusoft.se/</copyrightHolderWeb>
         <developer1Name>Tommy Svensson</developer1Name>
         <developer1Email>tommy@natusoft.se</developer1Email>
-        <app.version>2.0</app.version>
+        <app.version>2.1</app.version>
     </properties>
     <licenses>
         <license>

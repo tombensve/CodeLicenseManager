@@ -1,9 +1,11 @@
 package se.natusoft.tools.codelicmgr.library;
 
 import codelicmgr.licenses.LicenseResourceProvider;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
+
 import se.natusoft.tools.codelicmgr.CodeLicenseException;
 import se.natusoft.tools.codelicmgr.Display;
 import se.natusoft.tools.codelicmgr.annotations.Author;
@@ -17,47 +19,47 @@ import se.natusoft.tools.codelicmgr.config.ThirdpartyLicenseConfig;
 import se.natusoft.tools.codelicmgr.enums.Source;
 
 @Project(
-    name="CodeLicenseManager-manager",
-    codeVersion="2.0",
-    description="Manages project and license information in project sourcecode" +
+        name = "CodeLicenseManager-manager",
+        codeVersion = "2.0",
+        description = "Manages project and license information in project sourcecode" +
                 "and provides license text files for inclusion in builds. Supports" +
                 "multiple languages and it is relatively easy to add a new" +
                 "language and to make your own custom source code updater."
 )
-@Copyright(year="2009", holder="Natusoft AB", rights="All rights reserved.")
+@Copyright(year = "2009", holder = "Natusoft AB", rights = "All rights reserved.")
 @License(
-    type="Apache",
-    version="2.0",
-    description="Apache Software License",
-    source=Source.OPEN,
-    text={
-        "Licensed under the Apache License, Version 2.0 (the 'License');",
-        "you may not use this file except in compliance with the License.",
-        "You may obtain a copy of the License at",
-        "",
-        "  http://www.apache.org/licenses/LICENSE-2.0",
-        "",
-        "Unless required by applicable law or agreed to in writing, software",
-        "distributed under the License is distributed on an 'AS IS' BASIS,",
-        "WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.",
-        "See the License for the specific language governing permissions and",
-        "limitations under the License."
-    }
+        type = "Apache",
+        version = "2.0",
+        description = "Apache Software License",
+        source = Source.OPEN,
+        text = {
+                "Licensed under the Apache License, Version 2.0 (the 'License');",
+                "you may not use this file except in compliance with the License.",
+                "You may obtain a copy of the License at",
+                "",
+                "  http://www.apache.org/licenses/LICENSE-2.0",
+                "",
+                "Unless required by applicable law or agreed to in writing, software",
+                "distributed under the License is distributed on an 'AS IS' BASIS,",
+                "WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.",
+                "See the License for the specific language governing permissions and",
+                "limitations under the License."
+        }
 )
 @Authors({
-    @Author(
-        name="Tommy Svensson",
-        email="",
-        changes={
-            @Change(when="2009-11-23", description="Created")
-        }
-    )
+        @Author(
+                name = "Tommy Svensson",
+                email = "",
+                changes = {
+                        @Change(when = "2009-11-23", description = "Created")
+                }
+        )
 })
 /**
  * This class holds license data for use in source code update scripts.
  */
 public class LicenseLibrary {
-    
+
     //
     // Constants
     //
@@ -69,6 +71,7 @@ public class LicenseLibrary {
     private static final String PROP_SOURCE_BLOCK = "sourceblock";
     private static final String PROP_FULL_TEXT = "fulltext";
     private static final String PROP_FULL_TEXT_MARKDOWN = "fullTextMarkdown";
+    private static final String PROP_URL = "url";
 
     //
     // Methods
@@ -77,10 +80,10 @@ public class LicenseLibrary {
     /**
      * Loads and return a license from the license libraries available in classpath.
      *
-     * @param license The project license config entry.
+     * @param license    The project license config entry.
      * @param licenseUrl The url to the license on the web.
-     *
-     * @throws se.natusoft.tools.codelicmgr.CodeLicenseException on failure to load license.
+     * @throws se.natusoft.tools.codelicmgr.CodeLicenseException
+     *          on failure to load license.
      */
     public static LibraryLicense getLicense(LicenseConfig license, String licenseUrl) throws CodeLicenseException {
         return getLicense(license.getType(), license.getVersion(), licenseUrl);
@@ -89,10 +92,9 @@ public class LicenseLibrary {
     /**
      * Loads and return a license from the license libraries available in classpath.
      *
-     * @param licenseType The type of license.
+     * @param licenseType    The type of license.
      * @param licenseVersion The version of the license.
-     * @param licenseUrl The url for the license on the web.
-     *
+     * @param licenseUrl     The url for the license on the web.
      * @throws CodeLicenseException on failure to load license.
      */
     public static LibraryLicense getLicense(String licenseType, String licenseVersion, String licenseUrl) throws CodeLicenseException {
@@ -105,16 +107,18 @@ public class LicenseLibrary {
             String licVersion = props.getProperty(PROP_VERSION);
 
             libLic = new LibraryLicense(
-                licType,
-                licVersion,
-                props.getProperty(PROP_DESCRIPTION),
-                props.getProperty(PROP_SOURCE),
-                expandTypeAndVersion(props.getProperty(PROP_SOURCE_BLOCK), licType, licVersion),
-                expandTypeAndVersion(props.getProperty(PROP_FULL_TEXT), licType, licVersion),
-                expandTypeAndVersion(props.getProperty(PROP_FULL_TEXT_MARKDOWN), licType, licVersion)
-           );
-        }
-        else {
+                    licType,
+                    licVersion,
+                    props.getProperty(PROP_DESCRIPTION),
+                    props.getProperty(PROP_SOURCE),
+                    expandTypeAndVersion(props.getProperty(PROP_SOURCE_BLOCK), licType, licVersion),
+                    expandTypeAndVersion(props.getProperty(PROP_FULL_TEXT), licType, licVersion),
+                    expandTypeAndVersion(props.getProperty(PROP_FULL_TEXT_MARKDOWN), licType, licVersion)
+            );
+            // TODO: Add url to constructor along with the other properties!
+            String licUrl = props.getProperty(PROP_URL);
+            libLic.setUrl(licUrl != null ? licUrl : licenseUrl);
+        } else {
             libLic = new LibraryLicense(licenseType, licenseVersion, licenseType, "open", null, null, null, true /* downloadable*/);
             libLic.setUrl(licenseUrl);
         }
@@ -127,24 +131,10 @@ public class LicenseLibrary {
      * in not found in license library. The last part requires a valid url.
      *
      * @param thirdpartyLicense A third party license config entry.
-     *
      * @throws CodeLicenseException
      */
     public static LibraryLicense getThirdpartyLicense(ThirdpartyLicenseConfig thirdpartyLicense) throws CodeLicenseException {
-        LibraryLicense libLic = null;
-        try {
-            libLic = getLicense(thirdpartyLicense, thirdpartyLicense.getLicenseUrl());
-        }
-        catch (CodeLicenseException cle) {
-            // Maybe null should be returned here instead!
-            libLic = new LibraryLicense(
-                thirdpartyLicense.getType(),
-                thirdpartyLicense.getVersion(),
-                thirdpartyLicense.getLicenseUrl()
-            );
-        }
-
-        return libLic;
+        return getLicense(thirdpartyLicense, thirdpartyLicense.getLicenseUrl());
     }
 
     /**
@@ -159,8 +149,8 @@ public class LicenseLibrary {
                 return !libLic.isDownloadable();
             }
             return false;
+        } catch (CodeLicenseException cle) {
         }
-        catch (CodeLicenseException cle) {}
         return false;
     }
 
@@ -182,24 +172,29 @@ public class LicenseLibrary {
      * Loads properties from classpath using specified filename.
      *
      * @param propFile The name of the property file to load.
-     *
      * @throws CodeLicenseException on failure to load the license property file.
      */
     private static Properties loadProperties(String propFile) throws CodeLicenseException {
         Properties props = new Properties();
         InputStream licPropertyStream = LicenseResourceProvider.getInputStream(propFile);
         if (licPropertyStream == null) {
+            propFile = propFile.replace(' ', '_');
+            licPropertyStream = LicenseResourceProvider.getInputStream(propFile);
+        }
+        if (licPropertyStream == null) {
             return null;
         }
         try {
             props.load(licPropertyStream);
-        }
-        catch (IOException ioe) {
-            throw new CodeLicenseException("Failed to load properties file \"" + propFile + "\"!", CodeLicenseException.Type.BAD_LICENSE_LIBRARY, ioe);
-        }
-        finally {
+        } catch (IOException ioe) {
+            throw new CodeLicenseException("Failed to load properties file \"" + propFile + "\"!",
+                    CodeLicenseException.Type.BAD_LICENSE_LIBRARY, ioe);
+        } finally {
             if (licPropertyStream != null) {
-                try { licPropertyStream.close();} catch (IOException ioe) {}
+                try {
+                    licPropertyStream.close();
+                } catch (IOException ioe) {
+                }
             }
         }
 
@@ -211,6 +206,9 @@ public class LicenseLibrary {
         if (props.getProperty(PROP_DESCRIPTION) == null) {
             Display.msg("WARNING: License description missing in license library owning property file: " + propFile);
         }
+        if (props.getProperty(PROP_URL) == null) {
+            Display.msg("WARNING: License url is missing in license library owning property file: " + propFile);
+        }
 
         return props;
     }
@@ -219,8 +217,7 @@ public class LicenseLibrary {
      * Validates a property.
      *
      * @param props The properties containing the property to validate.
-     * @param prop The property to validate.
-     * 
+     * @param prop  The property to validate.
      * @throws CodeLicenseException on validateion failure.
      */
     private static void validateProperty(Properties props, String prop) throws CodeLicenseException {

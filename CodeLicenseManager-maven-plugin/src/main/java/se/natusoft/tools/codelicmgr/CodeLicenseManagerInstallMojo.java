@@ -177,17 +177,6 @@ public class CodeLicenseManagerInstallMojo
     private String baseDir;
 
     //
-    // Static build-wide data
-    //
-    // For a multi module build we wont know all dependencies and their licenses during an individual execution
-    // of this plugin. Therefore we solve this by statically storing the third party licenses, and append to those
-    // on och ech module execution. Since we cannot know which is the last execution we write/rewrite the third
-    // party license information on every execution. In the end it should be correct.
-
-    /** These are added to each run, both from injected configuration and from built project dependencies. */
-    private static ThirdpartyLicensesConfig collectedThirdpartyLicenses = new ThirdpartyLicensesConfig();
-
-    //
     // Implementation
     //
 
@@ -205,41 +194,35 @@ public class CodeLicenseManagerInstallMojo
      * 
      * @throws MojoExecutionException
      */
-    public void execute()
-        throws MojoExecutionException
-    {
+    public void execute() throws MojoExecutionException {
         logMsg("Running CodeLicenseManagerInstallMojo ... ");
 
-        if (this.mavenProject.isExecutionRoot()) {
-//            CodeLicenseManagerInstallMojo.thirdpartyLicenseDir = this.installOptions.getThirdpartyLicenseDir();
-
-            // If this is the project where the current maven build started, initialize the static third party license dir
-            // with this projects third party license dir, and also initialize the collected third party licenses with the
-            // initial licenses of this project.
-            CodeLicenseManagerInstallMojo.collectedThirdpartyLicenses = this.thirdpartyLicenses;
-
-            // We also want to save the execution root as install root.
-//            CodeLicenseManagerInstallMojo.installRoot = this.baseDir;
-        }
-        // Otherwise append this project third party licenses to the static license collection.
-        else {
-            MojoUtils.appendThirdpartyLicenses(CodeLicenseManagerInstallMojo.collectedThirdpartyLicenses, this.thirdpartyLicenses);
-        }
+        BuildDataCollector<ThirdpartyLicensesConfig> dataCollector =
+                new BuildDataCollector<ThirdpartyLicensesConfig>(this.mavenProject) {
+                    public ThirdpartyLicensesConfig newInstance() {return CodeLicenseManagerInstallMojo.this.thirdpartyLicenses;}
+                    public String getName() {return "ThirdpartyLicensesConfig";}
+                };
+        dataCollector.load();
+        ThirdpartyLicensesConfig collectedThirdpartyLicenses = dataCollector.getData();
 
         this.project = MojoUtils.updateConfigFromMavenProject(this.project, this.mavenProject);
 
-        if (autoResolveThirdPartyLicenses) {
-            System.out.print("Trying to resolve third party licenses from dependencies ...");
-            int before = CodeLicenseManagerInstallMojo.collectedThirdpartyLicenses.getLicenses().size();
+        if (this.autoResolveThirdPartyLicenses) {
+            logMsg("Trying to resolve third party licenses from dependencies ...");
+            int before = collectedThirdpartyLicenses.getLicenses().size();
 
-            CodeLicenseManagerInstallMojo.collectedThirdpartyLicenses = MojoUtils.updateThirdpartyLicenseConfigFromMavenProject(
-                    CodeLicenseManagerInstallMojo.collectedThirdpartyLicenses, this.mavenProject, this.localRepository);
+            MojoUtils.updateThirdpartyLicenseConfigFromMavenProject(
+                    collectedThirdpartyLicenses, this.mavenProject, this.localRepository, getLog());
 
-            int after = CodeLicenseManagerInstallMojo.collectedThirdpartyLicenses.getLicenses().size();
-            System.out.println(" found:" + (after - before));
+            int after = collectedThirdpartyLicenses.getLicenses().size();
+            logMsg("Found " + (after - before) + " new licenses!");
         }
 
-        Configuration config = new Configuration(this.project, CodeLicenseManagerInstallMojo.collectedThirdpartyLicenses, this.installOptions);
+        MojoUtils.appendThirdpartyLicenses(collectedThirdpartyLicenses, this.thirdpartyLicenses);
+
+        MojoUtils.complementThirdPartyLicensesWithLicenseLibraryData(collectedThirdpartyLicenses);
+
+        Configuration config = new Configuration(this.project, collectedThirdpartyLicenses, this.installOptions);
 
         try {
             config.validateForInstall();
@@ -265,7 +248,7 @@ public class CodeLicenseManagerInstallMojo
 
             if (this.createLicencesAPT) {
                 logMsg("Writing src/site/licenses/licenses.apt and specific license documents!");
-                codeLicMgr.writeLicensesAPT(rootDir, this.createMavenPDFPluginLicenseAPTVersions);
+                APTUtils.writeLicensesAPT(rootDir, this.createMavenPDFPluginLicenseAPTVersions, config);
             }
 
             boolean appendToDoc = this.appendUpdateLicensesMarkdownToMarkdownDocument != null &&
@@ -278,12 +261,12 @@ public class CodeLicenseManagerInstallMojo
                 String linkPrefix = this.markdownLinkPrefix != null ? this.markdownLinkPrefix : "";
                 String subDir = this.markdownTargetSubdir != null ? this.markdownTargetSubdir + "/" : "";
                 logMsg("Writing " + subDir + "licenses.md and specific license documents!");
-                codeLicMgr.writeLicensesMarkdown(new File(rootDir, subDir), appendToDoc, linkPrefix);
+                MarkdownUtils.writeLicensesMarkdown(new File(rootDir, subDir), appendToDoc, linkPrefix, config);
 
                 if (appendToDoc) {
                     logMsg("Appending/uppdating license info to " + this.appendUpdateLicensesMarkdownToMarkdownDocument + "!");
-                    codeLicMgr.appendUppdateLicensesToMarkdownDoc(new File(rootDir, subDir),
-                            this.appendUpdateLicensesMarkdownToMarkdownDocument, linkPrefix);
+                    MarkdownUtils.appendUppdateLicensesToMarkdownDoc(new File(rootDir, subDir),
+                            this.appendUpdateLicensesMarkdownToMarkdownDocument, linkPrefix, config);
                 }
             }
         }
@@ -302,7 +285,7 @@ public class CodeLicenseManagerInstallMojo
                     break;
 
                 case BAD_CONFIGURATION:
-                    logMsg("This is a plugin <configuration> section error.");
+                    logMsg("There is a plugin <configuration> section error.");
             }
             throw new MojoExecutionException("Bad inputs when running install!", cle);
         }
@@ -313,6 +296,7 @@ public class CodeLicenseManagerInstallMojo
         }
         finally {
             Display.setDisplay(null);
+            dataCollector.save();
         }
     }
 

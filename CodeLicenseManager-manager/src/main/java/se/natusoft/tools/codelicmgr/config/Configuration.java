@@ -311,13 +311,13 @@ public class Configuration {
     public String toString() {
         StringBuilder sb = new StringBuilder();
 
-        sb.append("Configuration {\n");
-        sb.append(this.project != null ? this.project.toString("    ") : "    ProjectConfig {}\n");
-        sb.append(this.thirdpartyLicenses != null ? this.thirdpartyLicenses.toString("    ") : "    ThirdpartyLicensesConfig {}\n");
-        sb.append(this.codeOptions != null ? this.codeOptions.toString("    ") : "    CodeOptionsConfig {}\n");
-        sb.append(this.installOptions != null ? this.installOptions.toString("    ") : "    InstallOptionsConfig {}\n");
-        sb.append(this.userData != null ? this.userData.toString("    ") : "    UserDataConfig {}\n");
-        sb.append("}\n");
+        sb.append("Configuration {");
+        sb.append(this.project != null ? this.project.toString() : "ProjectConfig {}");
+        sb.append(this.thirdpartyLicenses != null ? this.thirdpartyLicenses.toString() : "ThirdpartyLicensesConfig {}");
+        sb.append(this.codeOptions != null ? this.codeOptions.toString() : "CodeOptionsConfig {}");
+        sb.append(this.installOptions != null ? this.installOptions.toString() : "InstallOptionsConfig {}");
+        sb.append(this.userData != null ? this.userData.toString() : "UserDataConfig {}");
+        sb.append("}");
 
         return sb.toString();
     }

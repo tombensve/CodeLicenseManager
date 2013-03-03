@@ -5,6 +5,8 @@ import se.natusoft.tools.optionsmgr.annotations.Description;
 import se.natusoft.tools.optionsmgr.annotations.Option;
 import se.natusoft.tools.codelicmgr.annotations.*;
 
+import java.io.Serializable;
+
 /**
  * Third party extension to project license info.
  */
@@ -45,7 +47,7 @@ import se.natusoft.tools.codelicmgr.annotations.*;
         }
     )
 })
-public class ThirdpartyLicenseConfig extends LicenseConfig {
+public class ThirdpartyLicenseConfig extends LicenseConfig implements Serializable {
 
     //
     // ProductsConfig
@@ -85,21 +87,15 @@ public class ThirdpartyLicenseConfig extends LicenseConfig {
 
     @Override
     public String toString() {
-        return toString("");
-    }
-
-    public String toString(String indent) {
         StringBuilder sb = new StringBuilder();
 
-        sb.append(indent);
-        sb.append("ThirdpartyLicenseConfig {\n");
-        sb.append(indent);sb.append("    type='");sb.append(getType());sb.append("'\n");
-        sb.append(indent);sb.append("    version='");sb.append(getVersion());sb.append("'\n");
-        sb.append(indent);sb.append("    licenseUrl='");sb.append(this.licenseUrl);sb.append("'\n");
-        sb.append(this.licenseProducts != null ? this.licenseProducts.toString(indent + "    ") : indent + "    ProductsConfig {}\n");
-        sb.append(indent);sb.append("}\n");
-        
+        sb.append("ThirdpartyLicenseConfig {");
+        sb.append("type='");sb.append(getType());sb.append("', ");
+        sb.append("version='");sb.append(getVersion());sb.append("', ");
+        sb.append("licenseUrl='");sb.append(this.licenseUrl);sb.append("', ");
+        sb.append(this.licenseProducts != null ? this.licenseProducts.toString() : "ProductsConfig {}");
+        sb.append("}");
+
         return sb.toString();
     }
-
 }

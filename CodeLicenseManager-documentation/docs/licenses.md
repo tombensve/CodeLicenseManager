@@ -1,17 +1,17 @@
 <!-- Created by CodeLicenseManager -->
 ## Project License
 
-__[Apache Software License version 2.0](https://github.com/tombensve/CodeLicenseManager/blob/master/CodeLicenseManager-documentation/docs/Apache-2.0.md)__
+__[Apache Software License version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)__
 
 ## Third Party Licenses
 
-__[Lesser GNU Public License version v3](https://github.com/tombensve/CodeLicenseManager/blob/master/CodeLicenseManager-documentation/docs/LGPL-v3.md)__
+__[Lesser GNU Public License version v3](http://www.gnu.org/copyleft/lesser.html)__
 
 The following third party products are using this license:
 
 * [bsh-1.3.0](http://www.beanshell.org/)
 
-__[Apache Software License version 2.0](https://github.com/tombensve/CodeLicenseManager/blob/master/CodeLicenseManager-documentation/docs/Apache-2.0.md)__
+__[Apache Software License version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)__
 
 The following third party products are using this license:
 

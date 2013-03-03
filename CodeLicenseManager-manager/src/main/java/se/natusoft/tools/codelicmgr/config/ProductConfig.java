@@ -5,6 +5,8 @@ import se.natusoft.tools.optionsmgr.annotations.Option;
 import se.natusoft.tools.codelicmgr.annotations.*;
 import se.natusoft.tools.codelicmgr.enums.Source;
 
+import java.io.Serializable;
+
 /**
  * This holds information for a thirdparty product.
  */
@@ -45,7 +47,7 @@ import se.natusoft.tools.codelicmgr.enums.Source;
         }
     )
 })
-public class ProductConfig {
+public class ProductConfig implements Serializable {
 
     //
     // Name
@@ -121,18 +123,14 @@ public class ProductConfig {
 
     @Override
     public String toString() {
-        return toString("");
-    }
-
-    public String toString(String indent) {
         StringBuilder sb = new StringBuilder();
 
-        sb.append(indent);
-        sb.append("ProductConfig {\n");
-        sb.append(indent);sb.append("    name='");sb.append(this.name);sb.append("'\n");
-        sb.append(indent);sb.append("    web='");sb.append(this.web);sb.append("'\n");
-        sb.append(indent);sb.append("}\n");
+        sb.append("ProductConfig { ");
+        sb.append("name='");sb.append(this.name);sb.append("', ");
+        sb.append("web='");sb.append(this.web);sb.append("'");
+        sb.append("}");
 
         return sb.toString();
     }
+
 }

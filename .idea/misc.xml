@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BSFConsole">
+    <option name="preferredRecentCommandsDividerLocations">
+      <map>
+        <entry key="[BSF] beanshell" value="2019" />
+        <entry key="[JSR-223] ECMAScript" value="2000" />
+        <entry key="[JSR-223] Groovy" value="1720" />
+      </map>
+    </option>
+    <option name="searchOptions">
+      <BSFConsoleSearchOptions />
+    </option>
+  </component>
   <component name="DBNavigator.Project.ConnectionManager">
     <connections />
   </component>

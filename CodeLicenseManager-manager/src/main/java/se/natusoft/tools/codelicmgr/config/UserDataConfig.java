@@ -126,25 +126,20 @@ public class UserDataConfig {
 
     @Override
     public String toString() {
-        return toString("");
-    }
-
-    public String toString(String indent) {
         StringBuilder sb = new StringBuilder();
 
-        sb.append(indent);
-        sb.append("UserDataConfig {\n");
+        sb.append("UserDataConfig {");
+        String comma = "";
         for (String property : this.userProps.stringPropertyNames()) {
-            sb.append(indent);
-            sb.append("    ");
+            sb.append(comma);
             sb.append(property);
             sb.append("=");
             sb.append(this.userProps.getProperty(property));
-            sb.append("\n");
+            comma = ", ";
         }
-        sb.append(indent);
-        sb.append("}\n");
+        sb.append("}");
 
         return sb.toString();
     }
+
 }

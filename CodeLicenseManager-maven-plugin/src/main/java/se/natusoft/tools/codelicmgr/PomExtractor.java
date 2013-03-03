@@ -13,9 +13,9 @@ import se.natusoft.tools.codelicmgr.enums.Source;
  * This extracts information from a maven pom.
  * <p>
  * I first tried to use DefaultMavenProjectBuilder to produce a MavenProject from a dependency Artifact,
- * but it kept throwing NullPointerExceptions, which made get the source code and conclude that it
+ * but it kept throwing NullPointerExceptions, which made me get the source code and conclude that it
  * contains several private non initialized members that are only used, and never set. I strongly suspect
- * that most classes in maven have some form of dependecy injection into private fields just like maven
+ * that most classes in maven have some form of dependency injection into private fields just like maven
  * plugins. There is some class somewhere that sets this upp. I however gave up trying to resolve this
  * just to access a few values in the pom. I decided to take another simpler approach that should be good
  * enough for my need: This class.

@@ -1,4 +1,4 @@
-# Code License Manager 2.0
+# Code License Manager 2.1
 
 ## Introduction
 
@@ -23,6 +23,21 @@ If your CM tool allows pre checkin scripts to be run it can be plugged in at tha
 time to make sure all checked in code has the license text. If a source file already 
 has the license text nothing will be changed, if it doesn't it will be added. 
 
+## Version 2.1 changes
+
+* Generated APT and Markdown documents now links to license on web if possible instead of locally installed license file. This due to that all licenses that is not in local license library and that has an url to the license text on the web is not downloadable by a java.net.URL! Specifically Glassfish stuff that wants a certificate to download license (I keep my pesonal thoughts about that to myself!). If you click on a link that brings you to the page in a browser then the browser deals with the certificate request, but java.net.URL does not. It throws an exception. CLM will still install local license files and download if possible. Those files will just not be linked from the generated doc. 
+
+* Last version tried to collect license information from all sub builds of a multi project maven build. It did this by using a static field in the maven plugin. I was originally tricked into beleiving this actually worked, but it doesn’t. Maven does everything it can to isolate the execution of a plugin, and rightly so, but in that effort it creates a new ClassLoader for each invokation and reloads all plugin classes so that static fields are reinitialized on each plugin invocation and is thus no better than a non static field in this case. So now I have solved it by saving to disk between plugin invocations. The target directory will now contain a `.ThirdpartyLicensesConfigCollector` file. This gets overwritten on each new build. It will not be added to between external builds, only between invocation within the same build. 
+
+* For both auto collected license information and license information specified in pom, CLM will now complement it with URL if such is not specified but available in license library.
+
+* No longer tries to best-effort-fake a library license when there are errors in the library definition. It will now fail the build in this case. I have just spent many, many hours trying to find a bug that was very hidden due to the best-effort-fake behavior! If it is wrong, the source of that wrong should be fixed instead of covering it up! The best-effort-fake was a really dumb thing to do in the first place.
+
+* Added license url for all licenses in library.
+
+* Added OSGi Specification License 2.0 to library.
+
+* Did some internal cosmetic work like breaking out all APT and Markdown support code into their own classes rather than have them in the _CodeLicenseManager_ class. The APT code now resides in the maven plugin since it is maven specific. It is now more easy to add the markdown functionallity to the command line version, but it is not there yet in this version.
 
 ## Features
 

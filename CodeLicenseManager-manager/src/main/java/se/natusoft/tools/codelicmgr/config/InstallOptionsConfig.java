@@ -106,19 +106,15 @@ public class InstallOptionsConfig {
     
     @Override
     public String toString() {
-        return toString("");
-    }
-
-    public String toString(String indent) {
         StringBuilder sb = new StringBuilder();
 
-        sb.append(indent);
-        sb.append("InstallOptionsConfig {\n");
-        sb.append(indent);sb.append("    verbose='");sb.append(this.verbose);sb.append("'\n");
-        sb.append(indent);sb.append("    licenseDir='");sb.append(this.licenseDir);sb.append("'\n");
-        sb.append(indent);sb.append("    thirdpartyLicenseDir='");sb.append(this.thirdpartyLicenseDir);sb.append("'\n");
-        sb.append(indent);sb.append("}\n");
+        sb.append("InstallOptionsConfig {");
+        sb.append("verbose='");sb.append(this.verbose);sb.append("', ");
+        sb.append("licenseDir='");sb.append(this.licenseDir);sb.append("', ");
+        sb.append("thirdpartyLicenseDir='");sb.append(this.thirdpartyLicenseDir);sb.append("'");
+        sb.append("}");
 
         return sb.toString();
     }
+
 }

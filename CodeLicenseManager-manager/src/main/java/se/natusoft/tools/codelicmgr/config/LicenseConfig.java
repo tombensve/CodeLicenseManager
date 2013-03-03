@@ -11,6 +11,8 @@ import se.natusoft.tools.codelicmgr.CodeLicenseException;
 import se.natusoft.tools.optionsmgr.annotations.Description;
 import se.natusoft.tools.optionsmgr.annotations.Option;
 
+import java.io.Serializable;
+
 @Project(
     name="CodeLicenseManager-manager",
     codeVersion="2.0",
@@ -54,7 +56,7 @@ import se.natusoft.tools.optionsmgr.annotations.Option;
  * Please note that for each license type and version a ${type}-${version}.properties
  * is expected to be found in a codelicmgr.licenses package.
  */
-public class LicenseConfig {
+public class LicenseConfig  implements Serializable {
 
     //
     // Type
@@ -124,18 +126,14 @@ public class LicenseConfig {
 
     @Override
     public String toString() {
-        return toString("");
-    }
-
-    public String toString(String indent) {
         StringBuilder sb = new StringBuilder();
 
-        sb.append(indent);
-        sb.append("LicenseConfig {\n");
-        sb.append(indent);sb.append("    type='");sb.append(this.type);sb.append("'\n");
-        sb.append(indent);sb.append("    version='");sb.append(this.version);sb.append("'\n");
-        sb.append(indent);sb.append("}\n");
-        
+        sb.append("LicenseConfig {");
+        sb.append("type='");sb.append(this.type);sb.append("', ");
+        sb.append("version='");sb.append(this.version);sb.append("'");
+        sb.append("}");
+
         return sb.toString();
     }
+
 }

@@ -273,23 +273,19 @@ public class CodeOptionsConfig {
     
     @Override
     public String toString() {
-        return toString("");
-    }
-
-    public String toString(String indent) {
         StringBuilder sb = new StringBuilder();
-        
-        sb.append(indent);
-        sb.append("CodeOptionsConfig {\n");
-        sb.append(indent);sb.append("    verbose='");sb.append(this.verbose);sb.append("'\n");
-        sb.append(indent);sb.append("    codeLanguage='");sb.append(this.codeLanguage);sb.append("'\n");
-        sb.append(indent);sb.append("    updateLicenseInfo='");sb.append(this.updateLicenseInfo);sb.append("'\n");
-        sb.append(indent);sb.append("    updateCopyright='");sb.append(this.updateCopyright);sb.append("'\n");
-        sb.append(indent);sb.append("    updateProject='");sb.append(this.updateProject);sb.append("'\n");
-        sb.append(indent);sb.append("    addAuthorsBlock='");sb.append(this.addAuthorsBlock);sb.append("'\n");
-        sb.append(indent);sb.append("    sourceCodeDirs='");sb.append(this.sourceCodeDirs);sb.append("'\n");
-        sb.append(indent);sb.append("}\n");
-        
+
+        sb.append("CodeOptionsConfig {");
+        sb.append("verbose='");sb.append(this.verbose);sb.append("', ");
+        sb.append("codeLanguage='");sb.append(this.codeLanguage);sb.append("', ");
+        sb.append("updateLicenseInfo='");sb.append(this.updateLicenseInfo);sb.append("', ");
+        sb.append("updateCopyright='");sb.append(this.updateCopyright);sb.append("', ");
+        sb.append("updateProject='");sb.append(this.updateProject);sb.append("', ");
+        sb.append("addAuthorsBlock='");sb.append(this.addAuthorsBlock);sb.append("', ");
+        sb.append("sourceCodeDirs='");sb.append(this.sourceCodeDirs);sb.append("', ");
+        sb.append("}");
+
         return sb.toString();
     }
+
 }

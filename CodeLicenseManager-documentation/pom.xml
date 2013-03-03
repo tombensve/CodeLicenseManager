@@ -5,13 +5,13 @@
     <parent>
         <groupId>se.natusoft.tools.codelicmgr</groupId>
         <artifactId>CodeLicenseManager</artifactId>
-        <version>2.0</version>
+        <version>2.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>se.natusoft.tools.codelicmgr</groupId>
     <artifactId>CodeLicenseManager-documentation</artifactId>
-    <version>2.0</version>
+    <version>2.1</version>
 
 
     <build>
@@ -148,9 +148,9 @@
                                 <pageSize>A4</pageSize>
                                 <title>Code License Manager</title>
                                 <subject>User Guide</subject>
-                                <version>2.0</version>
+                                <version>${project.version}</version>
                                 <author>Tommy Svensson</author>
-                                <copyright>Copyright © 2012 Natusoft AB</copyright>
+                                <copyright>Copyright © ${copyrightYear} ${copyrightHolder}</copyright>
                                 <generateTitlePage>true</generateTitlePage>
                                 <generateTOC>true</generateTOC>
                             </pdfGeneratorOptions>

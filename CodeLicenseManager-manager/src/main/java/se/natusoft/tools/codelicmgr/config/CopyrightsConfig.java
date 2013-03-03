@@ -114,20 +114,17 @@ public class CopyrightsConfig {
 
     @Override
     public String toString() {
-        return toString("");
-    }
-
-    public String toString(String indent) {
         StringBuilder sb = new StringBuilder();
-        sb.append(indent);
-        sb.append("CopyrightsConfig {\n");
+        sb.append("CopyrightsConfig { ");
+        String comma = "";
         for (CopyrightConfig copyright : this.copyrights) {
-            sb.append(copyright.toString(indent + "    "));
-            sb.append("\n");
+            sb.append(comma);
+            sb.append(copyright.toString());
+            comma = ", ";
         }
-        sb.append(indent);
-        sb.append("}\n");
+        sb.append("}");
 
         return sb.toString();
     }
+
 }

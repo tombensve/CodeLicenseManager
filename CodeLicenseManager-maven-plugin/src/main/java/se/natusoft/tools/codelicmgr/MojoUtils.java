@@ -2,6 +2,7 @@ package se.natusoft.tools.codelicmgr;
 
 import org.apache.maven.artifact.Artifact;
 import org.apache.maven.artifact.repository.ArtifactRepository;
+import org.apache.maven.plugin.logging.Log;
 import org.apache.maven.project.MavenProject;
 import se.natusoft.tools.codelicmgr.annotations.*;
 import se.natusoft.tools.codelicmgr.config.*;
@@ -149,19 +150,20 @@ public class MojoUtils {
      *
      * @param thirdpartyLicenses The third party license configuration to update.
      * @param mavenProject The running maven project.
+     * @param localRepository The artifact repository for the current build.
+     * @param log To log to.
      * @return The passed configuration.
      */
-    public static ThirdpartyLicensesConfig updateThirdpartyLicenseConfigFromMavenProject(
+    public static void updateThirdpartyLicenseConfigFromMavenProject(
             ThirdpartyLicensesConfig thirdpartyLicenses,
             MavenProject mavenProject,
-            ArtifactRepository localRepository)
+            ArtifactRepository localRepository, Log log)
     {
 
-        Set dependencies = mavenProject.getDependencyArtifacts();
+        Set<Artifact> dependencies = mavenProject.getDependencyArtifacts();
         if (dependencies != null) {
-            for (Iterator<Artifact> it = (Iterator<Artifact>)dependencies.iterator(); it.hasNext();) {
-                Artifact depArtifact = it.next();
-                if (!depArtifact.getType().equals("pom") && 
+            for (Artifact depArtifact : dependencies) {
+                if (!depArtifact.getType().equals("pom") &&
                         // Avoid test scope dependencies
                         !depArtifact.getScope().equals(Artifact.SCOPE_TEST) &&
                         // Avoid internal dependencies.
@@ -170,10 +172,10 @@ public class MojoUtils {
 
                         PomExtractor depPom = new PomExtractor(localRepository, depArtifact);
 
-                        ProductConfig productConfig = new ProductConfig();
-                        productConfig.setName(depArtifact.getArtifactId());
-                        productConfig.setVersion(depArtifact.getVersion());
-                        productConfig.setWeb(depPom.getProductUrl());
+                        ProductConfig newProdConfig = new ProductConfig();
+                        newProdConfig.setName(depArtifact.getArtifactId());
+                        newProdConfig.setVersion(depArtifact.getVersion());
+                        newProdConfig.setWeb(depPom.getProductUrl());
 
                         if (depPom.getLicenseName() != null) {
                             String licName = getLicenseName(depPom.getLicenseName());
@@ -238,32 +240,30 @@ public class MojoUtils {
                             // Check if current artifact already exists
                             boolean artifactExists = false;
                             for (ProductConfig prodConfig : tplConfig.getProducts().getProducts()) {
-                                if (prodConfig.getName().trim().toLowerCase().equals(productConfig.getName().trim().toLowerCase())) {
+                                if (prodConfig.getName().trim().toLowerCase().equals(newProdConfig.getName().trim().toLowerCase())) {
                                     artifactExists = true;
                                 }
                             }
 
                             // If not add it.
                             if (!artifactExists) {
-                                tplConfig.getProducts().addProduct(productConfig);
+                                tplConfig.getProducts().addProduct(newProdConfig);
                             }
                         }
                         else {
                             if (lookupArtifactInConfiguredThirdpartyProduct(thirdpartyLicenses, depArtifact) == null) {
-                                System.out.println("WARNING: Artifact '" + depArtifact + "' has no license information and has not been configured " +
+                                log.warn("WARNING: Artifact '" + depArtifact + "' has no license information and has not been configured " +
                                         "under the <thirdpartyLicenses><license><products> section!");
                             }
                         }
 
                     } catch (IOException ioe) {
-                        System.out.println("WARNING: Failed to extract information from maven dependency: " +
+                        log.warn("WARNING: Failed to extract information from maven dependency: " +
                                 depArtifact.getArtifactId() + "-" + depArtifact.getVersion() + " [" + ioe.getMessage() + "]");
                     }
                 }
             }
         }
-
-        return thirdpartyLicenses;
     }
 
     /**
@@ -288,10 +288,26 @@ public class MojoUtils {
     }
 
     /**
+     * Complements the specified ThirdpartyLicensesConfig with data found for licenses in license library.
+     *
+     * @param thirdpartyLicenses The third party licenses to complement.
+     */
+    public static void complementThirdPartyLicensesWithLicenseLibraryData(ThirdpartyLicensesConfig thirdpartyLicenses) {
+        for (ThirdpartyLicenseConfig tpLic : thirdpartyLicenses) {
+            LibraryLicense libLic = LicenseLibrary.getThirdpartyLicense(tpLic);
+            if (libLic != null) {
+                if (tpLic.getLicenseUrl() == null || tpLic.getLicenseUrl().trim().length() == 0) {
+                    tpLic.setLicenseUrl(libLic.getURL());
+                }
+            }
+        }
+    }
+
+    /**
      * Copies all data in 'from' that does not already exists in 'to', to 'to'.
      * 
      * @param to The config to append to.
-     * @param from The congig to append from.
+     * @param from The config to append from.
      */
     public static void appendThirdpartyLicenses(ThirdpartyLicensesConfig to, ThirdpartyLicensesConfig from) {
         if (from != null) {

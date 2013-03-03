@@ -145,19 +145,15 @@ public class CopyrightConfig {
 
     @Override
     public String toString() {
-        return toString("");
-    }
-
-    public String toString(String indent) {
         StringBuilder sb = new StringBuilder();
 
-        sb.append(indent);
-        sb.append("CopyrightConfig {\n");
-        sb.append(indent);sb.append("    year='");sb.append(this.year);sb.append("'\n");
-        sb.append(indent);sb.append("    holder='");sb.append(this.holder);sb.append("'\n");
-        sb.append(indent);sb.append("    rights='");sb.append(this.rights);sb.append("'\n");
-        sb.append(indent);sb.append("}\n");
+        sb.append("CopyrightConfig {");
+        sb.append("year='");sb.append(this.year);sb.append("', ");
+        sb.append("holder='");sb.append(this.holder);sb.append("', ");
+        sb.append("rights='");sb.append(this.rights);sb.append("'");
+        sb.append("}");
 
         return sb.toString();
     }
+
 }
