@@ -1,33 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" name="Default" comment="Damn it! Forgot to update README.md file.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/OSGi-2.0-License.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/OSGi-2.09.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/OSGi-2.0.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/Apache-2.0-License.md" afterPath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/Apache-2.0-License.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-documentation/docs/Apache-2.0.md" afterPath="$PROJECT_DIR$/CodeLicenseManager-documentation/docs/Apache-2.0.md" />
+    <list default="true" id="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/setVersion.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-documentation/docs/CLM-User-Guide.pdf" afterPath="$PROJECT_DIR$/CodeLicenseManager-documentation/docs/CLM-User-Guide.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/Apache License-2.0.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/Apache License-2.0.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/CDDL-1.0.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/CDDL-1.0.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/library/LibraryLicense.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/library/LibraryLicense.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/MarkdownUtils.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/MarkdownUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/OSGiSL-2.0.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/OSGiSL-2.0.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/OSGiSpecificationLicense-2.0.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/OSGiSpecificationLicense-2.0.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-documentation/docs/UserGuide.md" afterPath="$PROJECT_DIR$/CodeLicenseManager-documentation/docs/UserGuide.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime/pom.xml" afterPath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime-all/pom.xml" afterPath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime-all/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-source/pom.xml" afterPath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-source/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-ant-task/pom.xml" afterPath="$PROJECT_DIR$/CodeLicenseManager-ant-task/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-command-line/pom.xml" afterPath="$PROJECT_DIR$/CodeLicenseManager-command-line/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-dist/pom.xml" afterPath="$PROJECT_DIR$/CodeLicenseManager-dist/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-documentation/pom.xml" afterPath="$PROJECT_DIR$/CodeLicenseManager-documentation/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/pom.xml" afterPath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/pom.xml" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-maven-plugin/pom.xml" afterPath="$PROJECT_DIR$/CodeLicenseManager-maven-plugin/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/pom.xml" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/pom.xml" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/pom.xml" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/pom.xml" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/pom.xml" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/pom.xml" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CodeLicenseManager.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1362585418422" ignored="false" />
+    <file path="/Dummy.txt" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1362585653451" ignored="false" />
     <file path="/CodeLicenseManager.java" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1362254100113" ignored="false" />
     <file path="$PROJECT_DIR$/../PropertiesCollectorMavenPlugin/src/main/java/se/natusoft/maven/plugin/properties/PropertySet.java" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1359228098581" ignored="false" />
     <file path="/PropertySet.java" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1359228098581" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OSGi/OSGiApplicationPlatformServices/.idea/workspace.xml" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1361820066547" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OSGi/OSGiApplicationPlatformServices/.idea/workspace.xml" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1362587113174" ignored="false" />
     <file path="$PROJECT_DIR$/../PropertiesCollectorMavenPlugin/src/main/java/se/natusoft/maven/plugin/properties/PropertySpec.java" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1359228201690" ignored="false" />
     <file path="/PropertySpec.java" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1359228199587" ignored="false" />
     <file path="$PROJECT_DIR$/../PropertiesCollectorMavenPlugin/src/main/java/se/natusoft/maven/plugin/properties/PropertiesCollectorMavenPlugin.java" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1359228464990" ignored="false" />
     <file path="/PropertiesCollectorMavenPlugin.java" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1359228463448" ignored="false" />
     <file path="$PROJECT_DIR$/../PropertiesCollectorMavenPlugin/pom.xml" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1359228518746" ignored="false" />
-    <file path="/pom.xml" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1362328177914" ignored="false" />
+    <file path="/pom.xml" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1362585965428" ignored="false" />
     <file path="/updateLicenseInfo.bsh" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1359824492412" ignored="false" />
     <file path="$PROJECT_DIR$/../../OSGi/OSGiApplicationPlatformServices/APS-Data/APSDataSource/pom.xml" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1359824651876" ignored="false" />
     <file path="$PROJECT_DIR$/../../OSGi/OSGiApplicationPlatformServices/APS-Data/APSDataSource/docs/aps-datasource.html" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1359824651876" ignored="false" />
@@ -140,7 +149,160 @@
       <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="44" selection-start="1296" selection-end="1296" vertical-scroll-proportion="-0.625">
+            <state line="35" column="31" selection-start="1686" selection-end="1686" vertical-scroll-proportion="-21.875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="23" selection-start="601" selection-end="601" vertical-scroll-proportion="-11.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime-all/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="23" selection-start="592" selection-end="592" vertical-scroll-proportion="-11.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-annotations-retention-source/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="23" selection-start="649" selection-end="649" vertical-scroll-proportion="-11.875">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-ant-task/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="23" selection-start="600" selection-end="600" vertical-scroll-proportion="-8.75">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-command-line/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="23" selection-start="608" selection-end="608" vertical-scroll-proportion="-8.125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-dist/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="23" selection-start="600" selection-end="600" vertical-scroll-proportion="-8.125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-documentation/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="23" selection-start="617" selection-end="617" vertical-scroll-proportion="41.25">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="23" selection-start="405" selection-end="405" vertical-scroll-proportion="-7.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-manager/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="36" selection-start="1394" selection-end="1394" vertical-scroll-proportion="0.80106807">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-maven-plugin/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="23" selection-start="636" selection-end="636" vertical-scroll-proportion="-8.125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="23" selection-start="407" selection-end="407" vertical-scroll-proportion="-7.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="23" selection-start="402" selection-end="402" vertical-scroll-proportion="-7.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="23" selection-start="398" selection-end="398" vertical-scroll-proportion="-7.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="23" selection-start="405" selection-end="405" vertical-scroll-proportion="-7.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="13" selection-start="383" selection-end="383" vertical-scroll-proportion="-7.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="9" selection-start="31" selection-end="31" vertical-scroll-proportion="-0.625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setVersion.sh" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/setVersion.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="13" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -182,10 +344,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MarkdownUtils.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MarkdownUtils.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/MarkdownUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="194" column="35" selection-start="8165" selection-end="8165" vertical-scroll-proportion="0.2341338">
+            <state line="194" column="35" selection-start="8165" selection-end="8165" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -416,22 +578,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/LGPL-2.1.properties" />
-        <option value="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/LGPL-v3.properties" />
-        <option value="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/MIT-1.0.properties" />
-        <option value="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/Mozilla-1.1.properties" />
-        <option value="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/OSGI-2.0.properties" />
-        <option value="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GNUAfferoGeneralPublicLicense-v3.properties" />
-        <option value="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GNUAGPL-v3.properties" />
-        <option value="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/CDDL-1.0.properties" />
-        <option value="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/library/LibraryLicense.java" />
-        <option value="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/library/LicenseLibrary.java" />
-        <option value="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/MarkdownUtils.java" />
-        <option value="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/Apache License-2.0.properties" />
-        <option value="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/OSGi-2.0.properties" />
-        <option value="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/OSGiSL-2.0.properties" />
-        <option value="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/OSGiSpecificationLicense-2.0.properties" />
-        <option value="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/OSGi-2.0-License.txt" />
+        <option value="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime/pom.xml" />
+        <option value="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime-all/pom.xml" />
+        <option value="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-source/pom.xml" />
+        <option value="$PROJECT_DIR$/CodeLicenseManager-ant-task/pom.xml" />
+        <option value="$PROJECT_DIR$/CodeLicenseManager-command-line/pom.xml" />
+        <option value="$PROJECT_DIR$/CodeLicenseManager-dist/pom.xml" />
+        <option value="$PROJECT_DIR$/CodeLicenseManager-documentation/pom.xml" />
+        <option value="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/pom.xml" />
+        <option value="$PROJECT_DIR$/CodeLicenseManager-manager/pom.xml" />
+        <option value="$PROJECT_DIR$/CodeLicenseManager-maven-plugin/pom.xml" />
+        <option value="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/pom.xml" />
+        <option value="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/pom.xml" />
+        <option value="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/pom.xml" />
+        <option value="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/pom.xml" />
       </list>
     </option>
   </component>
@@ -659,7 +821,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager-maven-plugin" />
+              <option name="myItemId" value="CodeLicenseManager-documentation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -673,293 +835,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager-maven-plugin" />
+              <option name="myItemId" value="CodeLicenseManager-documentation" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager-maven-plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager-maven-plugin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codelicmgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager-manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager-manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager-manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager-manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codelicmgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager-manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codelicmgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="library" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager-manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codelicmgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager-manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="codelicmgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="licenses" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LicenseResourceProvider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager-licenses-common-opensource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager-licenses-common-opensource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="licenses" />
+              <option name="myItemId" value="docs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1016,6 +896,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses" />
       <recent name="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters" />
       <recent name="$PROJECT_DIR$/CodeLicenseManager-documentation/docs/parts" />
@@ -1284,7 +1165,11 @@
       <created>1362338263528</created>
       <updated>1362338263528</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="- Greatly improved the HTML to markdown converter. Does a pretty good job for license texts at least.&#10;- Made already made markdown versions of several licenses available.&#10;">
+      <created>1362585665594</created>
+      <updated>1362585665594</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1309,7 +1194,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="112" y="67" width="2105" height="1314" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Dilbert" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3274707" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1321,17 +1206,17 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="BSFConsole" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295796" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32914573" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21925133" sideWeight="0.54461277" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295796" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975206" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25643516" sideWeight="0.44732442" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22972317" sideWeight="0.55108875" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22972317" sideWeight="0.6708543" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25643516" sideWeight="0.55108875" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25643516" sideWeight="0.6708543" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44891122" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Code Consultant" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1383,7 +1268,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="dumbug workaround." />
+    <option name="LAST_COMMIT_MESSAGE" value="- Greatly improved the HTML to markdown converter. Does a pretty good job for license texts at least.&#10;- Made already made markdown versions of several licenses available.&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1413,6 +1298,7 @@
     <MESSAGE value="Ran CLM apply on all sources to update source headers with current version.&#10;" />
     <MESSAGE value="Damn it! Forgot to update README.md file." />
     <MESSAGE value="dumbug workaround." />
+    <MESSAGE value="- Greatly improved the HTML to markdown converter. Does a pretty good job for license texts at least.&#10;- Made already made markdown versions of several licenses available.&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1422,114 +1308,114 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GNUAGPL-v3.properties">
+    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-annotations-retention-source/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.0">
+        <state line="19" column="23" selection-start="649" selection-end="649" vertical-scroll-proportion="-11.875">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GNUPublicLicense-v2.properties">
+    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime-all/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="39" selection-start="1318" selection-end="1318" vertical-scroll-proportion="0.0">
+        <state line="18" column="23" selection-start="592" selection-end="592" vertical-scroll-proportion="-11.25">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/CDDL-1.0.properties">
+    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="1409" selection-end="1409" vertical-scroll-proportion="0.0">
+        <state line="18" column="23" selection-start="601" selection-end="601" vertical-scroll-proportion="-11.25">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/CodeLicenseManager.java">
+    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-command-line/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="407" column="29" selection-start="16617" selection-end="16617" vertical-scroll-proportion="0.0">
+        <state line="13" column="23" selection-start="608" selection-end="608" vertical-scroll-proportion="-8.125">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-maven-plugin/src/main/java/se/natusoft/tools/codelicmgr/CodeLicenseManagerInstallMojo.java">
+    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-dist/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="246" column="23" selection-start="7613" selection-end="7613" vertical-scroll-proportion="0.0">
+        <state line="13" column="23" selection-start="600" selection-end="600" vertical-scroll-proportion="-8.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-documentation/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="23" selection-start="617" selection-end="617" vertical-scroll-proportion="41.25">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="12" column="23" selection-start="405" selection-end="405" vertical-scroll-proportion="-7.5">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CodeLicenseManager-maven-plugin/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="38" selection-start="1556" selection-end="1563" vertical-scroll-proportion="0.5122592">
+        <state line="13" column="23" selection-start="636" selection-end="636" vertical-scroll-proportion="-8.125">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/library/LicenseLibrary.java">
+    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="178" column="68" selection-start="7218" selection-end="7218" vertical-scroll-proportion="0.0">
+        <state line="12" column="23" selection-start="407" selection-end="407" vertical-scroll-proportion="-7.5">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/codelicmgr/licenses/LicenseResourceProvider.java">
+    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="9" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0">
+        <state line="12" column="23" selection-start="402" selection-end="402" vertical-scroll-proportion="-7.5">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/library/LibraryLicense.java">
+    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="393" column="44" selection-start="13953" selection-end="13969" vertical-scroll-proportion="0.0">
+        <state line="12" column="23" selection-start="398" selection-end="398" vertical-scroll-proportion="-7.5">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/Apache License-2.0.properties">
+    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="1380" selection-end="1427" vertical-scroll-proportion="0.0">
+        <state line="12" column="23" selection-start="405" selection-end="405" vertical-scroll-proportion="-7.5">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/OSGi-2.0.properties">
+    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="1395" selection-end="1395" vertical-scroll-proportion="0.0">
+        <state line="12" column="13" selection-start="383" selection-end="383" vertical-scroll-proportion="-7.5">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/OSGiSL-2.0.properties">
+    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="1395" selection-end="1395" vertical-scroll-proportion="0.0">
+        <state line="1" column="9" selection-start="31" selection-end="31" vertical-scroll-proportion="-0.625">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/OSGiSpecificationLicense-2.0.properties">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="1395" selection-end="1395" vertical-scroll-proportion="0.0">
+        <state line="35" column="31" selection-start="1686" selection-end="1686" vertical-scroll-proportion="-21.875">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/OSGi-2.0-License.txt">
+    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-manager/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="3545" selection-end="3545" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/MarkdownUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="194" column="35" selection-start="8165" selection-end="8165" vertical-scroll-proportion="0.2341338">
+        <state line="40" column="36" selection-start="1394" selection-end="1394" vertical-scroll-proportion="0.80106807">
           <folding />
         </state>
       </provider>

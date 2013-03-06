@@ -6,7 +6,7 @@
     <!-- Artifact information -->
     <groupId>se.natusoft.tools.codelicmgr</groupId>
     <artifactId>CodeLicenseManager</artifactId>
-    <version>2.1</version>
+    <version><!--VER-->2.1.1</version>
     <packaging>pom</packaging>
 
     <url>https://github.com/tombensve/CodeLicenseManager</url>
@@ -33,7 +33,7 @@
         <copyrightHolderWeb>http://www.natusoft.se/</copyrightHolderWeb>
         <developer1Name>Tommy Svensson</developer1Name>
         <developer1Email>tommy@natusoft.se</developer1Email>
-        <app.version>2.1</app.version>
+        <app.version><!--VER-->2.1.1</app.version>
     </properties>
     <licenses>
         <license>

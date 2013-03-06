@@ -1,4 +1,4 @@
-# Code License Manager 2.1
+# Code License Manager 2.1.1
 
 ## Introduction
 
@@ -23,7 +23,15 @@ If your CM tool allows pre checkin scripts to be run it can be plugged in at tha
 time to make sure all checked in code has the license text. If a source file already 
 has the license text nothing will be changed, if it doesn't it will be added. 
 
-## Version 2.1 changes
+## Version changes
+
+__Version 2.1.1__
+
+* Greatly improved HTML to Markdown conversion of downloaded licenses.
+* Fixed misspelling in OSGi license properties file.
+* Made already made markdown versions of several licenses available in license library.
+
+__Version 2.1__
 
 * Generated APT and Markdown documents now links to license on web if possible instead of locally installed license file. This due to that all licenses that is not in local license library and that has an url to the license text on the web is not downloadable by a java.net.URL! Specifically Glassfish stuff that wants a certificate to download license (I keep my pesonal thoughts about that to myself!). If you click on a link that brings you to the page in a browser then the browser deals with the certificate request, but java.net.URL does not. It throws an exception. CLM will still install local license files and download if possible. Those files will just not be linked from the generated doc. 
 
