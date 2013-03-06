@@ -175,7 +175,7 @@ __TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION__
 
 __END OF TERMS AND CONDITIONS__
 
-## APPENDIX: How to apply the Apache License to your work.
+### APPENDIX: How to apply the Apache License to your work.
 
 To apply the Apache License to your work, attach the following
 boilerplate notice, with the fields enclosed by brackets "\[\]"

@@ -208,25 +208,48 @@ public class MarkdownUtils {
                 htmlSource = libraryLic.getURL().endsWith(".html") || libraryLic.getURL().endsWith(".htm");
             }
 
-            while ((line = from.readLine()) != null) {
-                if (!htmlSource) {
+            if (!htmlSource) {
+                while ((line = from.readLine()) != null) {
                     ps.println("\t" + line);
                 }
-                else {
-                    // Downloaded licenses
-                    boolean skip = false;
+            }
+            else {
+                String ln = from.readLine();
+                while (!ln.trim().startsWith("<body") && ln != null) {
+                    ln = from.readLine();
+                }
+                if (ln == null) {
+                    from = new BufferedReader(new InputStreamReader(libraryLic.getFullTextStream()));
+                }
 
-                    if (line.trim().startsWith("<!DOCTYPE") || line.trim().startsWith("<!doctype")) skip = true;
-
-                    if (line.startsWith("\t") || line.startsWith("    ")) {
-                        String trimmed = line.trim();
-                        if (trimmed.startsWith("<")) skip = true;
+                StringWriter sw = new StringWriter();
+                int c = from.read();
+                boolean write = true;
+                while (c != -1) {
+                    if (c == 'p' && !write) {
+                        ps.println();
+                    }
+                    if (c == '>' && !write) {
+                        write = true;
+                    }
+                    else if (c == '<' && write) {
+                        write = false;
+                    }
+                    else if (write) {
+                        sw.write(c);
                     }
 
-                    if (line.contains("http://www.w3.org/")) skip = true;
-
-                    if (!skip) ps.println(line);
+                    c = from.read();
                 }
+
+                String licText = sw.toString();
+                sw.close();
+                licText = licText.replace("&quot;", "\"");
+                licText = licText.replace("&gt;", ">");
+                licText = licText.replace("&lt;", "<");
+
+                ps.print(licText);
+
             }
         }
         catch (IOException ioe) {

@@ -356,6 +356,48 @@ public class LibraryLicense {
     }
 
     /**
+     * Returns the full path to the license text file or an url.
+     *
+     * @throws IOException
+     */
+    public String getFullTextResource() throws IOException {
+        String resource = null;
+
+        if (this.fullTextFileName == null) {
+            if (this.url != null) {
+                this.fullTextFileName = this.url;
+            }
+            else {
+                if (this.downloadable) {
+                    if (this.url != null) {
+                        return new URL(this.url).toString();
+                    }
+                    else {
+                        throw new IOException("This license is not available in a library and no url have been found for it either!");
+                    }
+                }
+                else {
+                    throw new IOException("No full text filename nor an url have been provided!");
+                }
+            }
+        }
+
+        if (this.fullTextFileName.startsWith("http:")) {
+            File cache = getLicenseTextCacheFile();
+            if (!cache.exists()) {
+                CopyTool.copyFile(new URL(this.fullTextFileName).openStream(), cache);
+            }
+
+            resource = cache.getAbsolutePath();
+        }
+        else {
+            resource = this.fullTextFileName;
+        }
+
+        return resource;
+    }
+
+    /**
      * @return A possible cache file for a license text. Check with exists() to se if it exists.
      */
     private File getLicenseTextCacheFile() {
