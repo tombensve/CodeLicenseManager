@@ -24,7 +24,7 @@ import se.natusoft.tools.fileeditor.TextFileEditor;
 
 @Project(
     name="CodeLicenseManager-manager",
-    codeVersion="2.1",
+    codeVersion="2.1.1",
     description="Manages project and license information in project sourcecode" +
                 "and provides license text files for inclusion in builds. Supports" +
                 "multiple languages and it is relatively easy to add a new" +
@@ -130,7 +130,7 @@ public class CodeLicenseManager {
     public CodeLicenseManager(Configuration config, boolean loadLicenseLib) throws CodeLicenseException {
         this.config = config;
 
-        Display.msg("CodeLicenseManager 2.1\nMaintained by Tommy Svensson (tommy@natusoft.se)");
+        Display.msg("CodeLicenseManager 2.1.1\nMaintained by Tommy Svensson (tommy@natusoft.se)");
 
         if (loadLicenseLib) {
 

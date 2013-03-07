@@ -13,7 +13,7 @@ import se.natusoft.tools.optionsmgr.annotations.OptionsModel;
 
 @Project(
     name="CodeLicenseManager-manager",
-    codeVersion="2.1",
+    codeVersion="2.1.1",
     description="Manages project and license information in project sourcecode" +
                 "and provides license text files for inclusion in builds. Supports" +
                 "multiple languages and it is relatively easy to add a new" +

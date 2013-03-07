@@ -3,16 +3,46 @@
   <component name="ChangeListManager">
     <list default="true" id="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-documentation/docs/CLM-User-Guide.pdf" afterPath="$PROJECT_DIR$/CodeLicenseManager-documentation/docs/CLM-User-Guide.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/CodeLicenseException.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/CodeLicenseException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/CodeLicenseManager.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/CodeLicenseManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/CodeOptionsConfig.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/CodeOptionsConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/Configuration.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/Configuration.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/CopyTool.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/CopyTool.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/CopyrightConfig.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/CopyrightConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/CopyrightsConfig.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/CopyrightsConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/Display.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/Display.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/InstallOptionsConfig.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/InstallOptionsConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/library/LibraryLicense.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/library/LibraryLicense.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/LicenseConfig.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/LicenseConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/library/LicenseLibrary.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/library/LicenseLibrary.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/codelicmgr/licenses/LicenseResourceProvider.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/codelicmgr/licenses/LicenseResourceProvider.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/MarkdownUtils.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/MarkdownUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/ProductConfig.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/ProductConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/ProductsConfig.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/ProductsConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/ProjectConfig.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/ProjectConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/ScriptConfig.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/ScriptConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/scripting/ScriptingException.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/scripting/ScriptingException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/ScriptsConfig.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/ScriptsConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/scripting/SourceCodeUpdateScriptManager.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/scripting/SourceCodeUpdateScriptManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/SourceCodeUpdater.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/SourceCodeUpdater.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/codelicmgr/sourcecodeupdaters/SourceCodeUpdaterResourceProvider.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/codelicmgr/sourcecodeupdaters/SourceCodeUpdaterResourceProvider.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/SourcePath.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/SourcePath.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/ThirdpartyLicenseConfig.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/ThirdpartyLicenseConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/ThirdpartyLicensesConfig.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/ThirdpartyLicensesConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/UserDataConfig.java" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/config/UserDataConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/resources/codelicmgr/sourcecodeupdaters/scripts/copyrightSupport.bsh" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/resources/codelicmgr/sourcecodeupdaters/scripts/copyrightSupport.bsh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
+    <list id="01349d4b-fd16-4e6f-9be5-4f95c38928b9" name="Failed commit: Default" comment="Regenerated license and version info with CLM. This also updates The CodeLicenseManager class with the current version number that are printed on execution.">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/ApacheSoftwareLicense-2.0.properties" afterPath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/Apache-2.properties" />
     </list>
     <ignored path="CodeLicenseManager.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1362587462557" ignored="false" />
+    <file path="/Dummy.txt" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1362683023702" ignored="false" />
     <file path="/CodeLicenseManager.java" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1362254100113" ignored="false" />
     <file path="$PROJECT_DIR$/../PropertiesCollectorMavenPlugin/src/main/java/se/natusoft/maven/plugin/properties/PropertySet.java" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1359228098581" ignored="false" />
     <file path="/PropertySet.java" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1359228098581" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OSGi/OSGiApplicationPlatformServices/.idea/workspace.xml" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1362587467150" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OSGi/OSGiApplicationPlatformServices/.idea/workspace.xml" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1362683023085" ignored="false" />
     <file path="$PROJECT_DIR$/../PropertiesCollectorMavenPlugin/src/main/java/se/natusoft/maven/plugin/properties/PropertySpec.java" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1359228201690" ignored="false" />
     <file path="/PropertySpec.java" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1359228199587" ignored="false" />
     <file path="$PROJECT_DIR$/../PropertiesCollectorMavenPlugin/src/main/java/se/natusoft/maven/plugin/properties/PropertiesCollectorMavenPlugin.java" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1359228464990" ignored="false" />
@@ -21,11 +51,11 @@
     <file path="/pom.xml" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1362587350411" ignored="false" />
     <file path="/updateLicenseInfo.bsh" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1359824492412" ignored="false" />
     <file path="$PROJECT_DIR$/../../OSGi/OSGiApplicationPlatformServices/APS-Data/APSDataSource/pom.xml" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1359824651876" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OSGi/OSGiApplicationPlatformServices/APS-Data/APSDataSource/docs/aps-datasource.html" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1359824651876" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OSGi/OSGiApplicationPlatformServices/APS-Data/APSDataSource/docs/aps-datasource.html" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1362682764292" ignored="false" />
     <file path="/UserGuide.md" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1359825106511" ignored="false" />
     <file path="/CDDL + GPLv2 with classpath-exception.properties" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1361733301875" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OSGi/OSGiApplicationPlatformServices/APS-UserGuide/docs/APS-UserGuide.html" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1362340077756" ignored="false" />
-    <file path="$PROJECT_DIR$/../../OSGi/OSGiApplicationPlatformServices/APS-Webs/APSUserAdminWeb/docs/aps-user-admin-web.html" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1362340077756" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OSGi/OSGiApplicationPlatformServices/APS-UserGuide/docs/APS-UserGuide.html" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1362682764292" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OSGi/OSGiApplicationPlatformServices/APS-Webs/APSUserAdminWeb/docs/aps-user-admin-web.html" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1362682764292" ignored="false" />
     <file path="/LicenseLibrary.java" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1362338884661" ignored="false" />
     <file path="$PROJECT_DIR$/../../OSGi/OSGiApplicationPlatformServices/APS-Core/APSConfigServiceProvider/docs/aps-configuration-service-provider.html" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1362340077756" ignored="false" />
     <file path="$MAVEN_REPOSITORY$/se/natusoft/maven/plugin/ftp-maven-plugin/1.0/ftp-maven-plugin-1.0.jar!/META-INF/maven/plugin.xml" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1362158951551" ignored="false" />
@@ -74,6 +104,7 @@
     <file path="$PROJECT_DIR$/../../OSGi/OSGiApplicationPlatformServices/APS-APIs/aps-apis.iml" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1362587386992" ignored="false" />
     <file path="$PROJECT_DIR$/../../OSGi/OSGiApplicationPlatformServices/APS-Auth/APSSimpleUserServiceProvider/aps-simple-user-service-provider.iml" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1362587386992" ignored="false" />
     <file path="$PROJECT_DIR$/../../OSGi/OSGiApplicationPlatformServices/APS-Auth/APSSimpleUserServiceAuthServiceProvider/aps-simple-user-service-auth-service-provider.iml" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1362587270159" ignored="false" />
+    <file path="$PROJECT_DIR$/../../OSGi/OSGiApplicationPlatformServices/APS-Misc/APSResolvingBundleDeployer/docs/aps-resolving-bundle-deployer.html" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1362682764292" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +166,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="31" selection-start="1686" selection-end="1686" vertical-scroll-proportion="0.0">
+            <state line="35" column="31" selection-start="1686" selection-end="1686" vertical-scroll-proportion="-21.875">
               <folding />
             </state>
           </provider>
@@ -213,10 +244,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CodeLicenseManager-manager/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="7" selection-start="763" selection-end="763" vertical-scroll-proportion="0.30157343">
+            <state line="23" column="7" selection-start="763" selection-end="763" vertical-scroll-proportion="-14.375">
               <folding />
             </state>
           </provider>
@@ -279,16 +310,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="9" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="setVersion.sh" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/setVersion.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="13" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0">
+            <state line="1" column="9" selection-start="31" selection-end="31" vertical-scroll-proportion="-0.625">
               <folding />
             </state>
           </provider>
@@ -296,15 +318,6 @@
       </file>
       <file leaf-file-name="Apache-2.0.properties" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/Apache-2.0.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApacheSoftwareLicense-2.0.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/ApacheSoftwareLicense-2.0.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state line="6" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
               <folding />
@@ -333,7 +346,7 @@
       <file leaf-file-name="MarkdownUtils.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/MarkdownUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="194" column="35" selection-start="8165" selection-end="8165" vertical-scroll-proportion="0.0">
+            <state line="195" column="13" selection-start="8181" selection-end="8181" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -351,7 +364,7 @@
       <file leaf-file-name="LibraryLicense.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/library/LibraryLicense.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="393" column="44" selection-start="13953" selection-end="13969" vertical-scroll-proportion="0.0">
+            <state line="394" column="9" selection-start="13955" selection-end="13971" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -360,7 +373,7 @@
       <file leaf-file-name="LicenseLibrary.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/library/LicenseLibrary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="178" column="68" selection-start="7218" selection-end="7218" vertical-scroll-proportion="0.0">
+            <state line="179" column="40" selection-start="7282" selection-end="7282" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -369,16 +382,16 @@
       <file leaf-file-name="LicenseResourceProvider.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/codelicmgr/licenses/LicenseResourceProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="9" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0">
+            <state line="12" column="9" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CodeLicenseManager.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="CodeLicenseManager.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/CodeLicenseManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="407" column="29" selection-start="16617" selection-end="16617" vertical-scroll-proportion="0.0">
+            <state line="38" column="10" selection-start="1594" selection-end="1594" vertical-scroll-proportion="0.3492885">
               <folding />
             </state>
           </provider>
@@ -405,7 +418,16 @@
       <file leaf-file-name="GNUAfferoGeneralPublicLicense-v3.properties" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GNUAfferoGeneralPublicLicense-v3.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="0" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.0">
+            <state line="45" column="0" selection-start="1437" selection-end="1437" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Apache-2.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/Apache-2.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="2" selection-start="1168" selection-end="1168" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -432,7 +454,7 @@
       <file leaf-file-name="GNUPublicLicense-v3.properties" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GNUPublicLicense-v3.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="13" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+            <state line="46" column="0" selection-start="1417" selection-end="1417" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -540,7 +562,16 @@
       <file leaf-file-name="Apache License-2.0.properties" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/Apache License-2.0.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="0" selection-start="1380" selection-end="1427" vertical-scroll-proportion="0.0">
+            <state line="47" column="0" selection-start="1380" selection-end="1427" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApacheSoftwareLicense-2.0.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/ApacheSoftwareLicense-2.0.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="0" selection-start="1433" selection-end="1433" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -564,7 +595,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime/pom.xml" />
         <option value="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime-all/pom.xml" />
         <option value="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-source/pom.xml" />
         <option value="$PROJECT_DIR$/CodeLicenseManager-ant-task/pom.xml" />
@@ -580,6 +610,7 @@
         <option value="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/pom.xml" />
         <option value="$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/pom.xml" />
         <option value="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/pom.xml" />
+        <option value="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/CodeLicenseManager.java" />
       </list>
     </option>
   </component>
@@ -769,26 +800,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -817,7 +828,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager-documentation" />
+              <option name="myItemId" value="CodeLicenseManager-manager" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -831,12 +842,154 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="CodeLicenseManager-documentation" />
+              <option name="myItemId" value="CodeLicenseManager-manager" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="docs" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeLicenseManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeLicenseManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeLicenseManager-manager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeLicenseManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeLicenseManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeLicenseManager-manager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codelicmgr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeLicenseManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeLicenseManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeLicenseManager-manager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeLicenseManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeLicenseManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeLicenseManager-licenses-common-opensource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeLicenseManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeLicenseManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeLicenseManager-licenses-common-opensource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="licenses" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CodeLicenseManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -845,12 +998,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="SDKs" />
-    <property name="OverrideImplement.combined" value="false" />
     <property name="project.structure.proportion" value="0.0" />
+    <property name="OverrideImplement.combined" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="FileHistory.org.zmlx.hg4idea.provider.HgHistoryProvider_treeWidth1" value="313" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
     <property name="FileHistory.org.zmlx.hg4idea.provider.HgHistoryProvider_treeWidth2" value="317" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FileHistory.org.zmlx.hg4idea.provider.HgHistoryProvider_treeWidth0" value="312" />
@@ -872,18 +1025,18 @@
     <property name="FileHistory.org.zmlx.hg4idea.provider.HgHistoryProvider_flatWidth0" value="306" />
     <property name="options.lastSelected" value="MavenSettings" />
     <property name="FileHistory.org.zmlx.hg4idea.provider.HgHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.org.zmlx.hg4idea.provider.HgHistoryProvider_flatOrder0" value="0" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="FileHistory.org.zmlx.hg4idea.provider.HgHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.org.zmlx.hg4idea.provider.HgHistoryProvider_flatOrder3" value="3" />
-    <property name="FileHistory.org.zmlx.hg4idea.provider.HgHistoryProvider_flatOrder2" value="2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="dynamic.classpath" value="false" />
+    <property name="FileHistory.org.zmlx.hg4idea.provider.HgHistoryProvider_flatOrder2" value="2" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/src/main/resources/codelicmgr/sourcecodeupdaters" />
       <recent name="$PROJECT_DIR$/CodeLicenseManager-documentation/docs/parts" />
       <recent name="$PROJECT_DIR$/CodeLicenseManager-documentation/docs" />
@@ -1013,6 +1166,13 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" runner="idea" />
       <module name="" />
@@ -1032,13 +1192,6 @@
       </option>
       <envs />
       <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
     <list size="1">
@@ -1199,13 +1352,14 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21925133" sideWeight="0.54461277" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295796" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32914573" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25643516" sideWeight="0.44732442" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23215152" sideWeight="0.55108875" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23457989" sideWeight="0.6708543" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25643516" sideWeight="0.55108875" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44891122" sideWeight="0.49830014" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25643516" sideWeight="0.6708543" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44816053" sideWeight="0.49830014" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Code Consultant" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1215,7 +1369,6 @@
       <window_info id="IntelliJad Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295796" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UML Diagrams" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Code Graph" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298077" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975206" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Graphical Navigator" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1258,7 +1411,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated version number in poms and docs." />
+    <option name="LAST_COMMIT_MESSAGE" value="Regenerated license and version info with CLM. This also updates The CodeLicenseManager class with the current version number that are printed on execution." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1290,6 +1443,7 @@
     <MESSAGE value="dumbug workaround." />
     <MESSAGE value="- Greatly improved the HTML to markdown converter. Does a pretty good job for license texts at least.&#10;- Made already made markdown versions of several licenses available.&#10;" />
     <MESSAGE value="Updated version number in poms and docs." />
+    <MESSAGE value="Regenerated license and version info with CLM. This also updates The CodeLicenseManager class with the current version number that are printed on execution." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1299,48 +1453,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime-all/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="23" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="23" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-command-line/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="23" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-dist/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="23" selection-start="600" selection-end="600" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-documentation/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="23" selection-start="617" selection-end="617" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="23" selection-start="405" selection-end="405" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CodeLicenseManager-maven-plugin/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="23" selection-start="636" selection-end="636" vertical-scroll-proportion="0.0">
@@ -1383,30 +1495,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/pom.xml">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="9" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0">
+        <state line="35" column="31" selection-start="1686" selection-end="1686" vertical-scroll-proportion="-21.875">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/setVersion.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="31" selection-start="1686" selection-end="1686" vertical-scroll-proportion="0.0">
+        <state line="11" column="13" selection-start="433" selection-end="433" vertical-scroll-proportion="0.14126712">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="9" selection-start="31" selection-end="31" vertical-scroll-proportion="-0.625">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/Apache License-2.0.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="1380" selection-end="1427" vertical-scroll-proportion="0.0">
+        <state line="47" column="0" selection-start="1380" selection-end="1427" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/ApacheSoftwareLicense-2.0.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="0" selection-start="1433" selection-end="1433" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GNUPublicLicense-v3.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="0" selection-start="1417" selection-end="1417" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/GNUAfferoGeneralPublicLicense-v3.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="0" selection-start="1437" selection-end="1437" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/Apache-2.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="2" selection-start="1168" selection-end="1168" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CodeLicenseManager-manager/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="7" selection-start="763" selection-end="763" vertical-scroll-proportion="0.30157343">
+        <state line="23" column="7" selection-start="763" selection-end="763" vertical-scroll-proportion="-14.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/CodeLicenseManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="10" selection-start="1594" selection-end="1594" vertical-scroll-proportion="0.3492885">
           <folding />
         </state>
       </provider>
