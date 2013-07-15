@@ -515,13 +515,13 @@ is part of the maven plugin specification in the pom.xml file. Example:
     ...
     <plugins>
         <plugin>
-            <groupId>se.biltmore.tools.codelicmgr</groupId>
+            <groupId>se.natusoft.tools.codelicmgr</groupId>
             <artifactId>CodeLicenseManager-maven-plugin</artifactId>
             <version>2.0</version>
     
             <dependencies>
                 <dependency>
-                    <groupId>se.biltmore.tools.codelicmgr</groupId>
+                    <groupId>se.natusoft.tools.codelicmgr</groupId>
                     <artifactId>
                         CodeLicenseManager-licenses-common-opensource
                     </artifactId>
@@ -1290,13 +1290,13 @@ Use the CodeLicenseManager-maven-plugin with the "delete" goal. Here is an examp
 
     <plugin>
     
-        <groupId>se.biltmore.tools.codelicmgr</groupId>
+        <groupId>se.natusoft.tools.codelicmgr</groupId>
         <artifactId>CodeLicenseManager-maven-plugin</artifactId>
         <version>2.0</version>
     
         <dependencies>
             <dependency>
-                <groupId>se.biltmore.tools.codelicmgr</groupId>
+                <groupId>se.natusoft.tools.codelicmgr</groupId>
                 <artifactId>CodeLicenseManager-source-updater-java-annotation</artifactId>
                 <version>2.0</version>
             </dependency>
@@ -1654,7 +1654,7 @@ have any name, but I have used updater.properties:
     updater.copyright=
     
     # The name and email of the maintainer.
-    updater.maintainer=Maintained by Tommy Svensson (opensource@biltmore.se)
+    updater.maintainer=Maintained by Tommy Svensson (tommy@natusoft.se)
     
     # Where to turn for support.
     updater.support=For support goto http://sourceforge.net/projects/codelicmgr/support 
