@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
@@ -77,85 +76,32 @@
                                         <!--
                                             Plese note that we are cheating ant wise by letting maven setup our classpath :-)
                                         -->
-                                        <taskdef name="clmapply" classname="se.natusoft.tools.codelicmgr.CodeLicenseManagerApplyAntTask"/>
-                                        <taskdef name="clminstall" classname="se.natusoft.tools.codelicmgr.CodeLicenseManagerInstallAntTask"/>
+                                        <taskdef name="clmapply" classname="se.natusoft.tools.codelicmgr.CodeLicenseManagerApplyAntTask" />
+                                        <taskdef name="clminstall" classname="se.natusoft.tools.codelicmgr.CodeLicenseManagerInstallAntTask" />
 
                                         <clmapply debug="true">
-                                            <project
-                                                name="CodeLicenseManager"
-                                                codeVersion="2.5"
-                                                subProjectOf=""
-                                                description="Manages project and license information in project sourcecode&#xa;
-                                                    and provides license text for inclusion in builds."
-                                            />
-                                            <copyright
-                                                year="2008"
-                                                holder="Tommy Svensson"
-                                            />
-                                            <copyright
-                                                year="2009"
-                                                holder="Biltmore Group AB"
-                                            />
-                                            <license
-                                                type="Apache"
-                                                version="2.0"
-                                            />
-                                            <thirdPartyLicense
-                                                type="Apache"
-                                                version="2.0"
-                                            />
-                                            <thirdPartyLicense
-                                                type="LGPL"
-                                                version="v3"
-                                            />
+                                            <project name="CodeLicenseManager" codeVersion="2.5" subProjectOf="" description="Manages project and license information in project sourcecode&#xA;                                                     and provides license text for inclusion in builds." />
+                                            <copyright year="2008" holder="Tommy Svensson" />
+                                            <copyright year="2009" holder="Biltmore Group AB" />
+                                            <license type="Apache" version="2.0" />
+                                            <thirdPartyLicense type="Apache" version="2.0" />
+                                            <thirdPartyLicense type="LGPL" version="v3" />
                                             <!-- All options are optional. -->
-                                            <codeOptions
-                                                verbose="true"
-                                                codeLanguage=""
-                                                updateCopyright="true"
-                                                updateProject="true"
-                                                addAuthorsBlock="true"
-                                                sourceCodeDirs="${basedir}/src/test/java/**/.*.java"
-                                            />
+                                            <codeOptions verbose="true" codeLanguage="" updateCopyright="true" updateProject="true" addAuthorsBlock="true" sourceCodeDirs="${basedir}/src/test/java/**/.*.java" />
 
-                                            <userData name="maintainer" value="Tommy Svensson"/>
-                                            <userData name="Something" value="Whatever"/>
+                                            <userData name="maintainer" value="Tommy Svensson" />
+                                            <userData name="Something" value="Whatever" />
 
                                         </clmapply>
                                         <clminstall debug="true">
-                                            <project
-                                                name="CodeLicenseManager"
-                                                codeVersion="2.5"
-                                                subProjectOf=""
-                                                description="Manages project and license information in project sourcecode&#xa;
-                                                    and provides license text for inclusion in builds."
-                                            />
-                                            <copyright
-                                                year="2008"
-                                                holder="Tommy Svensson"
-                                            />
-                                            <copyright
-                                                year="2009"
-                                                holder="Biltmore Group AB"
-                                            />
-                                            <license
-                                                type="Apache"
-                                                version="2.0"
-                                            />
-                                            <thirdPartyLicense
-                                                type="Apache"
-                                                version="2.0"
-                                            />
-                                            <thirdPartyLicense
-                                                type="LGPL"
-                                                version="v3"
-                                            />
+                                            <project name="CodeLicenseManager" codeVersion="2.5" subProjectOf="" description="Manages project and license information in project sourcecode&#xA;                                                     and provides license text for inclusion in builds." />
+                                            <copyright year="2008" holder="Tommy Svensson" />
+                                            <copyright year="2009" holder="Biltmore Group AB" />
+                                            <license type="Apache" version="2.0" />
+                                            <thirdPartyLicense type="Apache" version="2.0" />
+                                            <thirdPartyLicense type="LGPL" version="v3" />
                                             <!-- All options are optional. -->
-                                            <installOptions
-                                                verbose="true"
-                                                licenseDir="${basedir}/target/license"
-                                                thirdpartyLicenseDir="${basedir}/target/license/thirdparty"
-                                            />
+                                            <installOptions verbose="true" licenseDir="${basedir}/target/license" thirdpartyLicenseDir="${basedir}/target/license/thirdparty" />
 
                                         </clminstall>
                                     </tasks>

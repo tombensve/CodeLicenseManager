@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<project>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
         <artifactId>CodeLicenseManager</artifactId>
         <groupId>se.natusoft.tools.codelicmgr</groupId>
@@ -42,7 +42,7 @@
                             <project>
                                 <name>CodeLicenseManager</name>
                                 <codeVersion>2.5</codeVersion>
-                                <subProjectOf></subProjectOf>
+                                <subProjectOf />
                                 <description>
                                     Manages project and license information in project sourcecode
                                     and provides license text for inclusion in builds.
@@ -76,7 +76,7 @@
                             <codeOptions>
                                 <verbose>true</verbose>
                                 <!-- If not set uses extension on source file to resolve. -->
-                                <codeLanguage></codeLanguage>
+                                <codeLanguage />
                                 <!-- If true updates the @Copyright annotation in source code. -->
                                 <updateCopyright>true</updateCopyright>
                                 <!-- If true updates the @Project annotation in source code. -->
