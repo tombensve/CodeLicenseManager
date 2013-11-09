@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
-<project>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
         <artifactId>CodeLicenseManager</artifactId>
         <groupId>se.natusoft.tools.codelicmgr</groupId>
-        <version><!--VER-->2.1.1</version>
+        <version><!--VER-->2.1.2-SNAPSHOT</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
     
     <groupId>se.natusoft.tools.codelicmgr</groupId>
     <artifactId>CodeLicenseManager-licenses-common-opensource</artifactId>
-    <version><!--VER-->2.1.1</version>
+    <version><!--VER-->2.1.2-SNAPSHOT</version>
 
     <name>CodeLicenseManager-licenses-common-opensource</name>
 
