@@ -149,6 +149,7 @@
         <module>CodeLicenseManager-documentation</module>
     </modules>
 
+    <!--
     <distributionManagement>
         <repository>
             <id>maven-repository-upload</id>
@@ -175,6 +176,7 @@
             <url>http://maven.natusoft.se/</url>
         </pluginRepository>
     </pluginRepositories>
+    -->
 
     <!--
         Profiles
