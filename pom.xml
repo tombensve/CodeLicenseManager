@@ -55,9 +55,9 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git@github.com:tombensve/CodeLicenseManager.git</connection>
-        <developerConnection>scm:git:git@github.com:tombensve/CodeLicenseManager.git</developerConnection>
-        <url>https://github.com/tombensve/CodeLicenseManager</url>
+        <connection>scm:git:git@github.com:tombensve/CodeLicenseManager-cenrel.git</connection>
+        <developerConnection>scm:git:git@github.com:tombensve/CodeLicenseManager-cenrel.git</developerConnection>
+        <url>https://github.com/tombensve/CodeLicenseManager-cenrel</url>
     </scm>
 
     <!--
