@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime-all" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CodeLicenseManager-annotations-retention-source" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CodeLicenseManager-ant-task" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CodeLicenseManager-command-line" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CodeLicenseManager-dist" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CodeLicenseManager-documentation" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CodeLicenseManager-manager" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CodeLicenseManager-maven-plugin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment" charset="UTF-8" />
+  </component>
 </project>
 
