@@ -3,31 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/APACHESOFTWARELICENSE-2.0.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-documentation/docs/CLM-User-Guide.pdf" afterPath="$PROJECT_DIR$/CodeLicenseManager-documentation/docs/CLM-User-Guide.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime/pom.xml" afterPath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime-all/pom.xml" afterPath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime-all/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-source/pom.xml" afterPath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-source/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-ant-task/pom.xml" afterPath="$PROJECT_DIR$/CodeLicenseManager-ant-task/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-command-line/pom.xml" afterPath="$PROJECT_DIR$/CodeLicenseManager-command-line/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-dist/pom.xml" afterPath="$PROJECT_DIR$/CodeLicenseManager-dist/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-documentation/pom.xml" afterPath="$PROJECT_DIR$/CodeLicenseManager-documentation/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/pom.xml" afterPath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/pom.xml" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-maven-plugin/pom.xml" afterPath="$PROJECT_DIR$/CodeLicenseManager-maven-plugin/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/pom.xml" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/pom.xml" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/pom.xml" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/pom.xml" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/pom.xml" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/pom.xml" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="01349d4b-fd16-4e6f-9be5-4f95c38928b9" name="Failed commit: Default" comment="Regenerated license and version info with CLM. This also updates The CodeLicenseManager class with the current version number that are printed on execution." />
     <ignored path="CodeLicenseManager.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1384020318407" ignored="false" />
+    <file path="/Dummy.txt" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1384020471240" ignored="false" />
     <file path="/CodeLicenseManager.java" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1362254100113" ignored="false" />
     <file path="$PROJECT_DIR$/../PropertiesCollectorMavenPlugin/src/main/java/se/natusoft/maven/plugin/properties/PropertySet.java" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1359228098581" ignored="false" />
     <file path="/PropertySet.java" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1359228098581" ignored="false" />
@@ -103,7 +85,7 @@
     <file path="$PROJECT_DIR$/../FileEditorMavenPlugin/src/main/java/se/natusoft/maven/plugin/ScriptConfig.java" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1382202424664" ignored="false" />
     <file path="$PROJECT_DIR$/../FileEditorMavenPlugin/pom.xml" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1382202582707" ignored="false" />
     <file path="/FileEditorMavenPlugin.java" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1382202531315" ignored="false" />
-    <file path="$PROJECT_DIR$/../FileEditor/.idea/workspace.xml" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1384020377556" ignored="false" />
+    <file path="$PROJECT_DIR$/../FileEditor/.idea/workspace.xml" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1384021207884" ignored="false" />
     <file path="$MAVEN_REPOSITORY$/se/natusoft/tools/codelicmgr/CodeLicenseManager-maven-plugin/2.1.1/CodeLicenseManager-maven-plugin-2.1.1.jar!/META-INF/maven/plugin.xml" changelist="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" time="1384020151060" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -165,10 +147,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="0" selection-start="2491" selection-end="2491" vertical-scroll-proportion="0.0">
+            <state line="4" column="0" selection-start="281" selection-end="281" vertical-scroll-proportion="0.06567425">
               <folding />
             </state>
           </provider>
@@ -192,10 +174,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CodeLicenseManager-command-line/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="38" selection-start="614" selection-end="614" vertical-scroll-proportion="0.17045455">
+            <state line="10" column="26" selection-start="489" selection-end="489" vertical-scroll-proportion="-6.25">
               <folding />
             </state>
           </provider>
@@ -233,8 +215,8 @@
         <option value="$PROJECT_DIR$/CodeLicenseManager-manager/src/main/java/se/natusoft/tools/codelicmgr/SourcePath.java" />
         <option value="$PROJECT_DIR$/CodeLicenseManager-manager/pom.xml" />
         <option value="$PROJECT_DIR$/CodeLicenseManager-dist/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/setVersion.sh" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -1021,7 +1003,11 @@
       <created>1384020299684</created>
       <updated>1384020299684</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Repaired the sonatype release damage.">
+      <created>1384020489826</created>
+      <updated>1384020489826</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1061,6 +1047,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21925133" sideWeight="0.54461277" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295796" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914573" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25643516" sideWeight="0.44732442" order="1" side_tool="true" content_ui="tabs" />
@@ -1078,7 +1065,6 @@
       <window_info id="IntelliJad Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295796" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UML Diagrams" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Code Graph" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298077" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914573" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Graphical Navigator" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1125,7 +1111,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added support for releasing to maven central." />
+    <option name="LAST_COMMIT_MESSAGE" value="Repaired the sonatype release damage." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1160,6 +1146,7 @@
     <MESSAGE value="Updated version number in poms and docs." />
     <MESSAGE value="Regenerated license and version info with CLM. This also updates The CodeLicenseManager class with the current version number that are printed on execution." />
     <MESSAGE value="Added support for releasing to maven central." />
+    <MESSAGE value="Repaired the sonatype release damage." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1238,13 +1225,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="0" selection-start="2491" selection-end="2491" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/setVersion.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="13" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0">
@@ -1254,7 +1234,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CodeLicenseManager-command-line/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="38" selection-start="614" selection-end="614" vertical-scroll-proportion="0.17045455">
+        <state line="10" column="26" selection-start="489" selection-end="489" vertical-scroll-proportion="-6.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="281" selection-end="281" vertical-scroll-proportion="0.06567425">
           <folding />
         </state>
       </provider>
