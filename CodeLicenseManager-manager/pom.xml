@@ -23,7 +23,7 @@
         <dependency>
             <groupId>se.natusoft.tools.fileeditor</groupId>
             <artifactId>FileEditor</artifactId>
-            <version>2.0</version>
+            <version>2.0.1</version>
             <scope>compile</scope>
         </dependency>
         <dependency>

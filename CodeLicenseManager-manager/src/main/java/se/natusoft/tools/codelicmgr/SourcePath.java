@@ -49,7 +49,7 @@ import se.natusoft.tools.codelicmgr.enums.Source;
     )
 })
 /*
- * Represents a path to source files and supplies functionallity to supply all
+ * Represents a path to source files and supplies functionality to supply all
  * relevant source files in that path.
  */
 public class SourcePath {
