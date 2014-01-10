@@ -121,6 +121,24 @@
                 </configuration>
             </plugin>
 
+            <!--
+                Package sources.
+            -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.2.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
         </plugins>
 
     </build>
@@ -149,34 +167,13 @@
         <module>CodeLicenseManager-documentation</module>
     </modules>
 
-    <!--
     <distributionManagement>
         <repository>
-            <id>maven-repository-upload</id>
-            <url>ftp://${maven.repo.upload}/${maven.base.path}</url>
+            <id>bintray-tommy-maven-CodeLicenseManager</id>
+            <name>tommy-maven-CodeLicenseManager</name>
+            <url>https://api.bintray.com/maven/tommy/maven/CodeLicenseManager</url>
         </repository>
     </distributionManagement>
-
-    <repositories>
-        <repository>
-            <id>maven-natusoft-se</id>
-            <name>
-                Natusofts maven repository
-            </name>
-            <url>http://maven.natusoft.se/</url>
-        </repository>
-    </repositories>
-
-    <pluginRepositories>
-        <pluginRepository>
-            <id>maven-natusoft-se</id>
-            <name>
-                Natusoft maven repository.
-            </name>
-            <url>http://maven.natusoft.se/</url>
-        </pluginRepository>
-    </pluginRepositories>
-    -->
 
     <!--
         Profiles
@@ -310,64 +307,6 @@
                             </execution>
                         </executions>
 
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-        <profile>
-            <id>sonaify</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>se.natusoft.tools.fileeditor</groupId>
-                        <artifactId>file-editor-maven-support-plugin</artifactId>
-                        <version>1.0</version>
-
-                        <dependencies>
-                            <dependency>
-                                <groupId>se.natusoft.tools.fileeditor</groupId>
-                                <artifactId>file-editor-maven-support-scripts</artifactId>
-                                <version>1.0</version>
-                            </dependency>
-                        </dependencies>
-                        <executions>
-                            <execution>
-                                <id>upd-parent-and-snapshot</id>
-                                <goals>
-                                    <goal>edit</goal>
-                                </goals>
-                                <phase>generate-sources</phase>
-                                <inherited>true</inherited>
-                                <configuration>
-                                    <scripts>
-                                        <script>
-                                            <forArtifactId>CodeLicenseManager</forArtifactId>
-                                            <scriptFile>script:pom_add_parent.bsh</scriptFile>
-                                            <sourcePath>${basedir}/pom.xml</sourcePath>
-                                            <variables>
-                                                <variable>
-                                                    <name>groupId</name>
-                                                    <value>org.sonatype.oss</value>
-                                                </variable>
-                                                <variable>
-                                                    <name>artifactId</name>
-                                                    <value>oss-parent</value>
-                                                </variable>
-                                                <variable>
-                                                    <name>version</name>
-                                                    <value>7</value>
-                                                </variable>
-                                            </variables>
-                                        </script>
-                                        <script>
-                                            <forArtifactId>CodeLicenseManager</forArtifactId>
-                                            <scriptFile>script:pom_add_snapshot_to_version.bsh</scriptFile>
-                                            <sourcePath>${basedir}/pom.xml</sourcePath>
-                                        </script>
-                                    </scripts>
-                                </configuration>
-                            </execution>
-                        </executions>
                     </plugin>
                 </plugins>
             </build>
