@@ -3,25 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/src/main/resources/codelicmgr/licenses/APACHESOFTWARELICENSE-2.0.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-documentation/docs/CLM-User-Guide.pdf" afterPath="$PROJECT_DIR$/CodeLicenseManager-documentation/docs/CLM-User-Guide.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime-all/CodeLicenseManager-annotations-retention-runtime-all.iml" afterPath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime-all/CodeLicenseManager-annotations-retention-runtime-all.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime/CodeLicenseManager-annotations-retention-runtime.iml" afterPath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-runtime/CodeLicenseManager-annotations-retention-runtime.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-source/CodeLicenseManager-annotations-retention-source.iml" afterPath="$PROJECT_DIR$/CodeLicenseManager-annotations-retention-source/CodeLicenseManager-annotations-retention-source.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-ant-task/CodeLicenseManager-ant-task.iml" afterPath="$PROJECT_DIR$/CodeLicenseManager-ant-task/CodeLicenseManager-ant-task.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-command-line/CodeLicenseManager-command-line.iml" afterPath="$PROJECT_DIR$/CodeLicenseManager-command-line/CodeLicenseManager-command-line.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-dist/CodeLicenseManager-dist.iml" afterPath="$PROJECT_DIR$/CodeLicenseManager-dist/CodeLicenseManager-dist.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-documentation/CodeLicenseManager-documentation.iml" afterPath="$PROJECT_DIR$/CodeLicenseManager-documentation/CodeLicenseManager-documentation.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/CodeLicenseManager-licenses-common-opensource.iml" afterPath="$PROJECT_DIR$/CodeLicenseManager-licenses-common-opensource/CodeLicenseManager-licenses-common-opensource.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-manager/CodeLicenseManager-manager.iml" afterPath="$PROJECT_DIR$/CodeLicenseManager-manager/CodeLicenseManager-manager.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-maven-plugin/CodeLicenseManager-maven-plugin.iml" afterPath="$PROJECT_DIR$/CodeLicenseManager-maven-plugin/CodeLicenseManager-maven-plugin.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/CodeLicenseManager-source-updater-groovy-annotation.iml" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-groovy-annotation/CodeLicenseManager-source-updater-groovy-annotation.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/CodeLicenseManager-source-updater-hash-comment.iml" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-hash-comment/CodeLicenseManager-source-updater-hash-comment.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/CodeLicenseManager-source-updater-html-xml.iml" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-html-xml/CodeLicenseManager-source-updater-html-xml.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/CodeLicenseManager-source-updater-java-annotation.iml" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-java-annotation/CodeLicenseManager-source-updater-java-annotation.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/CodeLicenseManager-source-updater-jsp.iml" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-jsp/CodeLicenseManager-source-updater-jsp.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/CodeLicenseManager-source-updater-slashstar-comment.iml" afterPath="$PROJECT_DIR$/CodeLicenseManager-source-updater-slashstar-comment/CodeLicenseManager-source-updater-slashstar-comment.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeLicenseManager.iml" afterPath="$PROJECT_DIR$/CodeLicenseManager.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="01349d4b-fd16-4e6f-9be5-4f95c38928b9" name="Failed commit: Default" comment="Regenerated license and version info with CLM. This also updates The CodeLicenseManager class with the current version number that are printed on execution." />
@@ -90,7 +72,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="61" selection-start="621" selection-end="621" vertical-scroll-proportion="0.19214347" vertical-offset="0" max-vertical-offset="4950">
+            <state line="23" column="17" selection-start="1053" selection-end="1053" vertical-scroll-proportion="0.30742955" vertical-offset="0" max-vertical-offset="4950">
               <folding />
             </state>
           </provider>
@@ -959,7 +941,7 @@
       <changelist id="02bd0dcf-a1d0-4a27-8940-3edfaab8bc91" name="Default" comment="" />
       <created>1331987431508</created>
       <updated>1331987431508</updated>
-      <workItem from="1389375975408" duration="1554000" />
+      <workItem from="1389375975408" duration="1717000" />
     </task>
     <task id="LOCAL-00001" summary="Removed truly stupid static cacheing of itself thereby fixing the truly stupid  bug that this caused!">
       <created>1336228235895</created>
@@ -1069,11 +1051,15 @@
       <created>1384021227053</created>
       <updated>1384021227053</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Now relases to bintray.">
+      <created>1389380523028</created>
+      <updated>1389380523028</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1554000" />
+    <option name="totallyTimeSpent" value="1717000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1113,6 +1099,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21925133" sideWeight="0.54461277" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295796" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914573" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25643516" sideWeight="0.44732442" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1132,7 +1119,6 @@
       <window_info id="IntelliJad Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295796" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UML Diagrams" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Code Graph" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298077" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914573" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Graphical Navigator" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1171,7 +1157,8 @@
     <MESSAGE value="Regenerated license and version info with CLM. This also updates The CodeLicenseManager class with the current version number that are printed on execution." />
     <MESSAGE value="Added support for releasing to maven central." />
     <MESSAGE value="Repaired the sonatype release damage." />
-    <option name="LAST_COMMIT_MESSAGE" value="Repaired the sonatype release damage." />
+    <MESSAGE value="Now relases to bintray." />
+    <option name="LAST_COMMIT_MESSAGE" value="Now relases to bintray." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1295,7 +1282,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="61" selection-start="621" selection-end="621" vertical-scroll-proportion="0.19214347" vertical-offset="0" max-vertical-offset="4950">
+        <state line="23" column="17" selection-start="1053" selection-end="1053" vertical-scroll-proportion="0.30742955" vertical-offset="0" max-vertical-offset="4950">
           <folding />
         </state>
       </provider>

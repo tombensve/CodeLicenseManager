@@ -17,3 +17,7 @@ _A tool for managing code license with code boilerplate update and license + thi
 ---
 
 [PDF Version](https://github.com/tombensve/CodeLicenseManager/blob/master/CodeLicenseManager-documentation/docs/CLM-User-Guide.pdf)
+
+---
+
+[Maven repo setup](https://github.com/tombensve/CommonStuff/blob/master/docs/MavenRepository.md)
