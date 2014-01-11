@@ -18,7 +18,6 @@
         <dependency>
             <artifactId>CodeLicenseManager-annotations-retention-source</artifactId>
             <groupId>se.natusoft.tools.codelicmgr</groupId>
-            <version>${project.version}</version>
         </dependency>
     </dependencies>
 
@@ -33,17 +32,14 @@
                     <plugin>
                         <groupId>${project.groupId}</groupId>
                         <artifactId>CodeLicenseManager-maven-plugin</artifactId>
-                        <version>${project.version}</version>
                         <dependencies>
                             <dependency>
                                 <groupId>${project.groupId}</groupId>
                                 <artifactId>CodeLicenseManager-licenses-common-opensource</artifactId>
-                                <version>${project.version}</version>
                             </dependency>
                             <dependency>
                                 <groupId>${project.groupId}</groupId>
                                 <artifactId>CodeLicenseManager-source-updater-java-annotation</artifactId>
-                                <version>${project.version}</version>
                             </dependency>
                         </dependencies>
                         <configuration>

@@ -60,6 +60,128 @@
         <url>https://github.com/tombensve/CodeLicenseManager-cenrel</url>
     </scm>
 
+    <dependencyManagement>
+        <dependencies>
+            <!-- Internal -->
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>CodeLicenseManager-manager</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>CodeLicenseManager-licenses-common-opensource</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>CodeLicenseManager-source-updater-java-annotation</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>CodeLicenseManager-source-updater-groovy-annotation</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency><!-- For the bsh scripts. -->
+                <groupId>${project.groupId}</groupId>
+                <artifactId>CodeLicenseManager-source-updater-slashstar-comment</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency><!-- For properties. -->
+                <groupId>${project.groupId}</groupId>
+                <artifactId>CodeLicenseManager-source-updater-hash-comment</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>CodeLicenseManager-source-updater-html-xml</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>CodeLicenseManager-source-updater-jsp</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>CodeLicenseManager-annotations-retention-source</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>CodeLicenseManager-ant-task</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+
+            <!-- External -->
+
+            <dependency>
+                <groupId>org.apache.maven</groupId>
+                <artifactId>maven-plugin-api</artifactId>
+                <version>2.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-plugin-plugin</artifactId>
+                <version>2.9</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.ant</groupId>
+                <artifactId>ant</artifactId>
+                <version>1.7.1</version>
+            </dependency>
+
+            <dependency>
+                <artifactId>FileEditor</artifactId>
+                <groupId>se.natusoft.tools.fileeditor</groupId>
+                <version>2.0.1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>bsh</groupId>
+                <artifactId>bsh</artifactId>
+                <version>1.3.0</version>
+                <scope>compile</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>se.natusoft.tools.doc.markdowndoc</groupId>
+                <artifactId>markdown-doc-lib</artifactId>
+                <version>1.2.9</version>
+            </dependency>
+
+            <dependency>
+                <groupId>se.natusoft.tools.optionsmgr</groupId>
+                <artifactId>OptionsManager</artifactId>
+                <version>2.0</version>
+            </dependency>
+
+            <!-- Test -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.5</version>
+                <scope>test</scope>
+            </dependency>
+
+
+        </dependencies>
+    </dependencyManagement>
+
     <!--
         Building
     -->
@@ -69,13 +191,71 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.5</version>
-            <scope>test</scope>
         </dependency>
     </dependencies>
 
     <!-- Common plugins for project and sub components. -->
     <build>
+        <pluginManagement>
+            <plugins>
+                <!-- Internal -->
+                <plugin>
+                    <groupId>${project.groupId}</groupId>
+                    <artifactId>CodeLicenseManager-maven-plugin</artifactId>
+                    <version>${project.version}</version>
+                </plugin>
+
+                <!-- External -->
+                <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>2.5.1</version>
+                </plugin>
+
+                <plugin>
+                    <artifactId>maven-install-plugin</artifactId>
+                    <version>2.4</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>2.4</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>2.2.1</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-antrun-plugin</artifactId>
+                    <version>1.7</version>
+                </plugin>
+
+                <plugin>
+                    <artifactId>maven-assembly-plugin</artifactId>
+                    <version>2.1</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>se.natusoft.tools.doc.markdowndoc</groupId>
+                    <artifactId>markdowndoc-maven-plugin</artifactId>
+                    <version>1.2.9</version>
+
+                    <dependencies>
+                        <dependency>
+                            <groupId>se.natusoft.tools.doc.markdowndoc</groupId>
+                            <artifactId>markdown-doc-lib</artifactId>
+                            <version>1.2.9</version>
+                        </dependency>
+                    </dependencies>
+                </plugin>
+
+            </plugins>
+        </pluginManagement>
+
         <extensions>
             <!-- Enabling the use of FTP -->
             <extension>
@@ -85,10 +265,11 @@
             </extension>
         </extensions>
 
+
+
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.5.1</version>
                 <configuration>
                     <source>1.5</source>
                     <target>1.5</target>
@@ -97,7 +278,6 @@
 
             <plugin>
                 <artifactId>maven-install-plugin</artifactId>
-                <version>2.4</version>
                 <configuration>
                     <createChecksum>true</createChecksum>
                 </configuration>
@@ -107,9 +287,7 @@
                 Manipulate manifest for jar files.
             -->
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
-                <version>2.4</version>
                 <configuration>
                     <archive>
                         <manifestEntries>
@@ -125,9 +303,7 @@
                 Package sources.
             -->
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
-                <version>2.2.1</version>
                 <executions>
                     <execution>
                         <id>attach-sources</id>
@@ -190,31 +366,25 @@
             <build>
                 <plugins>
                     <plugin>
-
                         <groupId>${project.groupId}</groupId>
                         <artifactId>CodeLicenseManager-maven-plugin</artifactId>
-                        <version>${project.version}</version>
 
                         <dependencies>
                             <dependency>
                                 <groupId>${project.groupId}</groupId>
                                 <artifactId>CodeLicenseManager-licenses-common-opensource</artifactId>
-                                <version>${project.version}</version>
                             </dependency>
                             <dependency><!-- This must come first since it overrides the comment version for java in the next dependency. -->
                                 <groupId>${project.groupId}</groupId>
                                 <artifactId>CodeLicenseManager-source-updater-java-annotation</artifactId>
-                                <version>${project.version}</version>
                             </dependency>
                             <dependency><!-- For the bsh scripts. -->
                                 <groupId>${project.groupId}</groupId>
                                 <artifactId>CodeLicenseManager-source-updater-slashstar-comment</artifactId>
-                                <version>${project.version}</version>
                             </dependency>
                             <dependency><!-- For properties. -->
                                 <groupId>${project.groupId}</groupId>
                                 <artifactId>CodeLicenseManager-source-updater-hash-comment</artifactId>
-                                <version>${project.version}</version>
                             </dependency>
                         </dependencies>
 

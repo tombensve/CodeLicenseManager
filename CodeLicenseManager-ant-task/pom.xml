@@ -19,12 +19,10 @@
         <dependency>
             <groupId>org.apache.ant</groupId>
             <artifactId>ant</artifactId>
-            <version>1.7.1</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>CodeLicenseManager-annotations-retention-source</artifactId>
-            <version>${project.version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
@@ -51,17 +49,14 @@
                             <dependency>
                                 <groupId>${project.groupId}</groupId>
                                 <artifactId>CodeLicenseManager-licenses-common-opensource</artifactId>
-                                <version>${project.version}</version>
                             </dependency>
                             <dependency>
                                 <groupId>${project.groupId}</groupId>
                                 <artifactId>CodeLicenseManager-source-updater-java-annotation</artifactId>
-                                <version>${project.version}</version>
                             </dependency>
                             <dependency>
                                 <groupId>${project.groupId}</groupId>
                                 <artifactId>CodeLicenseManager-ant-task</artifactId>
-                                <version>${project.version}</version>
                             </dependency>
                         </dependencies>
                         <executions>

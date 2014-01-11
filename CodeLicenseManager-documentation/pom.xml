@@ -28,7 +28,6 @@
             <plugin>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>CodeLicenseManager-maven-plugin</artifactId>
-                <version>${project.version}</version>
 
                 <dependencies>
                     <dependency>
@@ -69,7 +68,7 @@
                                 </product>
                                 <product>
                                     <name>MarkdownDoc</name>
-                                    <version>1.0</version>
+                                    <version>1.2.9</version>
                                     <web>https://github.com/tombensve/MarkdownDoc</web>
                                 </product>
                             </licenseProducts>
@@ -111,15 +110,6 @@
             <plugin>
                 <groupId>se.natusoft.tools.doc.markdowndoc</groupId>
                 <artifactId>markdowndoc-maven-plugin</artifactId>
-                <version>1.0</version>
-
-                <dependencies>
-                    <dependency>
-                        <groupId>se.natusoft.tools.doc.markdowndoc</groupId>
-                        <artifactId>markdown-doc-lib</artifactId>
-                        <version>1.0</version>
-                    </dependency>
-                </dependencies>
 
                 <executions>
                     <execution>
