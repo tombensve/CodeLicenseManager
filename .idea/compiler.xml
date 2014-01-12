@@ -61,7 +61,6 @@
         <module name="CodeLicenseManager-annotations-retention-source" />
         <module name="CodeLicenseManager-ant-task" />
         <module name="CodeLicenseManager-command-line" />
-        <module name="CodeLicenseManager-documentation" />
         <module name="CodeLicenseManager-licenses-common-opensource" />
         <module name="CodeLicenseManager-manager" />
         <module name="CodeLicenseManager-maven-plugin" />
