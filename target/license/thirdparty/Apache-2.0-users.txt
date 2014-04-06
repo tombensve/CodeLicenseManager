@@ -1,0 +1,17 @@
+The following products are using the Apache version 2.0 license:
+
+FileEditor version 2.0
+https://github.com/tombensve/FileEditor
+
+OptionsManager version 2.0
+https://github.com/tombensve/OptionsManager
+
+MarkdownDoc version null
+https://github.com/tombensve/MarkdownDoc
+
+FileEditor version 2.0.2
+https://github.com/tombensve/FileEditor
+
+OptionsManager version 2.0.2
+https://github.com/tombensve/OptionsManager
+

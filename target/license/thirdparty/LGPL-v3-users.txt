@@ -1,0 +1,5 @@
+The following products are using the LGPL version v3 license:
+
+bsh version 1.3.0
+http://www.beanshell.org/
+

@@ -17,6 +17,8 @@ The following third party products are using this license:
 
 * [FileEditor-2.0](https://github.com/tombensve/FileEditor)
 * [OptionsManager-2.0](https://github.com/tombensve/OptionsManager)
-* [MarkdownDoc-1.2.9](https://github.com/tombensve/MarkdownDoc)
+* [MarkdownDoc-null](https://github.com/tombensve/MarkdownDoc)
+* [FileEditor-2.0.2](https://github.com/tombensve/FileEditor)
+* [OptionsManager-2.0.2](https://github.com/tombensve/OptionsManager)
 
 <!-- CLM -->

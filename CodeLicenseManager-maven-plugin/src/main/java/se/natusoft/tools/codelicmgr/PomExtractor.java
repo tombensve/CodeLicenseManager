@@ -196,6 +196,10 @@ public class PomExtractor {
         int propNameStart = props.indexOf('<');
         while (propNameStart != -1) {
             int propNameEnd = props.indexOf('>', propNameStart);
+            if (props.charAt(propNameEnd - 1) == '/') {
+                propNameStart = props.indexOf('<', propNameEnd);
+                continue;
+            } 
             if (propNameEnd == -1) {
                 throw new RuntimeException("Bad pom XML! Starting '<' not terminated by '>'.");
             }

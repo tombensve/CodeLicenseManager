@@ -73,23 +73,23 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="CodeLicenseManager" target="1.5" />
-      <module name="CodeLicenseManager-annotations-retention-runtime" target="1.5" />
-      <module name="CodeLicenseManager-annotations-retention-runtime-all" target="1.5" />
-      <module name="CodeLicenseManager-annotations-retention-source" target="1.5" />
-      <module name="CodeLicenseManager-ant-task" target="1.5" />
-      <module name="CodeLicenseManager-command-line" target="1.5" />
-      <module name="CodeLicenseManager-dist" target="1.5" />
-      <module name="CodeLicenseManager-documentation" target="1.5" />
-      <module name="CodeLicenseManager-licenses-common-opensource" target="1.5" />
-      <module name="CodeLicenseManager-manager" target="1.5" />
-      <module name="CodeLicenseManager-maven-plugin" target="1.5" />
-      <module name="CodeLicenseManager-source-updater-groovy-annotation" target="1.5" />
-      <module name="CodeLicenseManager-source-updater-hash-comment" target="1.5" />
-      <module name="CodeLicenseManager-source-updater-html-xml" target="1.5" />
-      <module name="CodeLicenseManager-source-updater-java-annotation" target="1.5" />
-      <module name="CodeLicenseManager-source-updater-jsp" target="1.5" />
-      <module name="CodeLicenseManager-source-updater-slashstar-comment" target="1.5" />
+      <module name="CodeLicenseManager" target="1.7" />
+      <module name="CodeLicenseManager-annotations-retention-runtime" target="1.7" />
+      <module name="CodeLicenseManager-annotations-retention-runtime-all" target="1.7" />
+      <module name="CodeLicenseManager-annotations-retention-source" target="1.7" />
+      <module name="CodeLicenseManager-ant-task" target="1.7" />
+      <module name="CodeLicenseManager-command-line" target="1.7" />
+      <module name="CodeLicenseManager-dist" target="1.7" />
+      <module name="CodeLicenseManager-documentation" target="1.7" />
+      <module name="CodeLicenseManager-licenses-common-opensource" target="1.7" />
+      <module name="CodeLicenseManager-manager" target="1.7" />
+      <module name="CodeLicenseManager-maven-plugin" target="1.7" />
+      <module name="CodeLicenseManager-source-updater-groovy-annotation" target="1.7" />
+      <module name="CodeLicenseManager-source-updater-hash-comment" target="1.7" />
+      <module name="CodeLicenseManager-source-updater-html-xml" target="1.7" />
+      <module name="CodeLicenseManager-source-updater-java-annotation" target="1.7" />
+      <module name="CodeLicenseManager-source-updater-jsp" target="1.7" />
+      <module name="CodeLicenseManager-source-updater-slashstar-comment" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
