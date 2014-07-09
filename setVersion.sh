@@ -9,7 +9,7 @@ if [ "$1" == "" ]; then
     echo "You must specify the new version to set!"
 fi
 
-version=2.1.2
+version=2.1.3
 
 for pom in `find . -name 'pom.xml' -print`
 do

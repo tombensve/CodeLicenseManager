@@ -15,8 +15,8 @@ __[Apache Software License version 2.0](http://www.apache.org/licenses/LICENSE-2
 
 The following third party products are using this license:
 
-* [FileEditor-2.0.2](https://github.com/tombensve/FileEditor)
+* [FileEditor-2.0.3](https://github.com/tombensve/FileEditor)
 * [OptionsManager-2.0.2](https://github.com/tombensve/OptionsManager)
-* [MarkdownDoc-1.3.2](https://github.com/tombensve/MarkdownDoc)
+* [MarkdownDoc-1.3.3](https://github.com/tombensve/MarkdownDoc)
 
 <!-- CLM -->

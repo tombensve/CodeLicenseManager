@@ -1,29 +1,25 @@
-# Code License Manager 2.1.1
+# Code License Manager 2.1.3
 
 ## Introduction
 
-CodeLicenseManager (henceforth called CLM) was born out of frustration in handling
-licenses. Different IDE's have come up with different solutions for supplying
-ready "boilerplate" texts for different licenses, but go no further than that.
+CodeLicenseManager (henceforth called CLM) was born out of frustration in handling licenses. Different IDE's have come up with different solutions for supplying ready "boilerplate" texts for different licenses, but go no further than that.
 
-CLM solves this in an IDE independent way and also installs license texts of project 
-license and third party licenses including a list of which of the used third party 
-products uses each license. CLM can be used with any programming language and 
-not only Java even though it is written in Java. It currently supports the following 
-languages: Java (+ BeanShell), Java properties files, JSP, Groovy, Python, Ruby, 
-C, C++, C#, CSS, HTML, XHTML, XML, XML schema, XSL Stylesheets, Bourne shell, 
-AWK, Perl, but can easily be extended to other languages. See "Making your own 
-..." below for more information. 
+CLM solves this in an IDE independent way and also installs license texts of project  license and third party licenses including a list of which of the used third party  products uses each license. CLM can be used with any programming language and not only Java even though it is written in Java. It currently supports the following languages: Java (+ BeanShell), Java properties files, JSP, Groovy, Python, Ruby, 
+C, C++, C#, CSS, HTML, XHTML, XML, XML schema, XSL Stylesheets, Bourne shell, AWK, Perl, but can easily be extended to other languages. See "Making your own ..." below for more information. 
 
-CLM also makes it extremely easy to change license (does happen) and allows you 
-to not decide on a license at the start of a project, a license can be applied 
-at any time. 
+CLM also makes it extremely easy to change license (does happen) and allows you to not decide on a license at the start of a project, a license can be applied at any time. 
 
-If your CM tool allows pre checkin scripts to be run it can be plugged in at that 
-time to make sure all checked in code has the license text. If a source file already 
-has the license text nothing will be changed, if it doesn't it will be added. 
+If your CM tool allows pre checkin scripts to be run it can be plugged in at that time to make sure all checked in code has the license text. If a source file already has the license text nothing will be changed, if it doesn't it will be added. 
 
 ## Version changes
+
+__Version 2.1.3__
+
+Cleanup. No longer uses annotation based "boilerplate" text in source headers. This removes the annoying dependency on the actual annotations. Those where a bad idea to begin with. Me using them was even dumber :-). The annotation jars are still left, but is no longer used by CLM iteself. This in case some else have also made my mistake of using them. 
+
+__Version 2.1.2__
+
+Depenency version bug fixes. 
 
 __Version 2.1.1__
 
@@ -140,15 +136,6 @@ the editor methods to manipulate the text.
 
     * Project, license, and copyright information is provided in a comment block
     at the top of the file, just like for any other language.
-
-    * Project, license, and copyright information is provided in annotations on
-    the class. Annotations jars available in 3 variants:
-
-      * Retention source only. (This is used by all Code License Manager code).
-
-      * Some with retention runtime, and some with retention source.
-
-      * All with retention runtime.
 
 * Users can specify own scripts to run on source files in configuration either
 as separate script files or inline. These scripts can do whatever you want.
@@ -832,32 +819,25 @@ Use the CodeLicenseManager-maven-plugin with the "apply" goal. Here is an exampl
 
         <groupId>se.natusoft.tools.codelicmgr</groupId>
         <artifactId>CodeLicenseManager-maven-plugin</artifactId>
-        <version>2.0</version>
+        <version>2.1.3</version>
 
         <dependencies>
             <dependency>
                 <groupId>se.natusoft.tools.codelicmgr</groupId>
                 <artifactId>CodeLicenseManager-licenses-common-opensource</artifactId>
-                <version>2.0</version>
-            </dependency>
-            <dependency>
-                <!-- This must come first since it overrides the comment
-                     version for java in the next dependency. -->
-                <groupId>se.natusoft.tools.codelicmgr</groupId>
-                <artifactId>CodeLicenseManager-source-updater-java-annotation</artifactId>
-                <version>2.0</version>
+                <version>2.1.3</version>
             </dependency>
             <dependency>
                 <!-- For the bsh scripts. -->
                 <groupId>se.natusoft.tools.codelicmgr</groupId>
                 <artifactId>CodeLicenseManager-source-updater-slashstar-comment</artifactId>
-                <version>2.0</version>
+                <version>2.1.3</version>
             </dependency>
             <dependency>
                 <!-- For properties. -->
                 <groupId>se.natusoft.tools.codelicmgr</groupId>
                 <artifactId>CodeLicenseManager-source-updater-hash-comment</artifactId>
-                <version>2.0</version>
+                <version>2.1.3</version>
             </dependency>
         </dependencies>
 
@@ -951,8 +931,7 @@ Then run:
 
 > java -jar bin/CodeLicenseManager-command-line-2.0-exec.jar --config apply.xml --action apply
 > --licenselibrary lib/license/CodeLicenseManager-licenses-common-opensource-2.0.jar
-> --sourceupdaters lib/updaters/CodeLicenseManager-source-updater-java-annotation-2.0.jar,
-> lib/updaters/CodeLicenseManager-source-updater-slashstar-comment-2.0.jar,
+> --sourceupdaters lib/updaters/CodeLicenseManager-source-updater-slashstar-comment-2.0.jar,
 > lib/updaters/CodeLicenseManager-source-updater-hash-comment-2.0.jar
 
 This is preferably put in a script, which in turn can be called from a makefile. 
@@ -1268,6 +1247,8 @@ Then run:
 
 # Deleting license / project information from source
 
+__Note__ that this function is not well tested, and not entirely bug free either!
+
 This requires the "codeOptions" (only "sourceCodeDirs") configuration section. 
 
 This will do the opposite of "apply". Why is this available ? Each source updater 
@@ -1399,29 +1380,6 @@ instance to update source files with license information and boilerplate text,
 and optionally also project information and author information. There are different 
 updaters for different kinds of comment types. 
 
-__CodeLicenseManager-source-updater-java-annotation__
-
-This updater uses annotations for all information instead of putting it within 
-a comment. This also requires a dependency on one of the _CodeLicenseManager-annotations_ 
-variants (_-retention-source_ / _-retention-runtime_ / _-retention-runtime-all_). 
-If the _-retention-source_ variant is used there is only a compile time dependency. 
-For _-retention-runtime_ you get copyright and license information as runtime 
-retention, and with _-retention-runtime-all_ all annotations are runtime. 
-
-The annotations are all "Type" annotations. That is they are annotations on the 
-class/interface/enum/etc. For JavaDoc to be able to see the class javadoc comment 
-the annotations must be below the class comment, so this updater will insert them 
-below the class comment if such is found. 
-
-
-__CodeLicenseManager-source-updater-groovy-annotation__
-
-This does exactly the same as CodeLicenseManager-source-updater-java-annotation, 
-but for groovy source. The same annotations are used in groovy, but groovy have 
-a different way of specifying an array of information than java. Java uses '\{' 
-and '\}' while groovy uses '[' and ']'. Some of the annotations uses arrays and 
-thereby a different updater is needed for groovy source. 
-
 __CodeLicenseManager-source-updater-slashstar-comment__ 
 
 This updates source code with all license and other information within a 
@@ -1493,6 +1451,7 @@ This updates source code with all license and other information within a
     <!--
         ...
     -->
+    
 
 comment block. If the source file does not start with such a comment one is added 
 otherwise the information is inserted within the existing comment, but first in 
@@ -1758,6 +1717,7 @@ old and inserting new).
 This differs from other scripts since there can be more than one copyright and 
 looping through the copyrights are handled by CLM, so the "updatecopyrightInfo.bsh" 
 script must define a set of functions explained by the following example: 
+
 
     /**
      *   setup
@@ -2146,23 +2106,3 @@ position.
 _search_ - This is a regular expression search string surrounded by ''. Example: 
 '^# LICENSE'. This attribute must always be specified.
 
-
-
-# Special note to users of version < 2.0.
-
-A previous version of this utility exists on <http://codelicmgr.sf.net/>.
-As of version 2.0 this has moved to github and also changed package from _se.biltmore..._
-to _se.natusoft..._ The package change was required due to a bad decision by me to use the
-package name of a company my company was part owner of, but in the end didn't work out as
-intended and I left. Thereby I have changed package to my own company name.
-
-If you used the previous version then a search and replace of
-
-    <groupId>se.biltmore.tools.codelicmgr</groupId>
-
-to
-
-    <groupId>se.natusoft.tools.codelicmgr</groupId>
-
-in your pom(s) should be enough. Some new options have been added and nothing
-have been removed.

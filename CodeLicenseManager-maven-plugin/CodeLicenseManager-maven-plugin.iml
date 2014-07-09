@@ -57,10 +57,10 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.thoughtworks.qdox:qdox:1.11" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.maven.plugin-tools:maven-plugin-tools-beanshell:2.9" level="project" />
     <orderEntry type="library" name="Maven: bsh:bsh:1.3.0" level="project" />
-    <orderEntry type="module" module-name="CodeLicenseManager-annotations-retention-source" />
     <orderEntry type="module" module-name="CodeLicenseManager-manager" />
-    <orderEntry type="library" name="Maven: se.natusoft.tools.fileeditor:FileEditor:2.0.2" level="project" />
-    <orderEntry type="library" name="Maven: se.natusoft.tools.optionsmgr:OptionsManager:2.0.2" level="project" />
+    <orderEntry type="library" name="Maven: se.natusoft.tools.fileeditor:FileEditor:2.0.3" level="project" />
+    <orderEntry type="module" module-name="CodeLicenseManager-annotations-retention-source" />
+    <orderEntry type="library" name="Maven: se.natusoft.tools.optionsmgr:OptionsManager:2.0.3" level="project" />
   </component>
 </module>
 

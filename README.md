@@ -2,9 +2,7 @@
 
 Copyright © 2013 Natusoft AB
 
-__Version:__ 2.1.2
-
-This version is identical to the 2.1.1 version with the exception of versions of other artifacts it depends on. This version only refers to versions available in Bintrays JCenter and maven central. It will thereby build if checked out, and when used by other projects! Sorry about that!  
+__Version:__ 2.1.3
 
 __Author:__ Tommy Svensson (tommy@natusoft.se)
 
