@@ -42,7 +42,6 @@ package se.natusoft.tools.codelicmgr;
 import se.natusoft.tools.codelicmgr.config.Configuration;
 import se.natusoft.tools.codelicmgr.config.ProductConfig;
 import se.natusoft.tools.codelicmgr.config.ThirdpartyLicenseConfig;
-import se.natusoft.tools.codelicmgr.enums.Source;
 import se.natusoft.tools.codelicmgr.library.LibraryLicense;
 import se.natusoft.tools.codelicmgr.library.LicenseLibrary;
 import se.natusoft.tools.codelicmgr.scripting.ScriptingException;
@@ -618,7 +617,7 @@ public class CodeLicenseManager {
             data.put("licenseType", this.libLic.getType());
             data.put("licenseVersion", this.libLic.getVersion());
             data.put("licenseDescription", this.libLic.getDescription());
-            data.put("source", this.libLic.getSourceType() == Source.OPEN ? "Open" : "Closed");
+            data.put("source", this.libLic.getSourceType());
             data.put("sourceBlock", this.sourceBlock);
         }
         data.put("userName", this.userName);

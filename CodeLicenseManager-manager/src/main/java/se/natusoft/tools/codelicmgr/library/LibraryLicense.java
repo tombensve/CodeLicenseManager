@@ -43,7 +43,6 @@ import codelicmgr.licenses.LicenseResourceProvider;
 import se.natusoft.tools.codelicmgr.CodeLicenseException;
 import se.natusoft.tools.codelicmgr.CopyTool;
 import se.natusoft.tools.codelicmgr.Display;
-import se.natusoft.tools.codelicmgr.enums.Source;
 
 import java.io.*;
 import java.net.MalformedURLException;
@@ -260,8 +259,8 @@ public class LibraryLicense {
     /**
      * Return the type of the license: open/closed.
      */
-    public Source getSourceType() {
-        return this.sourceType.equals("open") ? Source.OPEN : Source.CLOSED;
+    public String getSourceType() {
+        return this.sourceType.equals("open") ? "Open" : "Closed";
     }
 
     /**
