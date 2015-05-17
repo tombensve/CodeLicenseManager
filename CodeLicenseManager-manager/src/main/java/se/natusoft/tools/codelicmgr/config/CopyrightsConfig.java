@@ -5,7 +5,7 @@
  *         CodeLicenseManager-manager
  *     
  *     Code Version
- *         2.1.3
+ *         2.1.4
  *     
  *     Description
  *         Manages project and license information in project sourcecode

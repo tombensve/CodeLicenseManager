@@ -1,4 +1,4 @@
-# Code License Manager 2.1.3
+# Code License Manager 2.1.4
 
 ## Introduction
 
@@ -12,6 +12,10 @@ CLM also makes it extremely easy to change license (does happen) and allows you 
 If your CM tool allows pre checkin scripts to be run it can be plugged in at that time to make sure all checked in code has the license text. If a source file already has the license text nothing will be changed, if it doesn't it will be added. 
 
 ## Version changes
+
+__Version 2.1.4__ 
+
+Fixed bug in CodeLicenseManager-maven-plugin (PomExtractor) when parsing properties of poms to be able to resolve eventual versions and license specifications specified as property references. Any failure to resolve properties are now logged, but does not break the build any more!  
 
 __Version 2.1.3__
 

@@ -5,11 +5,7 @@
 # to change the version number of all tagged versions in the pom.xml files in the project.
 #
 
-if [ "$1" == "" ]; then
-    echo "You must specify the new version to set!"
-fi
-
-version=2.1.3
+version=2.1.4
 
 for pom in `find . -name 'pom.xml' -print`
 do

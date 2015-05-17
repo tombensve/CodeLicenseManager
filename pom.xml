@@ -6,7 +6,7 @@
     <!-- Artifact information -->
     <groupId>se.natusoft.tools.codelicmgr</groupId>
     <artifactId>CodeLicenseManager</artifactId>
-    <version><!--VER-->2.1.3</version>
+    <version><!--VER-->2.1.4</version>
     <packaging>pom</packaging>
 
     <url>https://github.com/tombensve/CodeLicenseManager</url>
@@ -33,9 +33,9 @@
         <copyrightHolderWeb>http://www.natusoft.se/</copyrightHolderWeb>
         <developer1Name>Tommy Svensson</developer1Name>
         <developer1Email>tommy@natusoft.se</developer1Email>
-        
-        <app.version><!--VER-->2.1.3</app.version>
-                
+
+        <app.version><!--VER-->2.1.4</app.version>
+
     </properties>
     <licenses>
         <license>
@@ -163,7 +163,7 @@
             <dependency>
                 <groupId>se.natusoft.tools.doc.markdowndoc</groupId>
                 <artifactId>markdown-doc-lib</artifactId>
-                <version>1.3.3</version>
+                <version>1.3.9</version>
             </dependency>
 
             <dependency>
@@ -263,13 +263,13 @@
                 <plugin>
                     <groupId>se.natusoft.tools.doc.markdowndoc</groupId>
                     <artifactId>markdowndoc-maven-plugin</artifactId>
-                    <version>1.3.3</version>
+                    <version>1.3.9</version>
 
                     <dependencies>
                         <dependency>
                             <groupId>se.natusoft.tools.doc.markdowndoc</groupId>
                             <artifactId>markdown-doc-lib</artifactId>
-                            <version>1.3.3</version>
+                            <version>1.3.9</version>
                         </dependency>
                     </dependencies>
                 </plugin>

@@ -5,7 +5,7 @@
  *         CodeLicenseManager-manager
  *     
  *     Code Version
- *         2.1.3
+ *         2.1.4
  *     
  *     Description
  *         Manages project and license information in project sourcecode
@@ -122,7 +122,7 @@ public class CodeLicenseManager {
     public CodeLicenseManager(Configuration config, boolean loadLicenseLib) throws CodeLicenseException {
         this.config = config;
 
-        Display.msg("CodeLicenseManager 2.1.3\nMaintained by Tommy Svensson (tommy@natusoft.se)");
+        Display.msg("CodeLicenseManager 2.1.4\nMaintained by Tommy Svensson (tommy@natusoft.se)");
 
         if (loadLicenseLib) {
 

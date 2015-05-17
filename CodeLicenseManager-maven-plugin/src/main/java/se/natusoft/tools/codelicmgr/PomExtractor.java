@@ -1,41 +1,41 @@
-/* 
- * 
+/*
+ *
  * PROJECT
  *     Name
  *         CodeLicenseManager-maven-plugin
- *     
+ *
  *     Code Version
- *         2.1.3
- *     
+ *         2.1.4
+ *
  *     Description
  *         Manages project and license information in project sourcecode
  *         and provides license text files for inclusion in builds. Supports
  *         multiple languages and it is relatively easy to add a new
  *         language and to make your own custom source code updater.
- *         
+ *
  * COPYRIGHTS
  *     Copyright (C) 2013 by Natusoft AB All rights reserved.
- *     
+ *
  * LICENSE
  *     Apache 2.0 (Open Source)
- *     
+ *
  *     Licensed under the Apache License, Version 2.0 (the "License");
  *     you may not use this file except in compliance with the License.
  *     You may obtain a copy of the License at
- *     
+ *
  *       http://www.apache.org/licenses/LICENSE-2.0
- *     
+ *
  *     Unless required by applicable law or agreed to in writing, software
  *     distributed under the License is distributed on an "AS IS" BASIS,
  *     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  *     See the License for the specific language governing permissions and
  *     limitations under the License.
- *     
+ *
  * AUTHORS
  *     tommy ()
  *         Changes:
- *         2014-07-09: Created!
- *         
+ *         2015-05-17: Created!
+ *
  */
 package se.natusoft.tools.codelicmgr;
 
@@ -83,6 +83,8 @@ public class PomExtractor {
     // Constructors
     //
 
+    private PomExtractor() {}
+
     /**
      * Creates a new PomExtractor instance.
      *
@@ -101,7 +103,7 @@ public class PomExtractor {
      * @param localRepository A local repository injected to maven plugin.
      * @param groupId The artifacts, whose pom to read, group id
      * @param artifactId The artifacts, whose pom to read, artifact id.
-     * @param atifact version The artifacts, whose pom to read, version.
+     * @param artifactVersion The artifacts, whose pom to read, version.
      *
      * @throws IOException on failure to read pom.
      */
@@ -187,48 +189,64 @@ public class PomExtractor {
     }
 
     /**
+     * Extracts and sets properties found in passed string. The already extracted part of the string is
+     * chopped off and the rest is returned or null if the end of the string is reached.
+     *
+     * @param props The string of properties to extract from.
+     *
+     * @return A shorter string or null when fully extracted.
+     */
+    private String extractProperty(String props) {
+        int propNameStart = props.indexOf("<");
+        if (propNameStart < 0) return null;
+
+        int propNameEnd = props.indexOf(">", propNameStart);
+        if (propNameEnd < 0) return null;
+
+        String propName = props.substring(propNameStart + 1, propNameEnd);
+        String endTag = "</" + propName + ">";
+
+        int propValueStart = propNameEnd + 1;
+        int propValueEnd = props.indexOf(endTag, propValueStart);
+        if (propValueEnd < 0) return null;
+
+        String propValue = props.substring(propValueStart, propValueEnd);
+
+        if (propValue.contains("<name>") && propValue.contains("</name>") && propValue.contains("<value>") && propValue.contains("</value>")) {
+            propName = extractValue(propValue, "name");
+            propValue = extractValue(propValue, "value");
+        }
+
+        this.properties.setProperty(propName, propValue);
+        System.out.println("[INFO] (CLM) Collected property: '" + propName + "':'" + propValue + "'!");
+
+        int nextStart = propValueEnd + endTag.length() + 1;
+        if (props.length() > nextStart) {
+            return props.substring(nextStart);
+        }
+        return null;
+    }
+
+    /**
      * Loads properties.
-     * 
+     *
      * @param props The properties section of the pom.
-     * 
+     *
      * @throws RuntimeException on bad XML.
      */
     private void loadProperties(String props) {
-        int propNameStart = props.indexOf('<');
-        while (propNameStart != -1) {
-            int propNameEnd = props.indexOf('>', propNameStart);
-            if (props.charAt(propNameEnd - 1) == '/') {
-                propNameStart = props.indexOf('<', propNameEnd);
-                continue;
-            } 
-            if (propNameEnd == -1) {
-                throw new RuntimeException("Bad pom XML! Starting '<' not terminated by '>'.");
-            }
-            String propName = props.substring(propNameStart + 1, propNameEnd);
+        props = props.trim();
 
-            int propValueStart = propNameEnd + 1;
-            int propValueEnd = props.indexOf("</", propValueStart);
-            if (propValueEnd == -1) {
-                throw new RuntimeException("Bad pom XML! tag '<" + propName + ">' not terminated!" );
-            }
-            String propValue = props.substring(propValueStart, propValueEnd);
-
-            this.properties.put(propName, propValue);
-
-            int endTagEnd = props.indexOf('>', propValueEnd);
-            if (endTagEnd == -1) {
-                throw new RuntimeException("Bad pom XML! Missing '>' on '</" + propName + "' end tag!");
-            }
-
-            propNameStart = props.indexOf('<', endTagEnd);
+        while (props != null) {
+            props = extractProperty(props);
         }
     }
 
     /**
      * Expands any ${property} with the property value.
-     * 
+     *
      * @param value The value to expand property references in.
-     * 
+     *
      * @return An expanded string.
      */
     private String expandProperties(String value) {
@@ -239,7 +257,7 @@ public class PomExtractor {
                 value = value.replace("${" + propName + "}", propValue);
             }
         }
-        
+
         return value;
     }
 
@@ -281,7 +299,7 @@ public class PomExtractor {
             currentPosition = resultPosition;
         }
         --pathPosition;
-        
+
         int startPosition = currentPosition + tag.length();
 
         tag = "</" + path[pathPosition] + ">";
@@ -290,7 +308,7 @@ public class PomExtractor {
         return pom.substring(startPosition, endPosition);
     }
 
-    /** 
+    /**
      * Returns the product url.
      */
     public String getProductUrl() {

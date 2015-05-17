@@ -5,12 +5,12 @@
     <parent>
         <artifactId>CodeLicenseManager</artifactId>
         <groupId>se.natusoft.tools.codelicmgr</groupId>
-        <version><!--VER-->2.1.3</version>
+        <version><!--VER-->2.1.4</version>
     </parent>
 
     <groupId>se.natusoft.tools.codelicmgr</groupId>
     <artifactId>CodeLicenseManager-command-line</artifactId>
-    <version><!--VER-->2.1.3</version>
+    <version><!--VER-->2.1.4</version>
 
     <name>CodeLicenseManager-command-line</name>
 
