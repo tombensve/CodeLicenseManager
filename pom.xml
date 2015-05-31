@@ -6,7 +6,7 @@
     <!-- Artifact information -->
     <groupId>se.natusoft.tools.codelicmgr</groupId>
     <artifactId>CodeLicenseManager</artifactId>
-    <version><!--VER-->2.1.4</version>
+    <version><!--VER-->2.1.5</version>
     <packaging>pom</packaging>
 
     <url>https://github.com/tombensve/CodeLicenseManager</url>
@@ -34,8 +34,21 @@
         <developer1Name>Tommy Svensson</developer1Name>
         <developer1Email>tommy@natusoft.se</developer1Email>
 
-        <app.version><!--VER-->2.1.4</app.version>
+        <app.version><!--VER-->2.1.5</app.version>
 
+        <!--
+            To test running this on itself you need to do the following:
+            - Build once to this current version into local repo.
+            - Append a "-test" to app.version and do a normal build.
+            - Remove the "-test" again from app.version.
+            - Append the "-test" to this value instead.
+            - Build with the "apply-license-info" profile enabled.
+
+            DO NOTE that if you build this with the "apply-license-info" profile
+            and have the same version for "app.version" and "app.run.version"
+            then you will get a cyclic dependency error!
+        -->
+        <app.run.version>2.1.5</app.run.version>
     </properties>
     <licenses>
         <license>
@@ -204,23 +217,23 @@
                 <plugin>
                     <groupId>${project.groupId}</groupId>
                     <artifactId>CodeLicenseManager-maven-plugin</artifactId>
-                    <version>2.1.2</version>
+                    <version>${app.run.version}</version>
 
                     <dependencies>
                         <dependency>
                             <groupId>${project.groupId}</groupId>
                             <artifactId>CodeLicenseManager-licenses-common-opensource</artifactId>
-                            <version>2.1.2</version>
+                            <version>${app.run.version}</version>
                         </dependency>
                         <dependency><!-- For the java code & bsh scripts. -->
                             <groupId>${project.groupId}</groupId>
                             <artifactId>CodeLicenseManager-source-updater-slashstar-comment</artifactId>
-                            <version>2.1.2</version>
+                            <version>${app.run.version}</version>
                         </dependency>
                         <dependency><!-- For properties. -->
                             <groupId>${project.groupId}</groupId>
                             <artifactId>CodeLicenseManager-source-updater-hash-comment</artifactId>
-                            <version>2.1.2</version>
+                            <version>${app.run.version}</version>
                         </dependency>
                     </dependencies>
 
@@ -383,7 +396,7 @@
                 This profile runs the CodeLicenseManager maven plugin and updates the source code
                 with relevant information specified in this pom.
             -->
-            <id>apply-licence-info</id>
+            <id>apply-license-info</id>
             <build>
                 <plugins>
                     <plugin>
@@ -393,23 +406,23 @@
                         -->
                         <groupId>${project.groupId}</groupId>
                         <artifactId>CodeLicenseManager-maven-plugin</artifactId>
-                        <version>2.1.2</version>
+                        <version>${app.run.version}</version>
 
                         <dependencies>
                             <dependency>
                                 <groupId>${project.groupId}</groupId>
                                 <artifactId>CodeLicenseManager-licenses-common-opensource</artifactId>
-                                <version>2.1.2</version>
+                                <version>${app.run.version}</version>
                             </dependency>
                             <dependency><!-- For the java code & bsh scripts. -->
                                 <groupId>${project.groupId}</groupId>
                                 <artifactId>CodeLicenseManager-source-updater-slashstar-comment</artifactId>
-                                <version>2.1.2</version>
+                                <version>${app.run.version}</version>
                             </dependency>
                             <dependency><!-- For properties. -->
                                 <groupId>${project.groupId}</groupId>
                                 <artifactId>CodeLicenseManager-source-updater-hash-comment</artifactId>
-                                <version>2.1.2</version>
+                                <version>${app.run.version}</version>
                             </dependency>
                         </dependencies>
 
@@ -434,7 +447,7 @@
                                 <addAuthorsBlock>true</addAuthorsBlock>
                                 <!-- The directories to scan for source code to update with project & license information. -->
                                 <sourceCodeDirs>
-                                    src/main/java/**/.*.java,src/main/resources/**/.*.bsh,src/main/resources/**/.*.properties
+                                    src/main/java/**/.*.java,src/main/resources/**/.*.bsh
                                 </sourceCodeDirs>
 
                             </codeOptions>

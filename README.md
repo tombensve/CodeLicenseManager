@@ -2,7 +2,7 @@
 
 Copyright © 2013 Natusoft AB
 
-__Version:__ 2.1.4
+__Version:__ 2.1.5
 
 __Author:__ Tommy Svensson (tommy@natusoft.se)
 

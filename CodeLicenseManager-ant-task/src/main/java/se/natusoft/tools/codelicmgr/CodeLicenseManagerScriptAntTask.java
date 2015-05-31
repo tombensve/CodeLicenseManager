@@ -5,7 +5,7 @@
  *         CodeLicenseManager-ant-task
  *     
  *     Code Version
- *         2.1.4
+ *         2.1.5
  *     
  *     Description
  *         Manages project and license information in project sourcecode

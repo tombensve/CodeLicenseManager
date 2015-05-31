@@ -1,4 +1,4 @@
-# Code License Manager 2.1.4
+# Code License Manager 2.1.5
 
 ## Introduction
 
@@ -12,6 +12,12 @@ CLM also makes it extremely easy to change license (does happen) and allows you 
 If your CM tool allows pre checkin scripts to be run it can be plugged in at that time to make sure all checked in code has the license text. If a source file already has the license text nothing will be changed, if it doesn't it will be added. 
 
 ## Version changes
+
+__Version 2.1.5__
+
+For some strange reason all properties files in CodeLicenseManager-licenses-common-opensource lost their properties in version 2.1.4. This meant that no licenses could be found. On top of that I managed to release this version without running itself on it or anything else either. The 2.1.4 version were still using version 2.1.2. of itself! Sorry, I really fucked this up! This version have now been tested on itself.
+
+There is still a bug in this version: Applying license info on a properties file seems to delete all properties in the file leaving only the license header comment. It is far from clear why this happens. It is probably the 'CodeLicenseManager-source-updater-hash-comment' that is the problem here, so be careful with that one for now.
 
 __Version 2.1.4__ 
 

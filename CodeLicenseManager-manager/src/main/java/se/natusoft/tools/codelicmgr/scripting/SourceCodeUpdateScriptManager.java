@@ -1,11 +1,11 @@
-/* 
- * 
+/*
+ *
  * PROJECT
  *     Name
  *         CodeLicenseManager-manager
  *     
  *     Code Version
- *         2.1.4
+ *         2.1.5
  *     
  *     Description
  *         Manages project and license information in project sourcecode
@@ -35,7 +35,7 @@
  *     tommy ()
  *         Changes:
  *         2014-07-09: Created!
- *         
+ *
  */
 package se.natusoft.tools.codelicmgr.scripting;
 
@@ -63,7 +63,7 @@ public class SourceCodeUpdateScriptManager {
     //
     // Private Members
     //
-    
+
     /** The interpreter to use for this instance. */
     private bsh.Interpreter interpreter = null;
 
@@ -85,7 +85,7 @@ public class SourceCodeUpdateScriptManager {
     }
 
     /**
-     * Creates a new script manager instance. 
+     * Creates a new script manager instance.
      *
      * @param lang The source code language to update source for.
      *
@@ -220,9 +220,9 @@ public class SourceCodeUpdateScriptManager {
 
     /**
      * Imports the specified class into the scripting interpreter making the class available in scripts.
-     * 
+     *
      * @param clazz The class to import.
-     * 
+     *
      * @throws ScriptingException
      */
     public void importClass(Class clazz) throws ScriptingException {
@@ -258,7 +258,7 @@ public class SourceCodeUpdateScriptManager {
      * Evaluates the string within the interpreter.
      *
      * @param toEvaluate The string to evaluate.
-     * 
+     *
      * @throws ScriptingException
      */
     public void eval(String toEvaluate) throws ScriptingException {
@@ -344,7 +344,7 @@ public class SourceCodeUpdateScriptManager {
     public void runScript(String scriptName) throws ScriptingException {
         runScript(this.scriptDir, scriptName);
     }
-    
+
     /**
      * Runs the specified script within the interpreter. The script must be available under the path specified by "lang".properties under codelicmge/sourcecodeupdaters.
      * and suffixed with ".bsh" or ".java".

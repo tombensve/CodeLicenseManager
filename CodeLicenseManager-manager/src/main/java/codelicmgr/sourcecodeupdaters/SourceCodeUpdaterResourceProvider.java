@@ -1,11 +1,11 @@
-/* 
- * 
+/*
+ *
  * PROJECT
  *     Name
  *         CodeLicenseManager-manager
  *     
  *     Code Version
- *         2.1.4
+ *         2.1.5
  *     
  *     Description
  *         Manages project and license information in project sourcecode
@@ -35,7 +35,7 @@
  *     tommy ()
  *         Changes:
  *         2014-07-09: Created!
- *         
+ *
  */
 package codelicmgr.sourcecodeupdaters;
 

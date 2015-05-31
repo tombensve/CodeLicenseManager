@@ -4,7 +4,7 @@
  *         CodeLicenseManager-source-updater-hash-comment
  *     
  *     Code Version
- *         2.1.4
+ *         2.1.5
  *     
  *     Description
  *         Manages project and license information in project sourcecode
@@ -79,7 +79,7 @@
  *       text              - The text to format.
  *       lineBeg           - The beginning of each line. The indent will be added after this.
  *       lineEnd           - The string that terminates each line. For example " +" or ",".
- *       stringSpec        - A character or set of characters that indicates start and end of a String. For eample "\"" or "'".
+ *       stringSpec        - A character or set of characters that indicates start and end of a String. For example "\"" or "'".
  *       escapedStringSpec - A character or set of characters that indicates an escaped start and end of a string. For example "\\\�" or "\\'"
  *       indent            - The number of spaces to indent each line.
  *       trim              - If true each line is also trimmed.
