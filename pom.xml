@@ -48,7 +48,7 @@
             and have the same version for "app.version" and "app.run.version"
             then you will get a cyclic dependency error!
         -->
-        <app.run.version>2.1.6</app.run.version>
+        <app.run.version>2.1.5</app.run.version>
     </properties>
     <licenses>
         <license>
