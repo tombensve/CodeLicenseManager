@@ -1,46 +1,47 @@
-/* 
- * 
+/*
+ *
  * PROJECT
  *     Name
  *         CodeLicenseManager-maven-plugin
- *     
+ *
  *     Code Version
  *         2.1.5
- *     
+ *
  *     Description
  *         Manages project and license information in project sourcecode
  *         and provides license text files for inclusion in builds. Supports
  *         multiple languages and it is relatively easy to add a new
  *         language and to make your own custom source code updater.
- *         
+ *
  * COPYRIGHTS
  *     Copyright (C) 2013 by Natusoft AB All rights reserved.
- *     
+ *
  * LICENSE
  *     Apache 2.0 (Open Source)
- *     
+ *
  *     Licensed under the Apache License, Version 2.0 (the "License");
  *     you may not use this file except in compliance with the License.
  *     You may obtain a copy of the License at
- *     
+ *
  *       http://www.apache.org/licenses/LICENSE-2.0
- *     
+ *
  *     Unless required by applicable law or agreed to in writing, software
  *     distributed under the License is distributed on an "AS IS" BASIS,
  *     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  *     See the License for the specific language governing permissions and
  *     limitations under the License.
- *     
+ *
  * AUTHORS
  *     tommy ()
  *         Changes:
  *         2014-07-09: Created!
- *         
+ *
  */
 package se.natusoft.tools.codelicmgr;
 
 import org.apache.maven.artifact.Artifact;
 import org.apache.maven.artifact.repository.ArtifactRepository;
+import org.apache.maven.model.Organization;
 import org.apache.maven.plugin.logging.Log;
 import org.apache.maven.project.MavenProject;
 import se.natusoft.tools.codelicmgr.config.*;
@@ -121,6 +122,7 @@ public class MojoUtils {
             project.setLicense(licenseConf);
         }
         if (licenseConf.getType() == null) {
+            @SuppressWarnings("unchecked")
             List<org.apache.maven.model.License> lics = mavenProject.getLicenses();
             if (lics != null && lics.size() >= 1) {
                 org.apache.maven.model.License lic = lics.get(0);
@@ -135,16 +137,35 @@ public class MojoUtils {
                     licenseConf.setVersion(licVer);
                 }
             }
+            else {
+                throw new RuntimeException("At least one <licenses><license>...</license></licenses> is required!");
+            }
         }
 
         // Copyright
         if (project.getCopyrights().getCopyrights().size() == 0) {
             CopyrightConfig copyrightConf = new CopyrightConfig();
-            copyrightConf.setHolder(mavenProject.getOrganization().getName());
-            copyrightConf.setYear(mavenProject.getInceptionYear());
+            Organization org = mavenProject.getOrganization();
+            if (org != null) {
+                if (org.getName() != null) {
+                    copyrightConf.setHolder(org.getName());
+                }
+                else {
+                    throw new RuntimeException("<organization><name>...</name></organization> tag is missing in pom! This is required.");
+                }
+            }
+            else {
+                throw new RuntimeException("<organization>...</organization> is missing in pom! This is required.");
+            }
+            if (mavenProject.getInceptionYear() != null) {
+                copyrightConf.setYear(mavenProject.getInceptionYear());
+            }
+            else {
+                throw new RuntimeException("<inceptionYear>...</inceptionYear> is missing! This is required.");
+            }
             project.getCopyrights().addCopyright(copyrightConf);
         }
-        
+
         return project;
     }
 
@@ -155,7 +176,6 @@ public class MojoUtils {
      * @param mavenProject The running maven project.
      * @param localRepository The artifact repository for the current build.
      * @param log To log to.
-     * @return The passed configuration.
      */
     public static void updateThirdpartyLicenseConfigFromMavenProject(
             ThirdpartyLicensesConfig thirdpartyLicenses,
@@ -163,6 +183,7 @@ public class MojoUtils {
             ArtifactRepository localRepository, Log log)
     {
 
+        @SuppressWarnings("unchecked")
         Set<Artifact> dependencies = mavenProject.getDependencyArtifacts();
         if (dependencies != null) {
             for (Artifact depArtifact : dependencies) {
@@ -286,7 +307,7 @@ public class MojoUtils {
                 }
             }
         }
-        
+
         return found;
     }
 
@@ -308,7 +329,7 @@ public class MojoUtils {
 
     /**
      * Copies all data in 'from' that does not already exists in 'to', to 'to'.
-     * 
+     *
      * @param to The config to append to.
      * @param from The config to append from.
      */
@@ -357,10 +378,10 @@ public class MojoUtils {
     //
     // Internal support methods
     //
-    
+
     /**
      * Splits the specified string into a list of space separated parts.
-     * 
+     *
      * @param string The string to convert to a list of string.
      */
     private static List<String> stringToList(String string) {
@@ -394,11 +415,11 @@ public class MojoUtils {
         }
         return sb.toString().replace(',', ' ').replace("The", "").trim();
     }
-    
+
     /**
      * Extracts an alternative name (acronym).
-     * 
-     * @param license The string to extract the alternative name from. 
+     *
+     * @param license The string to extract the alternative name from.
      */
     private static String getLicenseNameAcronym(String license) {
         if (license == null) {
@@ -412,7 +433,7 @@ public class MojoUtils {
         }
         return sb.toString();
     }
-    
+
     /**
      * Returns the license version.
      *

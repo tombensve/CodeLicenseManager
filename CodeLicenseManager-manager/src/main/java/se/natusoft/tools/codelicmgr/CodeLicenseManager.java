@@ -1,41 +1,41 @@
-/* 
- * 
+/*
+ *
  * PROJECT
  *     Name
  *         CodeLicenseManager-manager
- *     
+ *
  *     Code Version
  *         2.1.5
- *     
+ *
  *     Description
  *         Manages project and license information in project sourcecode
  *         and provides license text files for inclusion in builds. Supports
  *         multiple languages and it is relatively easy to add a new
  *         language and to make your own custom source code updater.
- *         
+ *
  * COPYRIGHTS
  *     Copyright (C) 2013 by Natusoft AB All rights reserved.
- *     
+ *
  * LICENSE
  *     Apache 2.0 (Open Source)
- *     
+ *
  *     Licensed under the Apache License, Version 2.0 (the "License");
  *     you may not use this file except in compliance with the License.
  *     You may obtain a copy of the License at
- *     
+ *
  *       http://www.apache.org/licenses/LICENSE-2.0
- *     
+ *
  *     Unless required by applicable law or agreed to in writing, software
  *     distributed under the License is distributed on an "AS IS" BASIS,
  *     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  *     See the License for the specific language governing permissions and
  *     limitations under the License.
- *     
+ *
  * AUTHORS
  *     tommy ()
  *         Changes:
  *         2014-07-09: Created!
- *         
+ *
  */
 package se.natusoft.tools.codelicmgr;
 
@@ -122,7 +122,7 @@ public class CodeLicenseManager {
     public CodeLicenseManager(Configuration config, boolean loadLicenseLib) throws CodeLicenseException {
         this.config = config;
 
-        Display.msg("CodeLicenseManager 2.1.5\nMaintained by Tommy Svensson (tommy@natusoft.se)");
+        Display.msg("CodeLicenseManager 2.1.6\nMaintained by Tommy Svensson (tommy@natusoft.se)");
 
         if (loadLicenseLib) {
 
@@ -194,7 +194,7 @@ public class CodeLicenseManager {
             updateSourceFiles(sourcePath);
         }
     }
-    
+
     /**
      * Applies the source code updater on all found source files.
      * <p>
@@ -209,7 +209,7 @@ public class CodeLicenseManager {
      */
     public void updateSourceFiles(SourcePath sourcePath) throws IOException, ScriptingException {
         List<File> files = sourcePath.getSourceFiles();
-        
+
         for (File current : files) {
             updateSourceFile(current);
         }
@@ -239,7 +239,7 @@ public class CodeLicenseManager {
      * source paths.
      *
      * @param projectRoot The project root dir.
-     * 
+     *
      * @throws IOException
      * @throws ScriptingException
      */
@@ -254,9 +254,9 @@ public class CodeLicenseManager {
     /**
      * Deletes information previously added by updateSourceFile*() in all files included in the
      * specified source path.
-     * 
+     *
      * @param sourcePath A specification of files to update.
-     * 
+     *
      * @throws IOException
      * @throws ScriptingException
      */
@@ -269,8 +269,8 @@ public class CodeLicenseManager {
     }
 
     /**
-     * Deletes information previously added by updateSourceFile*(). 
-     * 
+     * Deletes information previously added by updateSourceFile*().
+     *
      * @param file The file to update.
      *
      * @throws IOException
@@ -527,7 +527,7 @@ public class CodeLicenseManager {
     public void copyFullLicenseTextToDir(File dir, LibraryLicense libraryLicense, String targetName, ThirdpartyLicenseConfig thirdpartyLicense) throws IOException {
         copyFullLicenseTextToDir(dir, null, libraryLicense, targetName, thirdpartyLicense);
     }
-    
+
     /**
      * Copies the full licence text as (licenceType)[-(licenceVersion)]-licence.txt into the specified directory.
      * <p>
@@ -539,7 +539,7 @@ public class CodeLicenseManager {
      * @param targetName The name of the target copy, but without an extension. The extension will be .txt for text files
      *                   and .html for html files.
      * @param thirdpartyLicense third party tpLicense information for third party licenses. For a project tpLicense this will be null.
-     * 
+     *
      * @throws IOException when shit happens.
      */
     public void copyFullLicenseTextToDir(File dir, OutputStream out, LibraryLicense libraryLicense, String targetName, ThirdpartyLicenseConfig thirdpartyLicense) throws IOException {

@@ -3,14 +3,14 @@
     <parent>
         <artifactId>CodeLicenseManager</artifactId>
         <groupId>se.natusoft.tools.codelicmgr</groupId>
-        <version><!--VER-->2.1.5</version>
+        <version><!--VER-->2.1.6</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>se.natusoft.tools.codelicmgr</groupId>
     <artifactId>CodeLicenseManager-source-updater-jsp</artifactId>
-    <version><!--VER-->2.1.5</version>
+    <version><!--VER-->2.1.6</version>
 
     <name>CodeLicenseManager-source-updater-jsp</name>
 

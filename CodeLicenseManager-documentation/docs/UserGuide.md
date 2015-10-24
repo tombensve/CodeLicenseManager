@@ -1,3 +1,6 @@
+<!--
+    @MSS("docs/docs.mss")
+-->
 # Code License Manager 2.1.5
 
 ## Introduction
@@ -12,6 +15,10 @@ CLM also makes it extremely easy to change license (does happen) and allows you 
 If your CM tool allows pre checkin scripts to be run it can be plugged in at that time to make sure all checked in code has the license text. If a source file already has the license text nothing will be changed, if it doesn't it will be added. 
 
 ## Version changes
+
+__Version 2.1.6__
+
+Only a fix in maven plugin that returns correct error messages about missing tags in pom rather than throwing a NullPointerException.
 
 __Version 2.1.5__
 
