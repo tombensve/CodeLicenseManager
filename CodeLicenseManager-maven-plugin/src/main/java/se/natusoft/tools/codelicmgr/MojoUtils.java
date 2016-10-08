@@ -46,6 +46,7 @@ import org.apache.maven.plugin.logging.Log;
 import org.apache.maven.project.MavenProject;
 import se.natusoft.tools.codelicmgr.config.*;
 import se.natusoft.tools.codelicmgr.library.LibraryLicense;
+import se.natusoft.tools.codelicmgr.library.LicenseIndex;
 import se.natusoft.tools.codelicmgr.library.LicenseLibrary;
 
 import java.io.IOException;
@@ -177,6 +178,7 @@ public class MojoUtils {
      * @param localRepository The artifact repository for the current build.
      * @param log To log to.
      */
+    @SuppressWarnings("Duplicates")
     public static void updateThirdpartyLicenseConfigFromMavenProject(
             ThirdpartyLicensesConfig thirdpartyLicenses,
             MavenProject mavenProject,
@@ -204,6 +206,12 @@ public class MojoUtils {
                         if (depPom.getLicenseName() != null) {
                             String licName = getLicenseName(depPom.getLicenseName());
                             String licVer = getLicenseVersion(depPom.getLicenseName());
+
+                            String licenceResoruce = LicenseIndex.index.resolveLibraryResource(depPom.getLicenseName());
+                            if (licenceResoruce != null) {
+                                licName = licenceResoruce.split("-")[0];
+                                licVer = licenceResoruce.split("-")[1];
+                            }
 
                             // Lets try the name we extracted first
                             ThirdpartyLicenseConfig tplConfig = lookupThirdpartyLicense(thirdpartyLicenses, licName);

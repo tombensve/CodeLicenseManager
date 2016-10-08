@@ -163,6 +163,12 @@
     },
 
     "pages": {
+      "pageFormat": "A4",
+      "leftMargin": "2.54cm",
+      "rightMargin": "2.54cm",
+      "topMargin": "2.54cm",
+      "bottomMargin": "2.54cm",
+
       "block_quote": {
         "style": "Italic",
         "color": "mddgrey"
@@ -202,7 +208,9 @@
       "code": {
         "family": "COURIER",
         "size": 7,
-        "color": "64:64:64"
+        "color": "64:64:64",
+        "boxed": true,
+        "boxedColor": "#f8f8f8"
       },
       "anchor": {
         "color": "27:143:248"

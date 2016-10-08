@@ -1,7 +1,7 @@
 <!--
     @MSS("docs/docs.mss")
 -->
-# Code License Manager 2.1.5
+# Code License Manager
 
 ## Introduction
 
@@ -15,6 +15,25 @@ CLM also makes it extremely easy to change license (does happen) and allows you 
 If your CM tool allows pre checkin scripts to be run it can be plugged in at that time to make sure all checked in code has the license text. If a source file already has the license text nothing will be changed, if it doesn't it will be added. 
 
 ## Version changes
+
+__Version 2.2.0__
+
+Added a licenses.index to the license library that looks something like this:
+
+    agpl,gnuafferogeneralpubliclicense,gnuagpl|v3,3,3.0|GNUAGPL-v3
+    apache,apache-license,apache-software-license,apache software license,asl|2,2.0|Apache-2.0
+    cddl|1.0,1|CDDL-1.0
+    epl|1.0,1|EPL-1.0
+    gpl|v2,2,2.0|GPL-v2
+    gpl|v3m3m3.0|GPL-v3
+    lgpl,lessergnupubliclicense|2.1|LGPL-2.1
+    lgpl,lessergnupubliclicense|v3|LGPL-v3
+    mit|1.0,1|MIT-1.0
+    mozilla|1.1|Mozilla-1.1
+    osgi|2.0|OSGi-2.0
+    osgisl,osgispecificationlicense|2.0|OSGiSL-2.0
+
+This is now used to match up license specifications in maven poms. Each word in the pom license string is matched up against the first part, and when a match is found each word is matched against the second part which is the version, and when both have been found then the third part is uses as the license to lookup in the library. This should decrease the problem of 3 to 4 different spellings of a license is interpreted as different licenses, and some is found in the library others are downloaded. Now most of the variants should be matched against the library. 
 
 __Version 2.1.6__
 

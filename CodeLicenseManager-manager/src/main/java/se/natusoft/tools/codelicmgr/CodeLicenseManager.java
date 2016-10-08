@@ -115,7 +115,7 @@ public class CodeLicenseManager {
      * headers with.
      *
      * @param config The configuration for this tool.
-     * @param loadLicenseLib if true the a tpLicense library will be loaded from the project configuration. This should from general be true.
+     * @param loadLicenseLib if true the a tpLicense library will be loaded from the project configuration. This should in general be true.
      *
      * @throws CodeLicenseException if bad licence data is passed.
      */
