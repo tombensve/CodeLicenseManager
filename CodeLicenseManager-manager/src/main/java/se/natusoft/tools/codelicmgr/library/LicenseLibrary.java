@@ -92,7 +92,19 @@ public class LicenseLibrary {
      * @throws CodeLicenseException on failure to load license.
      */
     public static LibraryLicense getLicense(String licenseType, String licenseVersion, String licenseUrl) throws CodeLicenseException {
-        Properties props = loadProperties(getLicenseFullName(licenseType, licenseVersion) + ".properties");
+        return getLicense(licenseType + " " + licenseVersion, licenseUrl);
+    }
+
+    /**
+     * Loads and return a license from the license libraries available in classpath.
+     *
+     * @param licenseRef     A reference to a license as from a pom.
+     * @param licenseUrl     The url for the license on the web.
+     * @throws CodeLicenseException on failure to load license.
+     */
+    public static LibraryLicense getLicense(String licenseRef, String licenseUrl) throws CodeLicenseException {
+        String licResource = LicenseIndex.index.resolveLibraryResource(licenseRef);
+        Properties props = loadProperties(licResource + ".properties");
 
         LibraryLicense libLic = null;
 
@@ -113,8 +125,7 @@ public class LicenseLibrary {
             String licUrl = props.getProperty(PROP_URL);
             libLic.setUrl(licUrl != null ? licUrl : licenseUrl);
         } else {
-            libLic = new LibraryLicense(licenseType, licenseVersion, licenseType, "open", null, null, null, true /* downloadable*/);
-            libLic.setUrl(licenseUrl);
+            System.err.println("WARNING: No license found for '" + licenseRef + "'!");
         }
 
         return libLic;

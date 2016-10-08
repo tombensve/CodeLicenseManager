@@ -9,14 +9,14 @@
     <parent>
         <artifactId>CodeLicenseManager</artifactId>
         <groupId>se.natusoft.tools.codelicmgr</groupId>
-        <version><!--VER-->2.1.6</version>
+        <version><!--VER-->2.2.0</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>se.natusoft.tools.codelicmgr</groupId>
     <artifactId>CodeLicenseManager-annotations-retention-runtime</artifactId>
-    <version><!--VER-->2.1.6</version>
+    <version><!--VER-->2.2.0</version>
 
     <name>CodeLicenseManager-annotations-retention-runtime</name>
 

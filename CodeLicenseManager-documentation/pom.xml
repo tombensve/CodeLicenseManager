@@ -3,13 +3,13 @@
     <parent>
         <groupId>se.natusoft.tools.codelicmgr</groupId>
         <artifactId>CodeLicenseManager</artifactId>
-        <version><!--VER-->2.1.6</version>
+        <version><!--VER-->2.2.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>se.natusoft.tools.codelicmgr</groupId>
     <artifactId>CodeLicenseManager-documentation</artifactId>
-    <version><!--VER-->2.1.6</version>
+    <version><!--VER-->2.2.0</version>
     <packaging>pom</packaging>
 
     <build>
@@ -102,6 +102,7 @@
             <plugin>
                 <groupId>se.natusoft.tools.doc.markdowndoc</groupId>
                 <artifactId>markdowndoc-maven-plugin</artifactId>
+                <version>2.0.0</version>
 
                 <executions>
                     <execution>
@@ -127,7 +128,6 @@
                                 <!-- paths are relative to project top root! -->
                                 <resultFile>CodeLicenseManager-documentation/docs/CLM-User-Guide.pdf</resultFile>
                                 <mss>CodeLicenseManager-documentation/docs/docs.mss</mss>
-                                <pageSize>A4</pageSize>
                                 <title>Code License Manager</title>
                                 <subject>User Guide</subject>
                                 <version>${project.version}</version>
@@ -135,6 +135,7 @@
                                 <copyright>Copyright © ${copyrightYear} ${copyrightHolder}</copyright>
                                 <generateTitlePage>true</generateTitlePage>
                                 <generateTOC>true</generateTOC>
+                                <generateSectionNumbers>false</generateSectionNumbers>
                             </pdfGeneratorOptions>
 
                         </configuration>
