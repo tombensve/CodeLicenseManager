@@ -404,7 +404,7 @@ public class CodeLicenseManager {
                 for (ThirdpartyLicenseConfig tpLicense : this.config.getThirdpartyLicenses().getLicenses()) {
                     try {
                         LibraryLicense tpLibraryLic = LicenseLibrary.getThirdpartyLicense(tpLicense);
-                        if (!tpLibraryLic.isDownloadable()) {
+                        if (tpLibraryLic != null && !tpLibraryLic.isDownloadable()) {
                             try {
                                 copyFullLicenseTextToDir(thirdpartyLicenseDir, tpLibraryLic, tpLicense.getType() + "-" +
                                         tpLicense.getVersion(), tpLicense);

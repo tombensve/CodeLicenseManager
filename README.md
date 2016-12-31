@@ -2,7 +2,7 @@
 
 Copyright © 2013 Natusoft AB
 
-__Version:__ 2.2.0
+__Version:__ 2.2.1
 
 __Author:__ Tommy Svensson (tommy@natusoft.se)
 
@@ -15,6 +15,12 @@ User Guide: [Markdown](https://github.com/tombensve/CodeLicenseManager/blob/mast
 [Licenses](https://github.com/tombensve/CodeLicenseManager/blob/master/CodeLicenseManager-documentation/docs/licenses.md)
 
 ## Version history
+
+__Version 2.2.1__
+
+Extended the index introduced in version 2.2.0 with more name variants for EPL.
+ 
+Fixed NPE when looking up licenses in library. If absolutely nothing is found it will now try a download instead.
 
 __Version 2.2.0__
 
