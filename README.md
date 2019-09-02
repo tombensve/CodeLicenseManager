@@ -14,6 +14,8 @@ I use this in my other tools on GitHub. See <https://github.com/tombensve/Markdo
 
 For finding third party licenses it does require maven. Unfortunately far from all provide clear license info ...
 
+This tool also contain a maven plugin for updateing source code with license header. 
+
 User Guide: [Markdown](https://github.com/tombensve/CodeLicenseManager/blob/master/CodeLicenseManager-documentation/docs/UserGuide.md) /  [PDF](https://github.com/tombensve/CodeLicenseManager/blob/master/CodeLicenseManager-documentation/docs/CLM-User-Guide.pdf)
 
 [Licenses](https://github.com/tombensve/CodeLicenseManager/blob/master/CodeLicenseManager-documentation/docs/licenses.md)
