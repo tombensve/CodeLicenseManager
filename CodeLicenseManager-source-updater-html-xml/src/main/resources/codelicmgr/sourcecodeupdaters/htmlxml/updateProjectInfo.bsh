@@ -4,7 +4,7 @@
  *         CodeLicenseManager-source-updater-html-xml
  *     
  *     Code Version
- *         2.1.6
+ *         2.2.1
  *     
  *     Description
  *         Manages project and license information in project sourcecode
@@ -119,11 +119,13 @@ if (hasProjectSubProjectOf) {
     editor.insertLine("        ");
 }
 
+/* Bad idea
 if (hasProjectCodeVersion) {
     editor.insertLine("        Code Version");
     editor.insertLine("            " + projectCodeVersion);
     editor.insertLine("        ");
 }
+*/
 
 if (hasProjectDescription) {
     editor.insertLine("        Description");

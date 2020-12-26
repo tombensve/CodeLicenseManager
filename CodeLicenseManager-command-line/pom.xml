@@ -5,12 +5,12 @@
     <parent>
         <artifactId>CodeLicenseManager</artifactId>
         <groupId>se.natusoft.tools.codelicmgr</groupId>
-        <version><!--VER-->2.2.1</version>
+        <version><!--VER-->2.2.2</version>
     </parent>
 
     <groupId>se.natusoft.tools.codelicmgr</groupId>
     <artifactId>CodeLicenseManager-command-line</artifactId>
-    <version><!--VER-->2.2.1</version>
+    <version><!--VER-->2.2.2</version>
 
     <name>CodeLicenseManager-command-line</name>
 
@@ -19,7 +19,7 @@
             <groupId>${project.groupId}</groupId>
             <artifactId>CodeLicenseManager-manager</artifactId>
         </dependency>
-        
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -44,7 +44,7 @@
                             <avalableAt>https://github.com/tombensve/CodeLicenseManager</avalableAt>
                         </manifestEntries>
                     </archive>
-                </configuration>           
+                </configuration>
             </plugin>
 
             <!--

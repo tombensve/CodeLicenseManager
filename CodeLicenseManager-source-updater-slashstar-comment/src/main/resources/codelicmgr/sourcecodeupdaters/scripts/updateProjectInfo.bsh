@@ -4,7 +4,7 @@
  *         CodeLicenseManager-source-updater-slashstar-comment
  *     
  *     Code Version
- *         2.1.6
+ *         2.2.1
  *     
  *     Description
  *         Manages project and license information in project sourcecode
@@ -123,11 +123,13 @@ if (hasProjectSubProjectOf) {
     editor.insertLine(" *     ");
 }
 
+/* This was a really bad idea! You don't want all source files updated due to version bump!
 if (hasProjectCodeVersion) {
     editor.insertLine(" *     Code Version");
     editor.insertLine(" *         " + projectCodeVersion);
     editor.insertLine(" *     ");
 }
+*/
 
 if (hasProjectDescription) {
     editor.insertLine(" *     Description");

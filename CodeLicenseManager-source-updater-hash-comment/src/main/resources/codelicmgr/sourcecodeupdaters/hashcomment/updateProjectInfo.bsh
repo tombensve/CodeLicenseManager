@@ -4,7 +4,7 @@
  *         CodeLicenseManager-source-updater-hash-comment
  *     
  *     Code Version
- *         2.1.6
+ *         2.2.1
  *     
  *     Description
  *         Manages project and license information in project sourcecode
@@ -90,7 +90,7 @@
 // PLEASE NOTE: A section is assumed to be from the found header to the next line having a character at position 2 (comment, space, character, ...).
 // This means that everything belonging to the section must start with a '#' char and then be followed by at least 2 spaces, or findEndOfBlock()
 // will find the end to early! If you dont like the indentation of the project subheadings you will have to find another way to identify the end
-// of the project section block. 
+// of the project section block.
 
 if (editor.find("^\\# PROJECT")) {
     display("Updating PROJECT");
@@ -121,11 +121,13 @@ if (hasProjectSubProjectOf) {
     editor.insertLine("#     ");
 }
 
+/* Bad idea
 if (hasProjectCodeVersion) {
     editor.insertLine("#     Code Version");
     editor.insertLine("#         " + projectCodeVersion);
     editor.insertLine("#     ");
 }
+*/
 
 if (hasProjectDescription) {
     editor.insertLine("#     Description");

@@ -4,7 +4,7 @@
  *         CodeLicenseManager-source-updater-groovy-annotation
  *     
  *     Code Version
- *         2.1.6
+ *         2.2.1
  *     
  *     Description
  *         Manages project and license information in project sourcecode
@@ -34,7 +34,7 @@
  *     Tommy Svensson
  *         Changes:
  *         2009-11-09: Created!
- *         
+ *
  * Updates the project info in a java source file.
  *
  * The following objects are available to this script:
@@ -114,6 +114,7 @@ if (hasProjectCodeVersion || hasProjectSubProjectOf || hasProjectDescription) {
 }
 editor.insertLine(projLine);
 
+/* Bad idea
 if (hasProjectCodeVersion) {
     projLine = "    codeVersion=\"" + projectCodeVersion + "\"";
     if (hasProjectSubProjectOf || hasProjectDescription) {
@@ -121,6 +122,7 @@ if (hasProjectCodeVersion) {
     }
     editor.insertLine(projLine);
 }
+*/
 
 if (hasProjectSubProjectOf) {
     projLine = "    subProjectOf=\"" + projectSubProjectOf + "\"";

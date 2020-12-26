@@ -2,7 +2,7 @@
 
 Copyright © 2013 Natusoft AB
 
-__Version:__ 2.2.1
+__Version:__ 2.2.2
 
 __Author:__ Tommy Svensson (tommy@natusoft.se)
 
@@ -15,6 +15,12 @@ User Guide: [Markdown](https://github.com/tombensve/CodeLicenseManager/blob/mast
 [Licenses](https://github.com/tombensve/CodeLicenseManager/blob/master/CodeLicenseManager-documentation/docs/licenses.md)
 
 ## Version history
+
+__Version 2.2.2__
+
+Removed generation of current version in source header comments. Including the version number was
+a rather stupid thing to do. It caused all source files to be updated as soon as you changed version
+in pom.xml.
 
 __Version 2.2.1__
 

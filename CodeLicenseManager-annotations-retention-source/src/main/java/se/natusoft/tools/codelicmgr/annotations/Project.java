@@ -5,7 +5,7 @@
  *         CodeLicenseManager-annotations-retention-source
  *     
  *     Code Version
- *         2.1.6
+ *         2.2.1
  *     
  *     Description
  *         Manages project and license information in project sourcecode
