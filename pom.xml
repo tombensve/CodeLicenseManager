@@ -49,6 +49,8 @@
             then you will get a cyclic dependency error!
         -->
         <app.run.version>2.2.2</app.run.version>
+
+        <markdowndoc.version>3.0.0</markdowndoc.version>
     </properties>
     <licenses>
         <license>
@@ -74,6 +76,45 @@
         <developerConnection>scm:git:git@github.com:tombensve/CodeLicenseManager-cenrel.git</developerConnection>
         <url>https://github.com/tombensve/CodeLicenseManager-cenrel</url>
     </scm>
+
+    <!--
+        Make sure we have access to ns repo.
+    -->
+    <repositories>
+        <repository>
+            <id>ns-repo</id>
+            <name>ns-artifact-repository</name>
+            <url>https://download.natusoft.se/maven</url>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>ns-plugin-repo</id>
+            <name>na-plugin-repository</name>
+            <url>https://download.natusoft.se/maven</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <!--            <snapshots>-->
+            <!--                <enabled>true</enabled>-->
+            <!--            </snapshots>-->
+        </pluginRepository>
+    </pluginRepositories>
+
+    <!--
+        Distribution Management
+    -->
+
+    <distributionManagement>
+        <repository>
+            <id>download.natusoft.se</id>
+            <name>DownloadNatusoftSe-MarkdownDoc</name>
+            <url>ftp://${maven.repo.upload}/${maven.base.path}</url>
+        </repository>
+    </distributionManagement>
+
+    <!-- __________________ -->
 
     <dependencyManagement>
         <dependencies>
@@ -176,7 +217,7 @@
             <dependency>
                 <groupId>se.natusoft.tools.doc.markdowndoc</groupId>
                 <artifactId>markdown-doc-lib</artifactId>
-                <version>2.2.0</version>
+                <version>${markdowndoc.version}</version>
             </dependency>
 
             <dependency>
@@ -276,13 +317,13 @@
                 <plugin>
                     <groupId>se.natusoft.tools.doc.markdowndoc</groupId>
                     <artifactId>markdowndoc-maven-plugin</artifactId>
-                    <version>2.0.0</version>
+                    <version>${markdowndoc.version}</version>
 
                     <dependencies>
                         <dependency>
                             <groupId>se.natusoft.tools.doc.markdowndoc</groupId>
                             <artifactId>markdown-doc-lib</artifactId>
-                            <version>2.0.0</version>
+                            <version>${markdowndoc.version}</version>
                         </dependency>
                     </dependencies>
                 </plugin>
@@ -376,14 +417,6 @@
         <module>CodeLicenseManager-dist</module>
         <module>CodeLicenseManager-documentation</module>
     </modules>
-
-    <distributionManagement>
-        <repository>
-            <id>bintray-tommy-maven-CodeLicenseManager</id>
-            <name>tommy-maven-CodeLicenseManager</name>
-            <url>https://api.bintray.com/maven/tommy/maven/CodeLicenseManager</url>
-        </repository>
-    </distributionManagement>
 
     <!--
         Profiles
