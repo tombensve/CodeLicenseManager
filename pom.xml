@@ -6,7 +6,7 @@
     <!-- Artifact information -->
     <groupId>se.natusoft.tools.codelicmgr</groupId>
     <artifactId>CodeLicenseManager</artifactId>
-    <version><!--VER-->2.2.2</version>
+    <version><!--VER-->2.2.3</version>
     <packaging>pom</packaging>
 
     <url>https://github.com/tombensve/CodeLicenseManager</url>
@@ -34,7 +34,7 @@
         <developer1Name>Tommy Svensson</developer1Name>
         <developer1Email>tommy@natusoft.se</developer1Email>
 
-        <app.version><!--VER-->2.2.2</app.version>
+        <app.version><!--VER-->2.2.3</app.version>
 
         <!--
             To test running this on itself you need to do the following:
@@ -198,7 +198,7 @@
             <dependency>
                 <groupId>org.apache.ant</groupId>
                 <artifactId>ant</artifactId>
-                <version>1.10.9</version>
+                <version>1.10.12</version>
             </dependency>
 
             <dependency>

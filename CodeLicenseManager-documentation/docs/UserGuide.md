@@ -16,6 +16,10 @@ If your CM tool allows pre checkin scripts to be run it can be plugged in at tha
 
 ## Version changes
 
+__Version 2.2.3__
+
+Bumped Ant version to 1.10.12 due to GitHub security warning. 
+
 __Version 2.2.0__
 
 Added a licenses.index to the license library that looks something like this:
