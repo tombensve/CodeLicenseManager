@@ -16,7 +16,7 @@ If your CM tool allows pre checkin scripts to be run it can be plugged in at tha
 
 ## Version changes
 
-__Version 2.2.3__
+__Version 2.2.4__
 
 Bumped Ant version to 1.10.12 due to GitHub security warning. 
 

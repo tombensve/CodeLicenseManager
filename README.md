@@ -2,7 +2,7 @@
 
 Copyright © 2013 Natusoft AB
 
-__Version:__ 2.2.3
+__Version:__ 2.2.4
 
 __Author:__ Tommy Svensson (tommy@natusoft.se)
 
@@ -26,7 +26,7 @@ User Guide: [Markdown](https://github.com/tombensve/CodeLicenseManager/blob/mast
 
 ## Version history
 
-__Version 2.2.3__
+__Version 2.2.4__
 
 Bumped Ant version to 1.10.12 due to GitHub security warning.
 

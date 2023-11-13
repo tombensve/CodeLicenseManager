@@ -382,6 +382,11 @@ public class SourceCodeUpdater {
         this.editor.setAllowLoadSave(false); // Scripts should not load or save anything!
 
         this.editor.moveToTopOfFile();
+
+        String firstLine = this.editor.getLine().trim();
+        if (firstLine.startsWith("<?") || firstLine.startsWith("<!"))
+            this.editor.moveDown(1);
+
         this.scriptMgr.runScriptIfAvailable("userBefore");
 
         this.editor.moveToTopOfFile();
