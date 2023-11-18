@@ -5,13 +5,15 @@
 # to change the version number of all tagged versions in the pom.xml files in the project.
 #
 
-version=2.2.4
+version=2.2.6
 
-for pom in `find . -name 'pom.xml' -print`
+# shellcheck disable=SC2044
+for pom in $(find . -name 'pom.xml' -print)
 do
     echo "Updating ${pom} ..."
-    cat ${pom} | sed 's%><!--VER-->.*<%><!--VER-->'${version}'<%g' > ${pom}.new
-    mv ${pom} ${pom}.old
-    mv ${pom}.new ${pom}
-    rm ${pom}.old
+    # shellcheck disable=SC2002
+    cat "${pom}" | sed 's%><!--VER-->.*<%><!--VER-->'${version}'<%g' > "${pom}".new
+    mv "${pom}" "${pom}".old
+    mv "${pom}".new "${pom}"
+    rm "${pom}".old
 done

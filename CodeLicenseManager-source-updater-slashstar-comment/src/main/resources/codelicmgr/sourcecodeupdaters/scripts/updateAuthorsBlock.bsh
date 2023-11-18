@@ -96,10 +96,17 @@ if (!editor.find(" \\* AUTHORS")) {
       "find=first;insert=before;section=false;search='^/\\*.*'"
     );
 
+
+    String _userName = userName.substring(0,1).toUpperCase() + userName.subString(1).toLowerCase();
+
+    if (userEmail != null) {
+         _userName = _userName + " ( " + userEmail + " )";
+    }
+
     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
     display("Adding AUTHORS");
     editor.insertLine(" * AUTHORS");
-    editor.insertLine(" *     " + userName + " (" + userEmail + ")");
+    editor.insertLine(" *     " + _userName);
     editor.insertLine(" *         Changes:");
     editor.insertLine(" *         " + sdf.format(new Date()) + ": Created!");
     editor.insertLine(" *         ");
