@@ -2,7 +2,7 @@
 
 Copyright © 2013 Natusoft AB
 
-__Version:__ 2.2.4
+__Version:__ 2.2.6
 
 __Author:__ Tommy Svensson (tommy@natusoft.se)
 
@@ -25,6 +25,19 @@ User Guide: [Markdown](https://github.com/tombensve/CodeLicenseManager/blob/mast
 [Accessing binaries](https://github.com/tombensve/CommonStuff/blob/master/docs/AccessingBinaries.md)
 
 ## Version history
+
+__Version 2.2.6__
+
+Very minor update that that now only adds "(email-address)" after name if an email address have been 
+provided. So no more `"firstName lastName ()"`! That just irritated me so much that I had to fix it even
+though I'm busy with another project! Maybe that is also why I a sloppy job at first (2.2.5), but in the
+future I want to redo this completely! The base idea is good, the implementation can be improved! This
+was done 10 years ago!!
+
+__Version 2.2.5__
+
+This version was skipped due to a dumb mistake that made me start over with 2.2.6.
+This version should not be in the repo, and if it accidentally is, don't use it!
 
 __Version 2.2.4__
 
