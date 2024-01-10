@@ -82,6 +82,12 @@
     -->
     <repositories>
         <repository>
+            <id>repsy</id>
+            <name>My Private Maven Repository on Repsy</name>
+            <url>https://repo.repsy.io/mvn/tombensve/natusoft-os</url>
+        </repository>
+
+        <repository>
             <id>ns-repo</id>
             <name>ns-artifact-repository</name>
             <url>https://download.natusoft.se/maven</url>
@@ -89,6 +95,16 @@
     </repositories>
 
     <pluginRepositories>
+
+        <pluginRepository>
+            <id>repsy</id>
+            <name>repsy</name>
+            <url>https://repo.repsy.io/mvn/tombensve/natusoft-os</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </pluginRepository>
+
         <pluginRepository>
             <id>ns-plugin-repo</id>
             <name>na-plugin-repository</name>
@@ -96,9 +112,6 @@
             <releases>
                 <enabled>true</enabled>
             </releases>
-            <!--            <snapshots>-->
-            <!--                <enabled>true</enabled>-->
-            <!--            </snapshots>-->
         </pluginRepository>
     </pluginRepositories>
 
@@ -108,9 +121,10 @@
 
     <distributionManagement>
         <repository>
-            <id>download.natusoft.se</id>
-            <name>DownloadNatusoftSe-MarkdownDoc</name>
-            <url>ftp://${maven.repo.upload}/${maven.base.path}</url>
+            <id>repsy</id>
+            <name>My Private Maven Repository on Repsy</name>
+            <url>https://repo.repsy.io/mvn/tombensve/natusoft-os</url>
+
         </repository>
     </distributionManagement>
 
