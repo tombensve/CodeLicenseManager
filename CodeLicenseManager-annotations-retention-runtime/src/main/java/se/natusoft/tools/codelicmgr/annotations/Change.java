@@ -55,15 +55,15 @@ public @interface Change {
     /**
      * Specifies when the change was made.
      */
-    String when() default "";
+    String when = "";
 
     /**
      * Describes what was changed.
      */
-    String description() default "";
+    String description =  "";
 
     /**
      * Allows for specifying for which version of the application the change is for.
      */
-    String forVersion() default "";
+    String forVersion =  "";
 }

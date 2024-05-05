@@ -124,8 +124,8 @@
             <id>repsy</id>
             <name>My Private Maven Repository on Repsy</name>
             <url>https://repo.repsy.io/mvn/tombensve/natusoft-os</url>
-
         </repository>
+
     </distributionManagement>
 
     <!-- __________________ -->
