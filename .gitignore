@@ -1,6 +1,7 @@
 */target/
 /target
 .idea/
-.iml
+*.iml
 *.iml
 *.DS_Store
+*.iml

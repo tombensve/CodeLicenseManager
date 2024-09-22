@@ -1,5 +1,11 @@
 # Code License Manager
 
+----
+
+**.: THIS PROJECT IS NO LONGER MAINTAINED! :.**
+
+----
+
 Copyright © 2013 Natusoft AB
 
 __Version:__ 2.2.6
