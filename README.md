@@ -4,6 +4,14 @@
 
 **.: THIS PROJECT IS NO LONGER MAINTAINED! :.**
 
+It is quite old and a lot of stuff here is no longer relevant! 
+
+Putting a licence text in the top of each source file is something that
+an IDE should do, but I don't think IDEA does this. 
+
+I will from now on ignore that requirement (maybe changed ?), and only
+supply the license text. 
+
 ----
 
 Copyright © 2013 Natusoft AB
@@ -12,7 +20,10 @@ __Version:__ 2.2.6
 
 __Author:__ Tommy Svensson (tommy@natusoft.se)
 
----
+    State: OLD AND DEPRECATED! (DOES NOT BUILD) 
+    Don't expect me to do anything about this anytime soon, if ever!
+
+----
 
 A tool for managing code license with code boilerplate update and license + third party licenses installation at build. This actually looks at both your code and dependencies and collects the licenses found and the dependencies using the license and can generate a report.
 
