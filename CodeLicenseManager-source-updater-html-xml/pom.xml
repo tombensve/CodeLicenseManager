@@ -3,14 +3,12 @@
     <parent>
         <artifactId>CodeLicenseManager</artifactId>
         <groupId>se.natusoft.tools.codelicmgr</groupId>
-        <version><!--VER-->2.2.6</version>
+        <version>3.0.0-BC11</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>se.natusoft.tools.codelicmgr</groupId>
     <artifactId>CodeLicenseManager-source-updater-html-xml</artifactId>
-    <version><!--VER-->2.2.6</version>
 
     <name>CodeLicenseManager-source-updater-html-xml</name>
 
@@ -38,7 +36,7 @@
                         <configuration>
                             <project>
                                 <name>CodeLicenseManager</name>
-                                <codeVersion>2.5</codeVersion>
+                                <codeVersion>3.0.0-BC11</codeVersion>
                                 <subProjectOf />
                                 <description>
                                     Manages project and license information in project sourcecode
@@ -46,11 +44,11 @@
                                 </description>
                                 <copyright>
                                     <year>2008</year>
-                                    <holder>Tommy Svensson</holder>
+                                    <holder>Tommy Bent Svensson</holder>
                                 </copyright>
                                 <copyright>
                                     <year>2009</year>
-                                    <holder>Natusoft AB</holder>
+                                    <holder>Tommy Bengt Svensson</holder>
                                 </copyright>
                                 <license>
                                     <type>Apache</type>

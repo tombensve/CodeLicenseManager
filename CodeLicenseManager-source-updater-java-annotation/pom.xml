@@ -3,21 +3,22 @@
     <parent>
         <artifactId>CodeLicenseManager</artifactId>
         <groupId>se.natusoft.tools.codelicmgr</groupId>
-        <version><!--VER-->2.2.6</version>
+        <version>3.0.0-BC11</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>se.natusoft.tools.codelicmgr</groupId>
     <artifactId>CodeLicenseManager-source-updater-java-annotation</artifactId>
-    <version><!--VER-->2.2.6</version>
+    <version>3.0.0-BC11</version>
 
     <name>CodeLicenseManager-source-updater-java-annotation</name>
 
     <dependencies>
         <dependency>
-            <artifactId>CodeLicenseManager-annotations-retention-source</artifactId>
             <groupId>se.natusoft.tools.codelicmgr</groupId>
+            <artifactId>CodeLicenseManager-annotations-retention-source</artifactId>
+            <version>2.3.0-BC11</version>
         </dependency>
     </dependencies>
 

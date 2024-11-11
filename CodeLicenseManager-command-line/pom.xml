@@ -5,12 +5,11 @@
     <parent>
         <artifactId>CodeLicenseManager</artifactId>
         <groupId>se.natusoft.tools.codelicmgr</groupId>
-        <version><!--VER-->2.2.6</version>
+        <version>3.0.0-BC11</version>
     </parent>
 
-    <groupId>se.natusoft.tools.codelicmgr</groupId>
     <artifactId>CodeLicenseManager-command-line</artifactId>
-    <version><!--VER-->2.2.6</version>
+    <version>${project.parent.version}</version>
 
     <name>CodeLicenseManager-command-line</name>
 
@@ -40,7 +39,7 @@
                         </manifest>
                         <manifestEntries>
                             <version>${project.version}</version>
-                            <providedBy>${project.organization.name} (www.natusoft.se)</providedBy>
+                            <providedBy>${project.organization.name} (https://github.com/tombensve/CodeLicenseManager)</providedBy>
                             <avalableAt>https://github.com/tombensve/CodeLicenseManager</avalableAt>
                         </manifestEntries>
                     </archive>
@@ -61,7 +60,7 @@
                             <mainClass>se.natusoft.tools.codelicmgr.Main</mainClass>
                         </manifest>
                         <manifestEntries>
-                            <version>${project.version}</version>
+                            <version>${parent.version}</version>
                             <providedBy>${project.organization.name} (www.natusoft.se)</providedBy>
                             <avalableAt>https://github.com/tombensve/CodeLicenseManager</avalableAt>
                         </manifestEntries>
@@ -69,9 +68,10 @@
                 </configuration>
                 <executions>
                     <execution>
-                        <id>package-zip</id>
                         <goals>
-                            <goal>assembly</goal>
+                            <goal>
+                                single
+                            </goal>
                         </goals>
                         <phase>package</phase>
                     </execution>
@@ -81,5 +81,3 @@
     </build>
 
 </project>
-
-

@@ -5,12 +5,11 @@
     <parent>
         <artifactId>CodeLicenseManager</artifactId>
         <groupId>se.natusoft.tools.codelicmgr</groupId>
-        <version><!--VER-->2.2.6</version>
+        <version>3.0.0-BC11</version>
     </parent>
 
-    <groupId>se.natusoft.tools.codelicmgr</groupId>
     <artifactId>CodeLicenseManager-dist</artifactId>
-    <version><!--VER-->2.2.6</version>
+    <version>${parent.version}</version>
     <packaging>pom</packaging>
 
     <name>CodeLicenseManager-dist</name>
@@ -46,13 +45,14 @@
         <dependency>
             <artifactId>FileEditor</artifactId>
             <groupId>se.natusoft.tools.fileeditor</groupId>
+            <version>2.1.11</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>bsh</groupId>
             <artifactId>bsh</artifactId>
+            <version>2.0b1</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
 </project>
-
