@@ -6,12 +6,6 @@
 
 It is quite old and a lot of stuff here is no longer relevant! 
 
-Putting a licence text in the top of each source file is something that
-an IDE should do, but I don't think IDEA does this. 
-
-I will from now on ignore that requirement (maybe changed ?), and only
-supply the license text. 
-
 ----
 
 Copyright © 2013 Natusoft AB
